@@ -1,0 +1,22 @@
+{
+  "name": "psaliente.github.io",
+  "version": "1.0.0",
+  "description": "my project portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psaliente/psaliente.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Peter John Saliente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psaliente/psaliente.github.io/issues"
+  },
+  "homepage": "https://github.com/psaliente/psaliente.github.io#readme"
+}
