@@ -18,45 +18,46 @@ var Portfolio = function (_React$Component) {
 
         _this.state = {
             Me: 'Peter John C. Saliente',
+            Description: 'Hi, welcome to my online portfolio where you can see the list of projects that I have participated during the span my software development and engineering career. I had been in the IT Industry since 2011 and then went on to do software development three years later.',
             Projects: [{
                 Title: 'Active Directory Web API',
-                Description: 'Lorem ipsum dolor sit amet adipiscing elit consectitur',
+                Description: 'A Web API that provides a common source of Active Directory Information that can easily be consumed by other Applications',
                 Languages: ['C#', 'MVC Web API']
             }, {
                 Title: 'Wafer Scribe Alerts',
-                Description: 'Lorem ipsum dolor sit amet adipiscing elit consectitur',
+                Description: 'A windows background service that is used to monitor discrepancies between data from two different applications',
                 Languages: ['C#', '.Net Core', 'T-SQL', 'PL/SQL']
             }, {
                 Title: 'COVID-19 Dashboard',
-                Description: 'Lorem ipsum dolor sit amet adipiscing elit consectitur',
-                Languages: ['C#', '.Net Core WEB API', 'JavaScript', 'T-SQL']
+                Description: 'A simple dashboard that displays the overview of the COVID-19 cases of employees',
+                Languages: ['C#', 'MVC', 'WEB API', 'JavaScript', 'T-SQL']
             }, {
                 Title: 'Location Logging System',
-                Description: 'OutSystems Application',
+                Description: 'An OutSystems android application that is used for QR-Code based logging of employees',
                 Languages: ['T-SQL']
             }, {
                 Title: 'Paperless Receipt Traveller',
-                Description: 'Lorem ipsum dolor sit amet adipiscing elit consectitur',
+                Description: 'An OutSystems web application approval system for Receipt Travellers',
                 Languages: ['T-SQL']
             }, {
                 Title: 'iRMS',
-                Description: 'Recipe Management System',
+                Description: 'An MVC/AngularJS web application used to manage Recipes used on Manufacturing Equipments',
                 Languages: ['T-SQL']
             }, {
                 Title: 'eRFQ',
-                Description: 'Request for Quotation',
+                Description: 'An OutSystems web application approval system for Request-for-Quotation forms',
                 Languages: ['T-SQL']
             }, {
                 Title: 'Covid-19 Tracker/Tracer',
-                Description: 'Lorem ipsum dolor sit amet adipiscing elit consectitur',
+                Description: 'An MVC web application record keeping system for COVID-19 related cases of employees',
                 Languages: ['T-SQL']
             }, {
                 Title: 'Universal Data Collection',
-                Description: 'Request for Quotation',
+                Description: 'An OutSystems web application used as an all-purpose basic record-keeping system',
                 Languages: ['T-SQL']
             }, {
                 Title: 'EPMAP',
-                Description: 'electronic promotional material and events approval system',
+                Description: 'A SharePoint web application used for the approval of promotional materials and events',
                 Languages: ['SharePoint', 'C#', 'Web API', 'JavaScript', 'AngularJS', 'SQL']
             }, {
                 Title: '4Runner',
@@ -108,6 +109,7 @@ var Portfolio = function (_React$Component) {
         value: function render() {
             var _state = this.state,
                 Me = _state.Me,
+                Description = _state.Description,
                 Projects = _state.Projects,
                 Skills = _state.Skills;
 
@@ -119,6 +121,12 @@ var Portfolio = function (_React$Component) {
                     { 'class': 'display-4 text-center' },
                     Me
                 ),
+                React.createElement(
+                    'p',
+                    { 'class': 'lead' },
+                    Description
+                ),
+                React.createElement('br', null),
                 React.createElement(
                     'div',
                     { 'class': 'container' },
@@ -159,6 +167,7 @@ var Portfolio = function (_React$Component) {
                         })
                     )
                 ),
+                React.createElement('br', null),
                 React.createElement(
                     'div',
                     { 'class': 'container' },
