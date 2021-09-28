@@ -84,7 +84,7 @@
     },
     {
         "Title": "4Runner",
-        "Description": "A SharePoint WebPart-based application",
+        "Description": "A SharePoint WebPart-based application used by Medical Representatives for managing marketing activities, sales tactical proposals, and reimbursements",
         "Languages": [
             "SharePoint",
             "C#",
