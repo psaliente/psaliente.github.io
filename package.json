@@ -4,6 +4,7 @@
   "description": "my project portfolio",
   "main": "index.html",
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
