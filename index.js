@@ -66,9 +66,21 @@ var Portfolio = function (_React$Component) {
                     Me
                 ),
                 React.createElement(
-                    'p',
-                    { 'class': 'lead' },
-                    Description
+                    'div',
+                    { 'class': 'container' },
+                    React.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        React.createElement(
+                            'div',
+                            { 'class': 'col-xs-12' },
+                            React.createElement(
+                                'p',
+                                { 'class': 'lead' },
+                                Description
+                            )
+                        )
+                    )
                 ),
                 React.createElement('br', null),
                 React.createElement(
@@ -121,13 +133,30 @@ var Portfolio = function (_React$Component) {
                         'Skills'
                     ),
                     React.createElement(
-                        'ul',
-                        { 'class': 'list-group list-group-flush' },
+                        'div',
+                        { 'class': 'row' },
                         Skills.map(function (s) {
                             return React.createElement(
-                                'li',
-                                { 'class': 'list-group-item' },
-                                s.Name
+                                'div',
+                                { 'class': 'col-sm-12' },
+                                React.createElement(
+                                    'div',
+                                    { 'class': 'row' },
+                                    React.createElement(
+                                        'div',
+                                        { 'class': 'col-sm-4 text-end' },
+                                        React.createElement(
+                                            'span',
+                                            null,
+                                            s.Name
+                                        )
+                                    ),
+                                    React.createElement(
+                                        'div',
+                                        { 'class': 'col-sm-4' },
+                                        React.createElement('input', { type: 'range', 'class': 'form-range', min: '0', max: '10', value: s.Proficiency, disabled: true })
+                                    )
+                                )
                             );
                         })
                     )

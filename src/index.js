@@ -40,7 +40,13 @@ class Portfolio extends React.Component {
         return (
             <div>
                 <h1 class="display-4 text-center">{Me}</h1>
-                <p class="lead">{Description}</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="lead">{Description}</p>
+                        </div>
+                    </div>
+                </div>
                 <br />
                 <div class="container">
                     <h2 class="display-5 text-center">Projects</h2>
@@ -61,11 +67,22 @@ class Portfolio extends React.Component {
                 <br />
                 <div class="container">
                     <h2 class="display-5 text-center">Skills</h2>
-                    <ul class="list-group list-group-flush">
+                    <div class="row">
                         {
-                            Skills.map(s => <li class="list-group-item">{s.Name}</li>)
+                            Skills.map(s =>
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-4 text-end">
+                                            <span>{s.Name}</span>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="range" class="form-range" min="0" max="10" value={s.Proficiency} disabled />
+                                        </div>
+                                    </div>
+                                </div>
+                            )
                         }
-                    </ul>
+                    </div>
                 </div>
             </div>
         );
