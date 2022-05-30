@@ -1,4 +1,13 @@
 [
+    
+    {
+        "Title": "SpotLight",
+        "Description": "A WPF Desktop application that extends and adds custom functionality to Peloton",
+        "Languages": [
+            "C#",
+            "WPF"
+        ]
+    },
     {
         "Title": "Active Directory Web API",
         "Description": "A Web API that provides a common source of Active Directory Information that can easily be consumed by other Applications",
