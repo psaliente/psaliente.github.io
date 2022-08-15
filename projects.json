@@ -1,6 +1,13 @@
 [
     
     {
+        "Title": "E-Collect (Back-End)",
+        "Description": "APIGEE Proxy Project",
+        "Languages": [
+            "JavaScript"
+        ]
+    },
+    {
         "Title": "SpotLight",
         "Description": "A WPF Desktop application that extends and adds custom functionality to Peloton",
         "Languages": [
