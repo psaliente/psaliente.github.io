@@ -4,7 +4,9 @@
         "Title": "E-Collect (Back-End)",
         "Description": "APIGEE Proxy Project",
         "Languages": [
-            "JavaScript"
+            "JavaScript",
+            "MongoDB",
+            "APIGEE"
         ]
     },
     {
