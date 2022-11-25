@@ -1,8 +1,18 @@
 [
     
     {
+        "Title": "OMNIX",
+        "Description": "Web Application",
+        "Role": ["Create new features and/or enhancements as required and specified in the Product Backlog Items", "Develop bug fixes for Bug Items found during QA Testing"],
+        "Languages": [
+            "Angular",
+            "TypeScript"
+        ]
+    },
+    {
         "Title": "E-Collect (Back-End)",
         "Description": "APIGEE Proxy Project",
+        "Role": [],
         "Languages": [
             "JavaScript",
             "MongoDB",
@@ -12,6 +22,7 @@
     {
         "Title": "SpotLight",
         "Description": "A WPF Desktop application that extends and adds custom functionality to Peloton",
+        "Role": [],
         "Languages": [
             "C#",
             "WPF"
@@ -20,6 +31,7 @@
     {
         "Title": "Active Directory Web API",
         "Description": "A Web API that provides a common source of Active Directory Information that can easily be consumed by other Applications",
+        "Role": [],
         "Languages": [
             "C#",
             "MVC Web API"
@@ -28,6 +40,7 @@
     {
         "Title": "Wafer Scribe Alerts",
         "Description": "A windows background service that is used to monitor discrepancies between data from two different applications",
+        "Role": [],
         "Languages": [
             "C#",
             ".Net Core",
@@ -38,6 +51,7 @@
     {
         "Title": "COVID-19 Dashboard",
         "Description": "A simple dashboard that displays the overview of the COVID-19 cases of employees",
+        "Role": [],
         "Languages": [
             "C#",
             "MVC",
@@ -49,6 +63,7 @@
     {
         "Title": "Location Logging System",
         "Description": "An OutSystems android application that is used for QR-Code based logging of employees",
+        "Role": [],
         "Languages": [
             "T-SQL"
         ]
@@ -56,6 +71,7 @@
     {
         "Title": "Paperless Receipt Traveller",
         "Description": "An OutSystems web application approval system for Receipt Travellers",
+        "Role": [],
         "Languages": [
             "T-SQL"
         ]
@@ -63,6 +79,7 @@
     {
         "Title": "iRMS",
         "Description": "An MVC/AngularJS web application used to manage Recipes used on Manufacturing Equipments",
+        "Role": [],
         "Languages": [
             "T-SQL"
         ]
@@ -70,6 +87,7 @@
     {
         "Title": "eRFQ",
         "Description": "An OutSystems web application approval system for Request-for-Quotation forms",
+        "Role": [],
         "Languages": [
             "T-SQL"
         ]
@@ -77,6 +95,7 @@
     {
         "Title": "Covid-19 Tracker/Tracer",
         "Description": "An MVC web application record keeping system for COVID-19 related cases of employees",
+        "Role": [],
         "Languages": [
             "T-SQL"
         ]
@@ -84,6 +103,7 @@
     {
         "Title": "Universal Data Collection",
         "Description": "An OutSystems web application used as an all-purpose basic record-keeping system",
+        "Role": [],
         "Languages": [
             "T-SQL"
         ]
@@ -91,6 +111,7 @@
     {
         "Title": "EPMAP",
         "Description": "A SharePoint WebPart-based application used for the approval of promotional materials and events",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
@@ -103,6 +124,7 @@
     {
         "Title": "4Runner",
         "Description": "A SharePoint WebPart-based application used by Medical Representatives for managing marketing activities, sales tactical proposals, and reimbursements",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
@@ -113,6 +135,7 @@
     {
         "Title": "AIG",
         "Description": "Account-in-a-Glance, is a SharePoint WebPart-based web app dashboard for a quick overview of the sales and costs of product in a certain sales territory",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
@@ -123,6 +146,7 @@
     {
         "Title": "ePAF",
         "Description": "Electronic Principal Approval Form, is a SharePoint WebPart-based application for the basic record keeping of Principal Approval Forms",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
@@ -134,6 +158,7 @@
     {
         "Title": "CRAMS",
         "Description": "Crew Resource Allocation Management System - is a SharePoint WebPart-Based Application used by airline mechanics to manage their aircraft maintenance schedules and tasks",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
@@ -145,6 +170,7 @@
     {
         "Title": "Flight Status Checker",
         "Description": "A simple SharePoint WebPart to view the flight status of incoming aircrafts",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
@@ -155,6 +181,7 @@
     {
         "Title": "Cabin Crew Leave Exchange Form",
         "Description": "A simple SharePoint WebPart for flight attendants to submit Leave Exchage Request",
+        "Role": [],
         "Languages": [
             "SharePoint",
             "C#",
