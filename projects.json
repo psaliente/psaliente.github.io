@@ -1,8 +1,17 @@
 [
     
     {
+        "Title": "E-Competency",
+        "Description": "Web Application (NDA)",
+        "Role": ["Create new features and/or enhancements as required and specified in the Product Backlog Items", "Develop bug fixes for Bug Items found during QA Testing"],
+        "Languages": [
+            "Angular",
+            "TypeScript"
+        ]
+    },
+    {
         "Title": "OMNIX",
-        "Description": "Web Application",
+        "Description": "Web Application (NDA)",
         "Role": ["Create new features and/or enhancements as required and specified in the Product Backlog Items", "Develop bug fixes for Bug Items found during QA Testing"],
         "Languages": [
             "Angular",
@@ -11,8 +20,8 @@
     },
     {
         "Title": "E-Collect (Back-End)",
-        "Description": "APIGEE Proxy Project",
-        "Role": [],
+        "Description": "APIGEE Proxy Project (NDA)",
+        "Role": ["Create new features and/or enhancements as required and specified in the Product Backlog Items", "Develop bug fixes for Bug Items found during QA Testing"],
         "Languages": [
             "JavaScript",
             "MongoDB",
