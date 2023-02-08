@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import MyProjects from "./assets/projects.json";
 import MySkills from "./assets/skills.json";
+import ProjectList from "./components/projectList.component";
+import SkillList from "./components/skillList.component";
 
 function App() {
   const [Me, setMe] = useState("Peter John C. Saliente");
@@ -21,47 +23,9 @@ function App() {
         </div>
       </div>
       <br />
-      <div class="container">
-        <h2 class="display-5 text-center">Projects</h2>
-        <div class="row gap-5">
-          {Projects.map((p) => (
-            <div class="col-md-5 col-sm-12 p-3">
-              <div>
-                <h3 class="display-6">{p.Title}</h3>
-                <p class="lead">{p.Description}</p>
-                {p.Languages.map((l) => (
-                  <span class="badge bg-primary rounded-pill m-1">{l}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <ProjectList projects={Projects} />
       <br />
-      <div class="container">
-        <h2 class="display-5 text-center">Skills</h2>
-        <div class="row">
-          {Skills.map((s) => (
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-4 text-end">
-                  <span>{s.Name}</span>
-                </div>
-                <div class="col-sm-4">
-                  <input
-                    type="range"
-                    class="form-range"
-                    min="0"
-                    max="10"
-                    value={s.Proficiency}
-                    disabled
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <SkillList skills={Skills} />
     </div>
   );
 }
