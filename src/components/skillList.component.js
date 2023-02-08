@@ -1,7 +1,6 @@
 import React from "react";
 
-function SkillListItem(props) {
-  let { Name, Proficiency } = props;
+function SkillListItem({ Name, Proficiency }) {
   return (
     <div class="col-sm-12">
       <div class="row">
@@ -23,8 +22,7 @@ function SkillListItem(props) {
   );
 }
 
-function SkillList(props) {
-  let { skills } = props;
+function SkillList({ skills }) {
   return (
     <div class="container">
       <h2 class="display-5 text-center">Skills</h2>

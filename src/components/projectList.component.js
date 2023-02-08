@@ -1,8 +1,7 @@
 import React from "react";
 import LanguageList from "./languageList.component";
 
-function ProjectListItem(props) {
-  let { Title, Description, Languages } = props;
+function ProjectListItem({ Title, Description, Languages }) {
   return (
     <div class="col-md-5 col-sm-12 p-3">
       <div>
@@ -14,8 +13,7 @@ function ProjectListItem(props) {
   );
 }
 
-function ProjectList(props) {
-  let { projects } = props;
+function ProjectList({ projects }) {
   return (
     <div class="container">
       <h2 class="display-5 text-center">Projects</h2>

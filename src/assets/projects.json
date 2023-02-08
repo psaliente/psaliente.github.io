@@ -1,5 +1,11 @@
 [
   {
+    "Title": "This Portfolio - PSALIENTE.GITHUB.IO",
+    "Description": "Simple ReactJS App that showcases my project portfolio",
+    "Role": ["Created and Maintained this App"],
+    "Languages": ["ReactJS", "JavaScript"]
+  },
+  {
     "Title": "E-Competency",
     "Description": "Web Application - NDA",
     "Role": [
