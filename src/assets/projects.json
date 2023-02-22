@@ -2,6 +2,7 @@
   {
     "Title": "This Portfolio - PSALIENTE.GITHUB.IO",
     "Description": "Simple ReactJS App that showcases my project portfolio",
+    "Link": "/",
     "Role": ["Created and Maintained this App"],
     "Languages": ["ReactJS", "JavaScript"]
   },

@@ -1,12 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LanguageList from "./languageList.component";
 
-function ProjectListItem({ Title, Description, Languages }) {
+function ProjectListItem({
+  Title,
+  Description,
+  Languages,
+  Roles,
+  ProjectLink,
+}) {
   return (
     <div class="col-md-5 col-sm-12 p-3">
       <div>
-        <h3 class="display-6">{Title}</h3>
+        {ProjectLink ? (
+          <Link to={ProjectLink} className="text-decoration-none">
+            <h3 class="display-6">{Title}</h3>
+          </Link>
+        ) : (
+          <h3 class="display-6">{Title}</h3>
+        )}
         <p class="lead">{Description}</p>
+        {Roles && Roles.length > 0 && (
+          <>
+            <strong>Roles and Responsibilities:</strong>
+            <ul>
+              {Roles.map((r) => (
+                <li>{r}</li>
+              ))}
+            </ul>
+          </>
+        )}
         <LanguageList Languages={Languages} />
       </div>
     </div>
@@ -22,7 +45,9 @@ function ProjectList({ projects }) {
           <ProjectListItem
             Title={p.Title}
             Description={p.Description}
+            Roles={p.Role}
             Languages={p.Languages}
+            ProjectLink={p.Link}
           />
         ))}
       </div>
