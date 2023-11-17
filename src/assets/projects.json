@@ -7,6 +7,24 @@
     "Languages": ["ReactJS", "JavaScript"]
   },
   {
+    "Title": "FRA",
+    "Description": "PowerApp - NDA",
+    "Role": [
+      "Create new features and/or enhancements as required and specified in the Product Backlog Items",
+      "Develop bug fixes for Bug Items found during QA Testing"
+    ],
+    "Languages": ["PowerApps", "PowerAutomate"]
+  },
+  {
+    "Title": "Moments",
+    "Description": "Mobile App - NDA",
+    "Role": [
+      "Create new features and/or enhancements as required and specified in the Product Backlog Items",
+      "Develop bug fixes for Bug Items found during QA Testing"
+    ],
+    "Languages": ["React-Native", "TypeScript"]
+  },
+  {
     "Title": "E-Competency",
     "Description": "Web Application - NDA",
     "Role": [
