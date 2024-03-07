@@ -3,8 +3,8 @@
     "Title": "This Portfolio - PSALIENTE.GITHUB.IO",
     "Description": "Simple ReactJS App that showcases my project portfolio",
     "Link": "/",
-    "Role": ["Developed this Project from the ground-up", "Full-Stack Development", "Created and Maintained this App"],
-    "Languages": ["ReactJS", "JavaScript"]
+    "Role": ["Full-Stack Development", "Developed this Project from the ground-up","Created and Maintained this App"],
+    "Languages": ["ReactJS", "TypeScript", "JavaScript"]
   },
   {
     "Title": "FRA",
