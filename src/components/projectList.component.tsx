@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import LanguageList from "./languageList.component";
 import { ProjectType } from "../types/Project.Type";
+import useStyle from "../styles/projectListItem.style";
 
 type ProjectListItemPropType = {
   Title: string,
@@ -21,8 +21,10 @@ function ProjectListItem({
   Roles,
   ProjectLink,
 }: ProjectListItemPropType) {
+  const style = useStyle();
+
   return (
-    <div className="col-md-5 col-sm-12 p-3">
+    <div className="col-md-5 col-sm-12 p-3" style={style.Panel}>
       <div>
         {ProjectLink ? (
           <Link to={ProjectLink} className="text-decoration-none">
