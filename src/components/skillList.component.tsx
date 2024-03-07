@@ -1,4 +1,5 @@
 import { SkillType } from "../types/Skill.Type";
+import useStyle from "../styles/skills.style";
 
 type SkillListPropType = {
   skills: SkillType[]
@@ -27,12 +28,14 @@ function SkillListItem({ Name, Proficiency }: SkillType) {
 }
 
 function SkillList({ skills }: SkillListPropType) {
+  const styles = useStyle();
+
   return (
-    <div className="container">
-      <h2 className="display-5 text-center">Skills</h2>
-      <div className="row">
-        {skills.map((s) => (
-          <SkillListItem Name={s.Name} Proficiency={s.Proficiency} />
+    <div className="container" style={styles.SkillsContainer}>
+      <h2 className="display-5 text-white">Skills</h2>
+      <div className="row" style={styles.SkillsPanel}>
+        {skills.map((s, i) => (
+          <SkillListItem key={"skill"+i} Name={s.Name} Proficiency={s.Proficiency} />
         ))}
       </div>
     </div>

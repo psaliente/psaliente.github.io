@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import LanguageList from "./languageList.component";
 import { ProjectType } from "../types/Project.Type";
 import useStyle from "../styles/projectListItem.style";
+import useProjectListStyle from "../styles/projectList.style";
 
 type ProjectListItemPropType = {
+  ProjectID: string,
   Title: string,
   Description: string,
   Languages: string[],
@@ -15,6 +17,7 @@ type ProjectListPropType = {
 }
 
 function ProjectListItem({
+  ProjectID,
   Title,
   Description,
   Languages,
@@ -38,25 +41,29 @@ function ProjectListItem({
           <>
             <strong>Roles and Responsibilities:</strong>
             <ul>
-              {Roles.map((r) => (
-                <li>{r}</li>
+              {Roles.map((r, i) => (
+                <li key={ProjectID+"role"+i}>{r}</li>
               ))}
             </ul>
           </>
         )}
-        <LanguageList Languages={Languages} />
+        <LanguageList ProjectID={ProjectID} Languages={Languages} />
       </div>
     </div>
   );
 }
 
 function ProjectList({ projects }: ProjectListPropType) {
+  const styles = useProjectListStyle();
+
   return (
-    <div className="container">
-      <h2 className="display-5 text-center">Projects</h2>
+    <div className="container" style={styles.ListContainer}>
+      <h2 className="display-5">Projects</h2>
       <div className="row gap-5">
-        {projects.map((p) => (
+        {projects.map((p, i) => (
           <ProjectListItem
+            key={"projectItem" + i}
+            ProjectID={"projectItem" + i}
             Title={p.Title}
             Description={p.Description}
             Roles={p.Role}

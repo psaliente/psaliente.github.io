@@ -1,13 +1,14 @@
 type LanguageListPropType = {
+  ProjectID: string,
   Languages: string[]
 }
 
-function LanguageList({ Languages }: LanguageListPropType) {
+function LanguageList({ ProjectID, Languages }: LanguageListPropType) {
   return (
     <>
       {
-        Languages.map((l) => (
-          <span className="badge bg-primary rounded-pill m-1">{l}</span>
+        Languages.map((l, i) => (
+          <span key={ProjectID + "language" + i} className="badge bg-primary rounded-pill m-1">{l}</span>
         ))
       }
     </>
