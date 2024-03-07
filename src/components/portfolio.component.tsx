@@ -1,17 +1,29 @@
-import React from "react";
-import MyProjects from "../assets/projects.json";
-import MySkills from "../assets/skills.json";
 import ProjectList from "./projectList.component";
 import SkillList from "./skillList.component";
 import { ProjectType } from "../types/Project.Type";
 import { SkillType } from "../types/Skill.Type";
+import { MyInfoType } from "../types/MyInfo.type";
+import { useEffect, useState } from "react";
+import { useMyInfoService, useProjectsService, useSkillsService } from "../services";
 
 function PortfolioPage() {
-  const Me = "Peter John C. Saliente";
-  const Description =
-    "Hi, welcome to my online portfolio where you can see the list of projects that I have participated throughout the span my software development and engineering career. I had been in the IT Industry since 2011 and then went on to do software development three years later.";
-  const Projects: ProjectType[] = MyProjects;
-  const Skills: SkillType[] = MySkills;
+  const { getSkills } = useSkillsService();
+  const { getProjects } = useProjectsService();
+  const { getMyInfo } = useMyInfoService();
+  
+  const [Me, setMe] = useState("");
+  const [Description, setDescription] = useState("");
+  const [Projects, setProjects] = useState<ProjectType[]>([]);
+  const [Skills, setSkills] = useState<SkillType[]>([]);
+
+  useEffect(() => {
+    const myInfo: MyInfoType = getMyInfo();
+
+    setMe(myInfo.Name);
+    setDescription(myInfo.Description);    
+    setProjects(getProjects());
+    setSkills(getSkills());
+  }, []);
 
   return (
     <div>

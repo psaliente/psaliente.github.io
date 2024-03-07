@@ -1,9 +1,11 @@
 import MySkills from "../assets/skills.json";
 
-class SkillsService {
-  async getSkills() {
-    return await new Promise(() => MySkills);
+export const useSkillsService = () => {
+  function getSkills() {
+    return MySkills;
+  }
+
+  return {
+    getSkills
   }
 }
-
-export default SkillsService;

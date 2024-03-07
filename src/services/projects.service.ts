@@ -1,9 +1,11 @@
 import MyProjects from "../assets/projects.json";
 
-class ProjectService {
-  async getProjects() {
-    return await new Promise(() => MyProjects);
+export const useProjectsService = () => {
+  function getProjects() {
+    return MyProjects;
+  }
+
+  return {
+    getProjects
   }
 }
-
-export default ProjectService;
