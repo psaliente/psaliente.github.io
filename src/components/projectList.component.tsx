@@ -1,6 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LanguageList from "./languageList.component";
+import { ProjectType } from "../types/Project.Type";
+
+type ProjectListItemPropType = {
+  Title: string,
+  Description: string,
+  Languages: string[],
+  Roles: string[],
+  ProjectLink?: string
+}
+type ProjectListPropType = {
+  projects: ProjectType[]
+}
 
 function ProjectListItem({
   Title,
@@ -8,18 +20,18 @@ function ProjectListItem({
   Languages,
   Roles,
   ProjectLink,
-}) {
+}: ProjectListItemPropType) {
   return (
-    <div class="col-md-5 col-sm-12 p-3">
+    <div className="col-md-5 col-sm-12 p-3">
       <div>
         {ProjectLink ? (
           <Link to={ProjectLink} className="text-decoration-none">
-            <h3 class="display-6">{Title}</h3>
+            <h3 className="display-6">{Title}</h3>
           </Link>
         ) : (
-          <h3 class="display-6">{Title}</h3>
+          <h3 className="display-6">{Title}</h3>
         )}
-        <p class="lead">{Description}</p>
+        <p className="lead">{Description}</p>
         {Roles && Roles.length > 0 && (
           <>
             <strong>Roles and Responsibilities:</strong>
@@ -36,11 +48,11 @@ function ProjectListItem({
   );
 }
 
-function ProjectList({ projects }) {
+function ProjectList({ projects }: ProjectListPropType) {
   return (
-    <div class="container">
-      <h2 class="display-5 text-center">Projects</h2>
-      <div class="row gap-5">
+    <div className="container">
+      <h2 className="display-5 text-center">Projects</h2>
+      <div className="row gap-5">
         {projects.map((p) => (
           <ProjectListItem
             Title={p.Title}
