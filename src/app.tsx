@@ -1,5 +1,4 @@
-import React from "react";
-import RouterComponent from "./components/router.component";
+import { RouterComponent } from "./components";
 
 function App() {
   return <RouterComponent></RouterComponent>;

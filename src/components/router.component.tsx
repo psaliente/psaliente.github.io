@@ -7,7 +7,7 @@ const RouterComponent = (): JSX.Element =>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PortfolioPage />}></Route>
-        <Route path="/mr-tutor" element={<PortfolioPage />}></Route>
+        <Route path="/mr-tutor" element={<MrTutorPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
