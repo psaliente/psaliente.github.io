@@ -38,6 +38,7 @@
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "gh-pages": "^5.0.0",
+    "sass": "^1.71.1",
     "typescript": "^4"
   },
   "browserslist": [

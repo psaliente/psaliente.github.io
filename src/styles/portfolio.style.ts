@@ -2,7 +2,7 @@
 const useStyle = () => {
     return {
         PortfolioPage: {
-            background: "linear-gradient(rgba(243,243,254), rgba(123,123,164))",
+            background: "linear-gradient(rgba(243,243,245), rgba(123,123,123))",
             backgroundColor: "#f3f3fe",
             paddingBottom: 60,
         }

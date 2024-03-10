@@ -1,0 +1,21 @@
+.animate {
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-delay: .75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0; 
+    transform: translate(0, 40px); 
+  }
+  100% { 
+    opacity: 1;
+    transform: translate(0, 0); 
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+}
