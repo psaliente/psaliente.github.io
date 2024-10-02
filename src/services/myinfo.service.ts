@@ -4,7 +4,7 @@ export const useMyInfoService = () => {
     function getMyInfo() {
         return {
             Name: "Peter John C. Saliente",
-            Description: "Hi, welcome to my online portfolio where you can see the list of projects that I have participated throughout the span my software development and engineering career. I had been in the IT Industry since 2011 and then went on to do software development three years later."
+            Description: "Hello and welcome to my online portfolio! Here, you’ll find a curated list of projects I’ve been involved in throughout my software development and engineering career. My journey in the IT industry began back in 2011, and three years later, I delved into the exciting world of software development."
         }
     }
 
