@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d3845ab.css",
-    "main.js": "/static/js/main.53f781a5.js",
+    "main.css": "/static/css/main.951986b8.css",
+    "main.js": "/static/js/main.3215b357.js",
     "static/js/488.51726c0b.chunk.js": "/static/js/488.51726c0b.chunk.js",
+    "static/media/SourceCodePro-Bold.ttf.woff2": "/static/media/SourceCodePro-Bold.ttf.17a68a0751a813474a0e.woff2",
+    "static/media/SourceCodePro-Regular.ttf.woff2": "/static/media/SourceCodePro-Regular.ttf.84b900b88d09398d86b0.woff2",
+    "static/media/SourceCodePro-Light.ttf.woff2": "/static/media/SourceCodePro-Light.ttf.5527e11961ec793a1710.woff2",
+    "static/media/SourceCodePro-ExtraLight.ttf.woff2": "/static/media/SourceCodePro-ExtraLight.ttf.3b5a90ac5cf71f645691.woff2",
+    "static/media/SourceCodePro-BoldIt.ttf.woff2": "/static/media/SourceCodePro-BoldIt.ttf.d45b7a3df103d441d78b.woff2",
+    "static/media/SourceCodePro-It.ttf.woff2": "/static/media/SourceCodePro-It.ttf.ec122a420df4175e74f2.woff2",
+    "static/media/SourceCodePro-LightIt.ttf.woff2": "/static/media/SourceCodePro-LightIt.ttf.62ff1932bb080a4c14f2.woff2",
+    "static/media/SourceCodePro-ExtraLightIt.ttf.woff2": "/static/media/SourceCodePro-ExtraLightIt.ttf.83765f993e05f322ee58.woff2",
     "index.html": "/index.html",
-    "main.7d3845ab.css.map": "/static/css/main.7d3845ab.css.map",
-    "main.53f781a5.js.map": "/static/js/main.53f781a5.js.map",
+    "main.951986b8.css.map": "/static/css/main.951986b8.css.map",
+    "main.3215b357.js.map": "/static/js/main.3215b357.js.map",
     "488.51726c0b.chunk.js.map": "/static/js/488.51726c0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d3845ab.css",
-    "static/js/main.53f781a5.js"
+    "static/css/main.951986b8.css",
+    "static/js/main.3215b357.js"
   ]
 }
