@@ -34,14 +34,14 @@ function SkillList({ skills }: SkillListPropType) {
   const thisRef = useRef<HTMLDivElement>(null);
   const observer = new IntersectionObserver(([entry]) => {
     const { isIntersecting } = entry;
-    setInView(isIntersecting);
+    !inView && isIntersecting && setInView(isIntersecting);
   }, { rootMargin: "0px 0px -10px 0px" });
 
   if(thisRef.current) observer.observe(thisRef.current);
 
   return (
     <div className="container" style={styles.SkillsContainer}>
-      <h2 className="display-5 text-white">Skills</h2>
+      <h2 className="display-5">Skills</h2>
       <div className={"row" + (inView ? " animate": " opacity-0")} style={styles.SkillsPanel}  ref={thisRef}>
         {skills.map((s, i) => (
           <SkillListItem key={"skill"+i} Name={s.Name} Proficiency={s.Proficiency} />

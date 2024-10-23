@@ -26,11 +26,11 @@ function ProjectListItem({
   ProjectLink,
 }: ProjectListItemPropType) {
   const style = useStyle();
-  const [inView, SetInView] = useState(false);
+  const [inView, setInView] = useState(false);
   const thisRef = useRef<HTMLDivElement>(null);
   const observer = new IntersectionObserver(([entry]) => {
     const { isIntersecting } = entry;
-    SetInView(isIntersecting);
+    !inView && isIntersecting && setInView(isIntersecting);
   }, { rootMargin: "0px 0px -10px 0px" });
 
   if(thisRef.current) observer.observe(thisRef.current);
