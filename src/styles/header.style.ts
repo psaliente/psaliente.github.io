@@ -10,8 +10,7 @@ const useStyle = (): HeaderStyleProp => {
     return {
         Header: {
             boxShadow: "0px 5px 5px #88888888",
-            background: "radial-gradient(ellipse at top, #fff 40%, #ccc 90%)",
-            backgroundColor: "#fff",
+            background: "radial-gradient(ellipse at top, #fff6 40%, #ccc 90%)",
             display: 'flex',
             flexDirection: 'column',
             gap: 60,
