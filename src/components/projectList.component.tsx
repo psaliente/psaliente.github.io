@@ -6,7 +6,7 @@ import useProjectListStyle from "../styles/projectList.style";
 import ScrollAnimation from "react-animate-on-scroll";
 
 type ProjectListItemPropType = {
-  ProjectID: string,
+  ProjectID: number,
   Title: string,
   Description: string,
   Languages: string[],
@@ -29,7 +29,7 @@ function ProjectListItem({
 
   return (
       <div className={"col-md-5 col-sm-12 p-3"}>
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn={ProjectID % 2 == 0 ? "fadeInLeft" : "fadeInRight"}>
           <div style={style.Panel}>
               {ProjectLink ? (
                 <Link to={ProjectLink} className="text-decoration-none">
@@ -44,12 +44,12 @@ function ProjectListItem({
                   <strong>Roles and Responsibilities:</strong>
                   <ul>
                     {Roles.map((r, i) => (
-                      <li key={ProjectID+"role"+i}>{r}</li>
+                      <li key={"" + ProjectID+"role"+i}>{r}</li>
                     ))}
                   </ul>
                 </>
               )}
-              <LanguageList ProjectID={ProjectID} Languages={Languages} />
+              <LanguageList ProjectID={"" + ProjectID} Languages={Languages} />
           </div>
         </ScrollAnimation>
       </div>
@@ -66,7 +66,7 @@ function ProjectList({ projects }: ProjectListPropType) {
         {projects.map((p, i) => (
           <ProjectListItem
             key={"projectItem" + i}
-            ProjectID={"projectItem" + i}
+            ProjectID={i}
             Title={p.Title}
             Description={p.Description}
             Roles={p.Role}
