@@ -1,6 +1,6 @@
 import { SkillType } from "../types/Skill.Type";
 import useStyle from "../styles/skills.style";
-import { useRef, useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 type SkillListPropType = {
   skills: SkillType[]
@@ -30,23 +30,17 @@ function SkillListItem({ Name, Proficiency }: SkillType) {
 
 function SkillList({ skills }: SkillListPropType) {
   const styles = useStyle();
-  const [inView, setInView] = useState(false);
-  const thisRef = useRef<HTMLDivElement>(null);
-  const observer = new IntersectionObserver(([entry]) => {
-    const { isIntersecting } = entry;
-    !inView && isIntersecting && setInView(isIntersecting);
-  }, { rootMargin: "0px 0px -10px 0px" });
-
-  if(thisRef.current) observer.observe(thisRef.current);
 
   return (
     <div className="container" style={styles.SkillsContainer}>
       <h2 className="display-5">Skills</h2>
-      <div className={"row" + (inView ? " animate": " opacity-0")} style={styles.SkillsPanel}  ref={thisRef}>
-        {skills.map((s, i) => (
-          <SkillListItem key={"skill"+i} Name={s.Name} Proficiency={s.Proficiency} />
-        ))}
-      </div>
+      <ScrollAnimation animateIn="fadeIn">
+        <div className={"row"} style={styles.SkillsPanel}>
+          {skills.map((s, i) => (
+            <SkillListItem key={"skill"+i} Name={s.Name} Proficiency={s.Proficiency} />
+          ))}
+        </div>
+      </ScrollAnimation>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import LanguageList from "./languageList.component";
 import { ProjectType } from "../types/Project.Type";
 import useStyle from "../styles/projectListItem.style";
 import useProjectListStyle from "../styles/projectList.style";
-import { useRef, useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 type ProjectListItemPropType = {
   ProjectID: string,
@@ -26,39 +26,33 @@ function ProjectListItem({
   ProjectLink,
 }: ProjectListItemPropType) {
   const style = useStyle();
-  const [inView, setInView] = useState(false);
-  const thisRef = useRef<HTMLDivElement>(null);
-  const observer = new IntersectionObserver(([entry]) => {
-    const { isIntersecting } = entry;
-    !inView && isIntersecting && setInView(isIntersecting);
-  }, { rootMargin: "0px 0px -10px 0px" });
-
-  if(thisRef.current) observer.observe(thisRef.current);
 
   return (
-    <div className={"col-md-5 col-sm-12 p-3" + (inView ? " animate": " ")} style={style.Panel} ref={thisRef}>
-      <div>
-        {ProjectLink ? (
-          <Link to={ProjectLink} className="text-decoration-none">
-            <h3 className="display-6">{Title}</h3>
-          </Link>
-        ) : (
-          <h3 className="display-6">{Title}</h3>
-        )}
-        <p className="lead">{Description}</p>
-        {Roles && Roles.length > 0 && (
-          <>
-            <strong>Roles and Responsibilities:</strong>
-            <ul>
-              {Roles.map((r, i) => (
-                <li key={ProjectID+"role"+i}>{r}</li>
-              ))}
-            </ul>
-          </>
-        )}
-        <LanguageList ProjectID={ProjectID} Languages={Languages} />
+      <div className={"col-md-5 col-sm-12 p-3"} style={style.Panel}>
+        <div>
+          <ScrollAnimation animateIn="fadeIn">
+            {ProjectLink ? (
+              <Link to={ProjectLink} className="text-decoration-none">
+                <h3 className="display-6">{Title}</h3>
+              </Link>
+            ) : (
+              <h3 className="display-6">{Title}</h3>
+            )}
+            <p className="lead">{Description}</p>
+            {Roles && Roles.length > 0 && (
+              <>
+                <strong>Roles and Responsibilities:</strong>
+                <ul>
+                  {Roles.map((r, i) => (
+                    <li key={ProjectID+"role"+i}>{r}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <LanguageList ProjectID={ProjectID} Languages={Languages} />
+          </ScrollAnimation>
+        </div>
       </div>
-    </div>
   );
 }
 

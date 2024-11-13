@@ -8,7 +8,7 @@ const useStyle = () => {
             borderRadius: 12,
             boxShadow: "0px 5px 5px #88888888",
             backgroundColor: "#fff",
-            transition: "opacity 0.5s ease-in-out"
+            // transition: "opacity 0.5s ease-in-out"
         }
     }
 }
