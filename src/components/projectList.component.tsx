@@ -28,30 +28,30 @@ function ProjectListItem({
   const style = useStyle();
 
   return (
-      <div className={"col-md-5 col-sm-12 p-3"} style={style.Panel}>
-        <div>
-          <ScrollAnimation animateIn="fadeIn">
-            {ProjectLink ? (
-              <Link to={ProjectLink} className="text-decoration-none">
+      <div className={"col-md-5 col-sm-12 p-3"}>
+        <ScrollAnimation animateIn="fadeInRight">
+          <div style={style.Panel}>
+              {ProjectLink ? (
+                <Link to={ProjectLink} className="text-decoration-none">
+                  <h3 className="display-6">{Title}</h3>
+                </Link>
+              ) : (
                 <h3 className="display-6">{Title}</h3>
-              </Link>
-            ) : (
-              <h3 className="display-6">{Title}</h3>
-            )}
-            <p className="lead">{Description}</p>
-            {Roles && Roles.length > 0 && (
-              <>
-                <strong>Roles and Responsibilities:</strong>
-                <ul>
-                  {Roles.map((r, i) => (
-                    <li key={ProjectID+"role"+i}>{r}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <LanguageList ProjectID={ProjectID} Languages={Languages} />
-          </ScrollAnimation>
-        </div>
+              )}
+              <p className="lead">{Description}</p>
+              {Roles && Roles.length > 0 && (
+                <>
+                  <strong>Roles and Responsibilities:</strong>
+                  <ul>
+                    {Roles.map((r, i) => (
+                      <li key={ProjectID+"role"+i}>{r}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <LanguageList ProjectID={ProjectID} Languages={Languages} />
+          </div>
+        </ScrollAnimation>
       </div>
   );
 }

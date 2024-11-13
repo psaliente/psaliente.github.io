@@ -7,6 +7,7 @@ import { MyInfoType } from "../types/MyInfo.type";
 import { useEffect, useState } from "react";
 import { useMyInfoService, useProjectsService, useSkillsService } from "../services";
 import useStyle from "../styles/portfolio.style";
+import PortfolioParticles from "./particles.component";
 
 function PortfolioPage() {
   const { getSkills } = useSkillsService();
@@ -31,6 +32,7 @@ function PortfolioPage() {
 
   return (
     <div style={styles.PortfolioPage}>
+      <PortfolioParticles />
       <HeaderComponent Name={Me} Description={Description} />
       <br />
       <ProjectList projects={Projects} />

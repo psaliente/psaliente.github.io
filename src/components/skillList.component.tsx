@@ -34,7 +34,7 @@ function SkillList({ skills }: SkillListPropType) {
   return (
     <div className="container" style={styles.SkillsContainer}>
       <h2 className="display-5">Skills</h2>
-      <ScrollAnimation animateIn="fadeIn">
+      <ScrollAnimation animateIn="fadeInUp">
         <div className={"row"} style={styles.SkillsPanel}>
           {skills.map((s, i) => (
             <SkillListItem key={"skill"+i} Name={s.Name} Proficiency={s.Proficiency} />
