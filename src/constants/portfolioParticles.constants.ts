@@ -11,7 +11,7 @@ export const getPortfolioParticlesConfig = (): ISourceOptions => {
             value: computedPopulation
             },
             color: {
-            value: COLORS.GREEN2
+            value: COLORS.GREEN3
             },
             links: {
             enable: true,
@@ -25,7 +25,7 @@ export const getPortfolioParticlesConfig = (): ISourceOptions => {
             type: "circle"
             },
             opacity: {
-            value: 1
+            value: 0.2
             },
             size: {
             value: {
