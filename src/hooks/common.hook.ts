@@ -1,0 +1,6 @@
+
+const useCommonHook = () => {};
+
+export {
+    useCommonHook
+}
