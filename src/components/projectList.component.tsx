@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import LanguageList from "./languageList.component";
 import { ProjectType } from "../types/Project.Type";
 import ScrollAnimation from "react-animate-on-scroll";
+import { useCommonHook } from "../hooks/common.hook";
 
 type ProjectListItemPropType = {
   ProjectID: number,
@@ -23,8 +24,10 @@ function ProjectListItem({
   Roles,
   ProjectLink,
 }: ProjectListItemPropType) {
+  const { isEven } = useCommonHook();
+
   return (
-    <ScrollAnimation animateIn={ProjectID % 2 == 0 ? "fadeInLeft" : "fadeInRight"}>
+    <ScrollAnimation animateIn={isEven(ProjectID) ? "fadeInLeft" : "fadeInRight"}>
       <div className="flex flex-col gap-3 bg-white px-7 pb-5 pt-8 border rounded-3xl border-slate-300 shadow-xl hover:shadow-2xl">
           {ProjectLink ? (
             <Link to={ProjectLink} className="">
@@ -52,7 +55,7 @@ function ProjectListItem({
 
 function ProjectList({ projects }: ProjectListPropType) {
   return (
-    <div className="flex flex-col gap-4 p-10">
+    <div className="flex flex-col gap-4 p-10 overflow-x-hidden">
       <h2 className="w-full md:w-1/4 p-2 text-5xl md:text-7xl font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Projects</h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {projects.map((p, i) => (

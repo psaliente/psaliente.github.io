@@ -16,10 +16,16 @@ const useCommonHook = () => {
             case 't': return 'bg-blue-500';
             default: return 'bg-gray-500';
         }
-    } 
+    };
+
+    const isEven = (value: number): boolean => value % 2 === 0;
+
+    const isOdd = (value: number): boolean => !isEven(value);
 
     return {
-        mapLanguageToColor
+        mapLanguageToColor,
+        isEven,
+        isOdd
     }
 };
 
