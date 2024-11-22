@@ -24,31 +24,29 @@ function ProjectListItem({
   ProjectLink,
 }: ProjectListItemPropType) {
   return (
-      <div className="">
-        <ScrollAnimation animateIn={ProjectID % 2 == 0 ? "fadeInLeft" : "fadeInRight"}>
-          <div className="flex flex-col gap-3 bg-white px-7 pb-5 pt-8 border rounded-xl border-slate-300 shadow-xl hover:shadow-2xl">
-              {ProjectLink ? (
-                <Link to={ProjectLink} className="">
-                  <h3 className="text-5xl font-[SourceCodePro] text-blue-500">{Title}</h3>
-                </Link>
-              ) : (
-                <h3 className="text-5xl font-[SourceCodePro]">{Title}</h3>
-              )}
-              <p className="text-xl font-[SourceCodePro] text-gray-700">{Description}</p>
-              {Roles && Roles.length > 0 && (
-                <>
-                  <strong className="font-[SourceCodePro] text-gray-900">Roles and Responsibilities:</strong>
-                  <ul className="list-disc list-inside">
-                    {Roles.map((r, i) => (
-                      <li key={"" + ProjectID+"role"+i} className="font-[SourceCodePro] text-gray-700">{r}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
-              <LanguageList ProjectID={"" + ProjectID} Languages={Languages} />
-          </div>
-        </ScrollAnimation>
+    <ScrollAnimation animateIn={ProjectID % 2 == 0 ? "fadeInLeft" : "fadeInRight"}>
+      <div className="flex flex-col gap-3 bg-white px-7 pb-5 pt-8 border rounded-xl border-slate-300 shadow-xl hover:shadow-2xl">
+          {ProjectLink ? (
+            <Link to={ProjectLink} className="">
+              <h3 className="text-5xl font-[SourceCodePro] text-blue-500">{Title}</h3>
+            </Link>
+          ) : (
+            <h3 className="text-5xl font-[SourceCodePro]">{Title}</h3>
+          )}
+          <p className="text-xl font-[SourceCodePro] text-gray-700">{Description}</p>
+          {Roles && Roles.length > 0 && (
+            <>
+              <strong className="font-[SourceCodePro] text-gray-900">Roles and Responsibilities:</strong>
+              <ul className="list-disc list-inside">
+                {Roles.map((r, i) => (
+                  <li key={"" + ProjectID+"role"+i} className="font-[SourceCodePro] text-gray-700">{r}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          <LanguageList ProjectID={"" + ProjectID} Languages={Languages} />
       </div>
+    </ScrollAnimation>
   );
 }
 
