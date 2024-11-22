@@ -27,8 +27,8 @@ function ProjectListItem({
   const { isEven } = useCommonHook();
 
   return (
-    <ScrollAnimation animateIn={isEven(ProjectID) ? "fadeInLeft" : "fadeInRight"}>
-      <div className="flex flex-col gap-3 bg-white px-7 pb-5 pt-8 border rounded-3xl border-slate-300 shadow-xl hover:shadow-2xl">
+    <ScrollAnimation animateIn={isEven(ProjectID) ? "fadeInLeft" : "fadeInRight"} duration={2} animateOnce={true}>
+      <div className="flex flex-col gap-5 bg-white px-7 pb-5 pt-8 border rounded-3xl border-slate-300 shadow-xl hover:shadow-2xl">
           {ProjectLink ? (
             <Link to={ProjectLink} className="">
               <h3 className="text-3xl md:text-5xl font-[SourceCodePro] text-blue-500">{Title}</h3>
@@ -55,9 +55,9 @@ function ProjectListItem({
 
 function ProjectList({ projects }: ProjectListPropType) {
   return (
-    <div className="flex flex-col gap-4 p-10 overflow-x-hidden">
+    <div className="flex flex-col gap-10 p-10 overflow-x-hidden">
       <h2 className="w-full md:w-1/4 p-2 text-5xl md:text-7xl font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Projects</h2>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2">
         {projects.map((p, i) => (
           <ProjectListItem
             key={"projectItem" + i}
