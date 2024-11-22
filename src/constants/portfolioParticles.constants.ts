@@ -8,38 +8,38 @@ export const getPortfolioParticlesConfig = (): ISourceOptions => {
     return {
         particles: {
             number: {
-            value: computedPopulation
+                value: computedPopulation
             },
             color: {
-            value: COLORS.GREEN3
+                value: COLORS.GREEN4
             },
             links: {
-            enable: true,
-            distance: computedDistance,
-            color: {
-                value: COLORS.GREEN2
-            },
-            opacity: 1
+                enable: true,
+                distance: computedDistance,
+                color: {
+                    value: COLORS.GREEN4
+                },
+                opacity: 0.2
             },
             shape: {
-            type: "circle"
+                type: "circle"
             },
             opacity: {
-            value: 0.2
+                value: 0.2
             },
             size: {
-            value: {
-                min: 2,
-                max: 6
-            }
+                value: {
+                    min: 2,
+                    max: 7
+                }
             },
             move: {
-            enable: true,
-            speed: 2
+                enable: true,
+                speed: 0.2
             }
         },
         poisson: {
-        enable: true
+            enable: true
         }
     };
 }
