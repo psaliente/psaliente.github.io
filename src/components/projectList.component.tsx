@@ -25,15 +25,15 @@ function ProjectListItem({
 }: ProjectListItemPropType) {
   return (
     <ScrollAnimation animateIn={ProjectID % 2 == 0 ? "fadeInLeft" : "fadeInRight"}>
-      <div className="flex flex-col gap-3 bg-white px-7 pb-5 pt-8 border rounded-xl border-slate-300 shadow-xl hover:shadow-2xl">
+      <div className="flex flex-col gap-3 bg-white px-7 pb-5 pt-8 border rounded-3xl border-slate-300 shadow-xl hover:shadow-2xl">
           {ProjectLink ? (
             <Link to={ProjectLink} className="">
-              <h3 className="text-5xl font-[SourceCodePro] text-blue-500">{Title}</h3>
+              <h3 className="text-3xl md:text-5xl font-[SourceCodePro] text-blue-500">{Title}</h3>
             </Link>
           ) : (
-            <h3 className="text-5xl font-[SourceCodePro]">{Title}</h3>
+            <h3 className="text-3xl md:text-5xl font-[SourceCodePro]">{Title}</h3>
           )}
-          <p className="text-xl text-justify font-[SourceCodePro] text-gray-700">{Description}</p>
+          <p className="text-lg md:text-xl text-justify font-[SourceCodePro] text-gray-700">{Description}</p>
           {Roles && Roles.length > 0 && (
             <>
               <strong className="font-[SourceCodePro] text-gray-900">Roles and Responsibilities:</strong>
@@ -53,7 +53,7 @@ function ProjectListItem({
 function ProjectList({ projects }: ProjectListPropType) {
   return (
     <div className="flex flex-col gap-4 p-10">
-      <h2 className="w-full md:w-1/4 p-2 text-7xl font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Projects</h2>
+      <h2 className="w-full md:w-1/4 p-2 text-5xl md:text-7xl font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Projects</h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {projects.map((p, i) => (
           <ProjectListItem

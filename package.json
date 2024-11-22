@@ -8,6 +8,7 @@
     "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "start": "vite",
+    "start:host": "vite --host",
     "serve": "vite preview",
     "build:css": "npx tailwindcss -i ./src/index.css -o ./build/index.css --watch"
   },
