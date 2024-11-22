@@ -1,5 +1,4 @@
 import { SkillType } from "../types/Skill.Type";
-import useStyle from "../styles/skills.style";
 import ScrollAnimation from "react-animate-on-scroll";
 
 type SkillListPropType = {
@@ -8,34 +7,33 @@ type SkillListPropType = {
 
 function SkillListItem({ Name, Proficiency }: SkillType) {
   return (
-    <div className="col-sm-12">
-      <div className="row">
-        <div className="col-sm-4 text-end">
-          <span>{Name}</span>
-        </div>
-        <div className="col-sm-4">
-          <input
-            type="range"
-            className="form-range"
-            min="0"
-            max="10"
-            value={Proficiency}
-            disabled
-          />
-        </div>
+    <div className="flex flex-row gap-1">
+      <div className="basis-1/3 text-right">
+        <span className="font-[SourceCodePro] text-gray-700 border">{Name}</span>
+      </div>
+      <div className="basis-1/3">
+        <input
+          type="range"
+          className="w-full"
+          min="0"
+          max="10"
+          value={Proficiency}
+          disabled
+        />
+      </div>
+      <div className="basis-1/3">
+        <span className="font-[SourceCodePro] text-gray-700 border">{Proficiency}/10</span>
       </div>
     </div>
   );
 }
 
 function SkillList({ skills }: SkillListPropType) {
-  const styles = useStyle();
-
   return (
-    <div className="container" style={styles.SkillsContainer}>
-      <h2 className="display-5">Skills</h2>
+    <div className="flex flex-col gap-4 p-10" >
+      <h2 className="w-full md:w-1/4 p-2 text-7xl font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">Skills</h2>
       <ScrollAnimation animateIn="fadeInUp">
-        <div className={"row"} style={styles.SkillsPanel}>
+        <div className="flex flex-col gap-2 bg-white p-8 border rounded-3xl border-slate-300 shadow-xl hover:shadow-2xl">
           {skills.map((s, i) => (
             <SkillListItem key={"skill"+i} Name={s.Name} Proficiency={s.Proficiency} />
           ))}
