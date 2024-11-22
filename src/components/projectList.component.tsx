@@ -33,7 +33,7 @@ function ProjectListItem({
           ) : (
             <h3 className="text-5xl font-[SourceCodePro]">{Title}</h3>
           )}
-          <p className="text-xl font-[SourceCodePro] text-gray-700">{Description}</p>
+          <p className="text-xl text-justify font-[SourceCodePro] text-gray-700">{Description}</p>
           {Roles && Roles.length > 0 && (
             <>
               <strong className="font-[SourceCodePro] text-gray-900">Roles and Responsibilities:</strong>
