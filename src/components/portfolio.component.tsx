@@ -6,7 +6,6 @@ import { SkillType } from "../types/Skill.Type";
 import { MyInfoType } from "../types/MyInfo.type";
 import { useEffect, useState } from "react";
 import { useMyInfoService, useProjectsService, useSkillsService } from "../services";
-import useStyle from "../styles/portfolio.style";
 import PortfolioParticles from "./particles.component";
 
 function PortfolioPage() {
@@ -19,8 +18,6 @@ function PortfolioPage() {
   const [Projects, setProjects] = useState<ProjectType[]>([]);
   const [Skills, setSkills] = useState<SkillType[]>([]);
 
-  const styles = useStyle();
-
   useEffect(() => {
     const myInfo: MyInfoType = getMyInfo();
 
@@ -31,7 +28,7 @@ function PortfolioPage() {
   }, []);
 
   return (
-    <div style={styles.PortfolioPage}>
+    <div>
       <PortfolioParticles />
       <HeaderComponent Name={Me} Description={Description} />
       <br />
