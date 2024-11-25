@@ -28,7 +28,7 @@ function PortfolioPage() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-gray-50">
       <PortfolioParticles />
       <HeaderComponent Name={Me} Description={Description} />
       <br />

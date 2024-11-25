@@ -19,13 +19,13 @@ export const getPortfolioParticlesConfig = (): ISourceOptions => {
                 color: {
                     value: COLORS.GREEN4
                 },
-                opacity: 0.2
+                opacity: 0.25
             },
             shape: {
                 type: "circle"
             },
             opacity: {
-                value: 0.2
+                value: 0.25
             },
             size: {
                 value: {
