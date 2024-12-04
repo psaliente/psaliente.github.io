@@ -3,6 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from "react";
 import { getPortfolioParticlesConfig } from "../constants";
+import React from "react";
 
 function PortfolioParticles() {
     const [init, setInit] = useState(false);
@@ -29,4 +30,4 @@ function PortfolioParticles() {
     return <></>
 }
 
-export default PortfolioParticles;
+export default React.memo(PortfolioParticles);

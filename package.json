@@ -10,7 +10,7 @@
     "start": "vite",
     "start:host": "vite --host",
     "serve": "vite preview",
-    "build:css": "npx tailwindcss -i ./src/index.css -o ./build/index.css --watch"
+    "build:css": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
   },
   "repository": {
     "type": "git",

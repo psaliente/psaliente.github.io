@@ -1,3 +1,4 @@
+import React from "react";
 
 function BrandColors(): JSX.Element {
     return (<div className="flex">
@@ -9,4 +10,4 @@ function BrandColors(): JSX.Element {
     </div>)
 }
 
-export default BrandColors;
+export default React.memo(BrandColors);

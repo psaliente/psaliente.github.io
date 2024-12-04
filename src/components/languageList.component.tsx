@@ -1,4 +1,6 @@
+import React from "react";
 import { useCommonHook } from "../hooks/common.hook";
+import { TagItem } from "./labels";
 
 type LanguageListPropType = {
   ProjectID: string,
@@ -12,11 +14,11 @@ function LanguageList({ ProjectID, Languages }: LanguageListPropType) {
     <div className="flex flex-wrap flex-row gap-2 py-3">
       {
         Languages.map((l, i) => (
-          <span key={ProjectID + "language" + i} className={"pl-3 pr-4 py-2 rounded-r-full text-white text-xs " + mapLanguageToColor(l)}>{l}</span>
+          <TagItem key={ProjectID + "language" + i} tagColor={mapLanguageToColor(l)} textColor="text-white">{l}</TagItem>
         ))
       }
     </div>
   );
 }
 
-export default LanguageList;
+export default React.memo(LanguageList);
