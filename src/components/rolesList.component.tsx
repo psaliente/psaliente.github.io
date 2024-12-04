@@ -5,7 +5,7 @@ type RolesListPropType = {
 }
 
 function RolesList({Roles}: RolesListPropType): JSX.Element {
-    if (!!Roles === false || Roles.length === 0) return <></>;
+    if (!Roles || Roles.length === 0) return <></>;
 
     return <>
     <strong className="font-[SourceCodePro] text-gray-900">Roles and Responsibilities:</strong>
