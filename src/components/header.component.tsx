@@ -8,7 +8,7 @@ const HeaderComponent = ({Name, Description}: MyInfoType) => {
     return (
       <div className="overflow-y-hidden">
         <ScrollAnimation animateIn="fadeInDownBig">
-          <div className="flex flex-col gap-16 border bg-gradient-to-t from-white/80 via-white/25 to-white/80 p-10 md:p-20 ">
+          <div className="flex flex-col gap-16 bg-gradient-to-t from-white/80 via-white/25 to-white/80 p-10 md:p-20 ">
             <TextTitle className={"text-center"}>{Name}</TextTitle>
             <p className="p-1 text-2xl md:text-4xl text-justify font-[SourceCodePro] text-gray-500">{Description}</p>
           </div>
