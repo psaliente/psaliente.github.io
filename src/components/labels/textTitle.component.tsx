@@ -6,7 +6,7 @@ type TextTitlePropsType = {
 } & React.PropsWithChildren
 
 function TextTitle({className, children}: TextTitlePropsType): JSX.Element {
-    return <h1 className={className + " p-2 text-5xl md:text-7xl"}>
+    return <h1 className={className + " p-2 text-5xl md:text-7xl z-10"}>
         <TextGradient>{ children }</TextGradient>
     </h1>
 }

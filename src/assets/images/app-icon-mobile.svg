@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" xml:space="preserve">
+  <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="173.25" y1="519.012" x2="423.083" y2="86.288">
+    <stop offset="0" style="stop-color:#3b82f6"/>
+    <stop offset=".114" style="stop-color:#388be2"/>
+    <stop offset=".539" style="stop-color:#2caa9b"/>
+    <stop offset=".845" style="stop-color:#25be6f"/>
+    <stop offset="1" style="stop-color:#22c55e"/>
+  </linearGradient>
+  <path fill="url(#a)" stroke="#666" stroke-width="20" stroke-miterlimit="10" d="M220 61h160c20 0 39 19.625 39 39.5V500c0 20-19.625 41-39 41H220c-20 0-40.5-21.375-40.5-40.75s-.5-379.875 0-399.875S200.125 61 220 61z"/>
+  <path fill="#FFF" d="M284 475h32v31h-32zm-40 0h32v31h-32zm-40 0h32v31h-32zm120 0h32v31h-32zm40 0h32v31h-32zm-80-314h32v31h-32zm0-54h32v31h-32zm40 54h32v31h-32zm0-54h32v31h-32zm40 0h32v31h-32zm0 54h32v31h-32zm-120-54h32v31h-32zm0 54h32v31h-32zm0 52h32v31h-32zm-40 0h32v31h-32zm0-52h32v31h-32zm0-54h32v31h-32z"/>
+</svg>

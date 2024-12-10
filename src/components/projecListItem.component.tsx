@@ -1,45 +1,44 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useCommonHook } from "../hooks/common.hook";
-import ScrollAnimation from "react-animate-on-scroll";
 import { Card } from "./containers";
 import { Link } from "react-router-dom";
-import { LanguageList, RolesList } from ".";
+import { LanguageList } from ".";
+import { ProjectType } from "../types/Project.Type";
+import useProjectThumbnail from "../hooks/useProjectThumbnail";
+import { ProjectItemContext } from "../contexts";
 
 type ProjectListItemPropType = {
-    ProjectID: number,
-    Title: string,
-    Description: string,
-    Languages: string[],
-    Roles: string[],
-    ProjectLink?: string
-}
+    ProjectID: number
+} & ProjectType
 
   
-function ProjectListItem({
-    ProjectID,
-    Title,
-    Description,
-    Languages,
-    Roles,
-    ProjectLink,
-  }: ProjectListItemPropType) {
-    const { isEven } = useCommonHook();
+function ProjectListItem(projectItem: ProjectListItemPropType) {
+    const { trimText2Elipse } = useCommonHook();
+    const { setProjectItem } = useContext(ProjectItemContext);
+    const projectThumb = useProjectThumbnail(projectItem.Type);
+    const trimmedTitle = trimText2Elipse(projectItem.Title, 15);
+    const trimmedDesc = trimText2Elipse(projectItem.Description, 50);
+
+    const setCurrentProjectItem = () => {
+      setProjectItem(projectItem);
+    };
   
     return (
-      <ScrollAnimation animateIn={isEven(ProjectID) ? "fadeInLeft" : "fadeInRight"} duration={2} animateOnce={true}>
-        <Card className="flex flex-col gap-5 px-7 pb-5 pt-8">
-            {ProjectLink ? (
-              <Link to={ProjectLink} className="">
-                <h3 className="text-3xl md:text-5xl font-[SourceCodePro] text-blue-500">{Title}</h3>
+      <Card className="flex flex-row gap-4 px-7 pb-5 pt-8">
+          <img src={projectThumb} className="w-40 h-40" alt='mobile app picture'/>
+          <div className="flex flex-col gap-5 content-between">
+            {projectItem.Link ? (
+              <Link to={projectItem.Link}>
+                <h3 className="text-3xl md:text-5xl font-[SourceCodePro] text-blue-500 text-wrap break-words">{trimmedTitle}</h3>
               </Link>
             ) : (
-              <h3 className="text-3xl md:text-5xl font-[SourceCodePro]">{Title}</h3>
+              <h3 className="text-3xl md:text-5xl font-[SourceCodePro] text-wrap break-words">{trimmedTitle}</h3>
             )}
-            <p className="text-lg md:text-xl text-justify font-[SourceCodePro] text-gray-700">{Description}</p>
-            <RolesList Roles={Roles} />
-            <LanguageList ProjectID={"" + ProjectID} Languages={Languages} />
+            <LanguageList ProjectID={"" + projectItem.ProjectID} Languages={projectItem.Languages} />
+            <p className="text-lg md:text-xl font-[SourceCodePro] text-gray-700">{trimmedDesc}</p>
+            <Link to='/project' className="font-bold text-blue-700" onClick={setCurrentProjectItem}>see more</Link>
+          </div>
         </Card>
-      </ScrollAnimation>
     );
 }
 

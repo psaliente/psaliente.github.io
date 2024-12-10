@@ -40,6 +40,10 @@ export const getPortfolioParticlesConfig = (): ISourceOptions => {
         },
         poisson: {
             enable: true
+        },
+        fullScreen: {
+            enable: true,
+            zIndex: -10
         }
     };
 }

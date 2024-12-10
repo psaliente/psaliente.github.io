@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" xml:space="preserve">
+  <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="136.665" y1="188.949" x2="516.171" y2="408.058" gradientTransform="matrix(1 0 0 -1 -6 506)">
+    <stop offset="0" style="stop-color:#3b82f6"/>
+    <stop offset=".114" style="stop-color:#388be2"/>
+    <stop offset=".539" style="stop-color:#2caa9b"/>
+    <stop offset=".845" style="stop-color:#25be6f"/>
+    <stop offset="1" style="stop-color:#22c55e"/>
+  </linearGradient>
+  <path fill="url(#a)" stroke="#4D4D4D" stroke-width="20" stroke-miterlimit="10" d="M507.838 318.074c0 6.211-5.036 11.246-11.245 11.246H144.242c-6.21 0-11.245-5.035-11.245-11.246V96.919c0-6.21 5.035-11.245 11.245-11.245h352.351c6.209 0 11.245 5.035 11.245 11.245z"/>
+  <path fill="#4D4D4D" d="M565 404.287c0 12.422-10.068 22.491-22.488 22.491H100.199c-12.422 0-22.491-10.069-22.491-22.491v-14.993c0-12.421 10.069-22.489 22.491-22.489h442.313c12.42 0 22.488 10.068 22.488 22.489z"/>
+  <path fill="#FFF" d="M158.3 176.572h18.742v17.805H158.3zm0-29.05h18.742v17.805H158.3zm0-30.924h18.742v17.805H158.3zm39.357 183.672h244.584v13.119H197.657z"/>
+  <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="59.685" y1="501.729" x2="209.466" y2="242.301">
+    <stop offset="0" style="stop-color:#3b82f6"/>
+    <stop offset=".114" style="stop-color:#388be2"/>
+    <stop offset=".539" style="stop-color:#2caa9b"/>
+    <stop offset=".845" style="stop-color:#25be6f"/>
+    <stop offset="1" style="stop-color:#22c55e"/>
+  </linearGradient>
+  <path fill="url(#b)" stroke="#666" stroke-width="12" stroke-miterlimit="10" d="M87.785 227h95.739C195.491 227 207 239.134 207 251.027v239.048C207 502.042 195.117 515 183.523 515H87.784c-11.968 0-24.234-12.986-24.234-24.58 0-11.592-.299-227.599 0-239.565C63.85 238.887 75.892 227 87.785 227z"/>
+  <path fill="#FFF" d="M126 475h19v19h-19zm-24 0h19v19h-19zm-24 0h19v19H78zm72 0h19v19h-19zm24 0h19v19h-19zm-48-188h19v19h-19zm0-32h19v18h-19zm24 32h19v19h-19zm0-32h19v18h-19zm24 0h19v18h-19zm0 32h19v19h-19zm-72-32h19v18h-19zm0 32h19v19h-19zm0 31h19v19h-19zm-24 0h19v19H78zm0-31h19v19H78zm0-32h19v18H78z"/>
+</svg>

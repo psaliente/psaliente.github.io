@@ -7,14 +7,14 @@ type RolesListPropType = {
 function RolesList({Roles}: RolesListPropType): JSX.Element {
     if (!Roles || Roles.length === 0) return <></>;
 
-    return <>
-    <strong className="font-[SourceCodePro] text-gray-900">Roles and Responsibilities:</strong>
+    return <div className="m-6 max-w-4xl">
+    <strong className="font-[SourceCodePro] text-3xl text-gray-600">Roles and Responsibilities:</strong>
     <ul className="list-disc list-inside">
       {Roles.map((r, i) => (
-        <li key={"role"+i} className="font-[SourceCodePro] text-gray-700">{r}</li>
+        <li key={"role"+i} className="font-[SourceCodePro] text-2xl text-gray-700">{r}</li>
       ))}
     </ul>
-  </>
+  </div>
 }
 
 export default React.memo(RolesList);
