@@ -1,3 +1,4 @@
+import BrandColors from './brandcolors.component';
 import HeaderComponent from "./header.component";
 import LanguageList from "./languageList.component";
 import MainPage from "./main.component";
@@ -9,4 +10,16 @@ import RouterComponent from "./router.component";
 import SkillList from "./skillList.component";
 import SkillListItem from './skillListItem.component';
 
-export {HeaderComponent, LanguageList, MainPage, PortfolioPage, ProjectList, ProjectListItem, RolesList, RouterComponent, SkillList, SkillListItem}
+export {
+    BrandColors,
+    HeaderComponent, 
+    LanguageList, 
+    MainPage, 
+    PortfolioPage, 
+    ProjectList, 
+    ProjectListItem, 
+    RolesList, 
+    RouterComponent, 
+    SkillList, 
+    SkillListItem
+}

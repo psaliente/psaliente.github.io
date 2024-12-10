@@ -21,11 +21,14 @@ const useCommonHook = () => {
     const isEven = (value: number): boolean => value % 2 === 0;
 
     const isOdd = (value: number): boolean => !isEven(value);
+    
+    const trimText2Elipse = (value: string, length: number = 40): string => value.length <= length ? value: `${value.substring(0, length - 1)}...`;
 
     return {
         mapLanguageToColor,
         isEven,
-        isOdd
+        isOdd,
+        trimText2Elipse
     }
 };
 
