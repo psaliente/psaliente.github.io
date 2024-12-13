@@ -6,13 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    // container: {
-    //   center: true,
-    //   padding: {
-    //     DEFAULT: '1.5rem',
-    //     md: '3rem'
-    //   }
-    // }
+    screens: {
+      'hd': '1280px',
+      'fhd': '1920px',
+      'qhd': '2560px',
+      'uhd': '3840px'
+    }
   },
   plugins: [],
 }

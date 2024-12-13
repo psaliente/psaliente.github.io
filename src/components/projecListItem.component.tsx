@@ -16,17 +16,17 @@ function ProjectListItem(projectItem: ProjectListItemPropType) {
     const { trimText2Elipse } = useCommonHook();
     const { setProjectItem } = useContext(ProjectItemContext);
     const projectThumb = useProjectThumbnail(projectItem.Type);
-    const trimmedTitle = trimText2Elipse(projectItem.Title, 15);
-    const trimmedDesc = trimText2Elipse(projectItem.Description, 50);
+    const trimmedTitle = trimText2Elipse(projectItem.Title, 30);
+    const trimmedDesc = trimText2Elipse(projectItem.Description, 60);
 
     const setCurrentProjectItem = () => {
       setProjectItem(projectItem);
     };
   
     return (
-      <Card className="flex flex-row gap-4 px-7 pb-5 pt-8">
+      <Card className="flex flex-row flex-wrap gap-4 px-7 pb-5 pt-8">
           <img src={projectThumb} className="w-40 h-40" alt='mobile app picture'/>
-          <div className="flex flex-col gap-5 content-between">
+          <div className="flex flex-col gap-5 max-w-xs content-between">
             {projectItem.Link ? (
               <Link to={projectItem.Link}>
                 <h3 className="text-3xl md:text-5xl font-[SourceCodePro] text-blue-500 text-wrap break-words">{trimmedTitle}</h3>

@@ -21,12 +21,12 @@ export default function ProjectItemPage(): JSX.Element {
         <BrandColors />
         <div className="flex flex-row flex-wrap gap-3 items-center justify-center p-8">
             <img src={projectImage} alt={projectItemType} className="w-full md:w-auto max-h-60" />
-            <div className="w-full lg:w-auto pb-10">
-                <h1 className="text-7xl text-gray-600">{projectItem?.Title}</h1>
+            <div className="w-full max-w-4xl pb-5 md:pb-10">
+                <h1 className="text-5xl md:text-7xl text-gray-600">{projectItem?.Title}</h1>
                 <LanguageList ProjectID="" Languages={projectLanguages} />
             </div>
             <div className="flex flex-col w-full p-10 items-center justify-center">
-                <p className="text-4xl max-w-4xl font-light break-words">{projectItem?.Description}</p>
+                <p className="text-2xl md:text-4xl max-w-4xl font-light break-words">{projectItem?.Description}</p>
                 <RolesList Roles={projectItem?.Role} />
             </div>
         </div>

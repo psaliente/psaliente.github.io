@@ -1,15 +1,13 @@
 import { MyInfoType } from "../types/MyInfo.type";
-import ScrollAnimation from "react-animate-on-scroll";
 import BrandColors from "./brandcolors.component";
 import { TextTitle } from "./labels";
-import React from "react";
 
 const HeaderComponent = ({Name, Description}: MyInfoType) => {
     return (
       <div className="overflow-y-hidden relative">
-        <div className="flex flex-col gap-16 bg-gradient-to-t from-white/80 via-white/25 to-white/80 p-10 md:p-20 ">
+        <div className="flex flex-col gap-8 md:gap-16 bg-white p-5 md:p-20 ">
           <TextTitle className={"text-center"}>{Name}</TextTitle>
-          <p className="p-1 text-2xl md:text-4xl text-justify font-[SourceCodePro] text-gray-500">{Description}</p>
+          <p className="p-5 text-2xl md:text-4xl text-justify font-[SourceCodePro] text-gray-500 break-words">{Description}</p>
         </div>
         <BrandColors />
       </div>
