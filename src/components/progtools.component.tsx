@@ -1,4 +1,4 @@
-import { aics6SVG, apgSVG, githubSVG, jiraSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, vscodeSVG } from "../assets/images";
+import { aics6SVG, apgSVG, githubSVG, jiraSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
 import { Card, Section } from "./containers";
 
 export default function ProgTools() {
@@ -30,6 +30,9 @@ export default function ProgTools() {
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={spSVG} className="h-20" alt="SharePoint Logo"/>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <img src={viteSVG} className="h-20" alt="VS Code Logo"/>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={vscodeSVG} className="h-20" alt="VS Code Logo"/>

@@ -25,6 +25,7 @@ import spSVG from '../images/sp.svg';
 import sqlSVG from '../images/sql.svg';
 import tailwindSVG from '../images/tailwind.svg';
 import tsSVG from '../images/ts.svg';
+import viteSVG from '../images/vite.svg';
 import vscodeSVG from '../images/vscode.svg';
 
 
@@ -56,5 +57,6 @@ export {
     sqlSVG,
     tailwindSVG,
     tsSVG,
+    viteSVG,
     vscodeSVG,
 }
