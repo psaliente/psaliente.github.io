@@ -4,7 +4,7 @@ type RolesListPropType = {
     Roles: string[] | undefined
 }
 
-function RolesList({Roles}: RolesListPropType): JSX.Element {
+function RolesList({Roles}: RolesListPropType) {
     if (!Roles || Roles.length === 0) return <></>;
 
     return <div className="m-6 max-w-4xl">

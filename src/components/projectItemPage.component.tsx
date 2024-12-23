@@ -5,7 +5,7 @@ import { TextTitle } from "./labels";
 import { BrandColors, LanguageList, RolesList } from ".";
 import { Link } from "react-router-dom";
 
-export default function ProjectItemPage(): JSX.Element {
+export default function ProjectItemPage() {
     const { projectItem } = useContext(ProjectItemContext);
     const me = useContext(PortfolioContext);
     const projectItemType = !projectItem ? 'generic': projectItem.Type;

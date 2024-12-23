@@ -1,5 +1,5 @@
 type MainPagePropType = {
-  component: JSX.Element
+  component: React.ReactNode
 }
 
 function MainPage({ component }: MainPagePropType) {
