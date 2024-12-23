@@ -5,10 +5,15 @@ import { getPortfolioParticlesConfig } from "../constants";
 import React from "react";
 import useParticlesEngine from "../hooks/useParticlesEngine.hook";
 
-function PortfolioParticles() {
+type PortfolioParticlesPropType = {
+    width: number,
+    height: number
+}
+
+function PortfolioParticles({width, height}: PortfolioParticlesPropType) {
     const [init, setInit] = useState(false);
 
-    const options: ISourceOptions = useMemo(() => getPortfolioParticlesConfig(), []);
+    const options: ISourceOptions = useMemo(() => getPortfolioParticlesConfig(width, height), [width, height]);
 
     useParticlesEngine(setInit);
 

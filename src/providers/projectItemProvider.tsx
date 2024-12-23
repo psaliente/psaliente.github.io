@@ -5,6 +5,6 @@ type ProjectItemProviderPropsType = {
     projectItem: ProjectItemContextPropType
 } & React.PropsWithChildren
 
-export default function ProjectItemProvider({projectItem, children}: ProjectItemProviderPropsType): JSX.Element {
+export default function ProjectItemProvider({projectItem, children}: ProjectItemProviderPropsType) {
     return <ProjectItemContext.Provider value={projectItem}>{children}</ProjectItemContext.Provider>    
 }

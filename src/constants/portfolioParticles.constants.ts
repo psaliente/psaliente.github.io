@@ -1,14 +1,19 @@
 import { ISourceOptions } from "@tsparticles/engine";
 import { COLORS } from "./colors.constants";
 
-export const getPortfolioParticlesConfig = (): ISourceOptions => {
-    const computedDistance = (window.innerHeight + window.innerWidth) / 8;
-    const computedPopulation = (window.innerHeight + window.innerWidth) / 32; 
+export const getPortfolioParticlesConfig = (width: number, height: number): ISourceOptions => {
+    const computedDistance = (width + height) / 16;
+    const computedPopulation = (width + height) / 32; 
 
     return {
         particles: {
             number: {
-                value: computedPopulation
+                value: computedPopulation,
+                density: {
+                    enable: true,
+                    height: height,
+                    width: width
+                }
             },
             color: {
                 value: COLORS.GREEN4
@@ -19,31 +24,41 @@ export const getPortfolioParticlesConfig = (): ISourceOptions => {
                 color: {
                     value: COLORS.GREEN4
                 },
-                opacity: 0.25
+                opacity: 0.5,
+                
+            },
+            opacity: {
+                value: 0.5
             },
             shape: {
                 type: "circle"
             },
-            opacity: {
-                value: 0.25
-            },
             size: {
                 value: {
-                    min: 2,
-                    max: 7
+                    min: 1,
+                    max: 3
                 }
             },
             move: {
                 enable: true,
-                speed: 0.2
+                speed: 0.2,
+                random: false,
+                straight: false,
+                outModes: 'out',
+                attract: {
+                    enable: false,
+                    rotate: {
+                        x: 600,
+                        y: 1200
+                    }
+                }
             }
         },
-        poisson: {
-            enable: true
-        },
-        fullScreen: {
-            enable: true,
-            zIndex: -10
+        style: {
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            zIndex: '-5'
         }
     };
 }

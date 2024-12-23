@@ -6,7 +6,7 @@ type TextGradientPropsType = {
     toColor?: string
 } & React.PropsWithChildren
 
-function TextGradient({children, fromColor = 'from-blue-500', viaColor = 'via-sky-500', toColor = 'to-green-500'}: TextGradientPropsType): JSX.Element {
+function TextGradient({children, fromColor = 'from-blue-500', viaColor = 'via-sky-500', toColor = 'to-green-500'}: TextGradientPropsType) {
     return <span className={`font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r ${fromColor} ${viaColor} ${toColor}`}>{children}</span>
 }
 

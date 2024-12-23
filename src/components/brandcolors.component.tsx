@@ -1,6 +1,6 @@
 import React from "react";
 
-function BrandColors(): JSX.Element {
+function BrandColors() {
     return (<div className="flex">
         <div className="block relative w-full h-16 overflow-hidden">
             <div className="bg-sky-300 w-2/3 h-12 rounded-[50%] absolute -top-2/3 left-0 blur-xl animate-pulse"></div>

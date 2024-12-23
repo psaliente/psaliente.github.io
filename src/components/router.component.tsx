@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PortfolioPage from "./portfolio.component";
-import PortfolioParticles from "./particles.component";
 import ProjectItemPage from "./projectItemPage.component";
 
-const RouterComponent = (): JSX.Element => 
+const RouterComponent = () => 
   (
     <BrowserRouter>
       <Routes>
