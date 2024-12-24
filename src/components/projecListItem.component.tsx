@@ -24,7 +24,7 @@ function ProjectListItem(projectItem: ProjectListItemPropType) {
     };
   
     return (
-      <Card className="flex flex-row flex-wrap gap-4 px-7 pb-5 pt-8 bg-white">
+      <Card className="flex flex-row flex-wrap gap-4 px-7 pb-5 pt-8 bg-white justify-center hd:justify-normal">
           <img src={projectThumb} className="w-40 h-40" alt='mobile app picture'/>
           <div className="flex flex-col gap-5 max-w-xs content-between">
             {projectItem.Link ? (
