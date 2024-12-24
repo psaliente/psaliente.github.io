@@ -11,12 +11,16 @@ import bootstrapSVG from '../images/bootstrap.svg';
 import csharpSVG from '../images/C_sharp.svg';
 import cssSVG from '../images/css.svg';
 import dotnetSVG from '../images/dotnet.svg';
+import expoSVG from '../images/expo.svg';
 import githubSVG from '../images/github.svg';
 import html5SVG from '../images/html5.svg';
 import jiraSVG from '../images/jira.svg';
 import jsSVG from '../images/js.svg';
 import koSVG from '../images/kojs.svg';
+import mssqlSVG from '../images/mssql.svg';
 import nodeSVG from '../images/nodejs.svg';
+import oracleSVG from '../images/oracle.svg';
+import postmanSVG from '../images/postman.svg';
 import powerappSVG from '../images/powerapps.svg';
 import powerautomateSVG from '../images/powerautomate.svg';
 import pscs6SVG from '../images/ps-cs6.svg';
@@ -43,12 +47,16 @@ export {
     csharpSVG,
     cssSVG,
     dotnetSVG,
+    expoSVG,
     html5SVG,
     githubSVG,
     jiraSVG,
     jsSVG,
     koSVG,
+    mssqlSVG,
     nodeSVG,
+    oracleSVG,
+    postmanSVG,
     powerappSVG,
     powerautomateSVG,
     pscs6SVG,

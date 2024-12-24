@@ -1,4 +1,4 @@
-import { aics6SVG, apgSVG, githubSVG, jiraSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
+import { aics6SVG, apgSVG, expoSVG, githubSVG, jiraSVG, mssqlSVG, oracleSVG, postmanSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
 import { Card, Section } from "./containers";
 
 export default function ProgTools() {
@@ -17,10 +17,22 @@ export default function ProgTools() {
                 </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <img src={expoSVG} className="h-20" alt="Expo Logo"/>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={githubSVG} className="h-20" alt="GitHub Logo"/>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={jiraSVG} className="h-20" alt="Jira Logo"/>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <img src={mssqlSVG} className="h-20" alt="MS SQL Logo"/>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <img src={oracleSVG} className="h-20" alt="Oracle RDBMS Logo"/>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <img src={postmanSVG} className="h-20" alt="Postman Logo"/>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={powerappSVG} className="h-20" alt="Power Apps Logo"/>
