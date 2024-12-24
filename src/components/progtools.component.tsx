@@ -2,7 +2,7 @@ import { aics6SVG, apgSVG, githubSVG, jiraSVG, powerappSVG, powerautomateSVG, ps
 import { Card, Section } from "./containers";
 
 export default function ProgTools() {
-    return <Section className="z-10 bg-white flex flex-col p-8 shadow-lg">
+    return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
         <Section.Title>Tools and Platforms</Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-slate-200">

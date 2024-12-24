@@ -2,7 +2,7 @@ import { csharpSVG, cssSVG, html5SVG, jsSVG, sqlSVG, tsSVG } from "../assets/ima
 import { Card, Section } from "./containers";
 
 export default function ProgLangs() {
-    return <Section className="z-10 bg-white flex flex-col p-8 shadow-lg">
+    return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
         <Section.Title>Languages</Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-slate-200">

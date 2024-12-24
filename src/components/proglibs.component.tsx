@@ -2,7 +2,7 @@ import { angularSVG, apgSVG, bootstrapSVG, dotnetSVG, koSVG, nodeSVG, reactSVG, 
 import { Card, Section } from "./containers";
 
 export default function ProgLibraries() {
-    return <Section className="z-10 flex flex-col p-8" >
+    return <Section className="z-10 flex flex-col px-10 py-12 " >
         <Section.Title>Libraries and Frameworks</Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-gray-50">
