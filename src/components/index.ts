@@ -5,7 +5,6 @@ import LanguageList from "./languageList.component";
 import ProgLibraries from './proglibs.component';
 import MainPage from "./main.component";
 import PortfolioPage from "./portfolio.component";
-import PortfolioParticles from './particles.component';
 import ProjectList from "./projectList.component";
 import ProjectListItem from './projecListItem.component';
 import ProgLangs from './proglangs.component';
@@ -21,7 +20,6 @@ export {
     ProgLibraries,
     MainPage, 
     PortfolioPage, 
-    PortfolioParticles,
     ProjectList, 
     ProjectListItem, 
     ProgLangs,
