@@ -17,6 +17,7 @@ import html5SVG from '../images/html5.svg';
 import jiraSVG from '../images/jira.svg';
 import jsSVG from '../images/js.svg';
 import koSVG from '../images/kojs.svg';
+import mongodbSVG from '../images/mongodb.svg';
 import mssqlSVG from '../images/mssql.svg';
 import nodeSVG from '../images/nodejs.svg';
 import oracleSVG from '../images/oracle.svg';
@@ -53,6 +54,7 @@ export {
     jiraSVG,
     jsSVG,
     koSVG,
+    mongodbSVG,
     mssqlSVG,
     nodeSVG,
     oracleSVG,

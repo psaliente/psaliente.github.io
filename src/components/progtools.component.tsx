@@ -1,4 +1,4 @@
-import { aics6SVG, apgSVG, expoSVG, githubSVG, jiraSVG, mssqlSVG, oracleSVG, postmanSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
+import { aics6SVG, apgSVG, expoSVG, githubSVG, jiraSVG, mongodbSVG, mssqlSVG, oracleSVG, postmanSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
 import { Card, Section } from "./containers";
 
 export default function ProgTools() {
@@ -24,6 +24,9 @@ export default function ProgTools() {
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={jiraSVG} className="h-20" alt="Jira Logo"/>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <img src={mongodbSVG} className="h-20" alt="MongoDB Logo"/>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={mssqlSVG} className="h-20" alt="MS SQL Logo"/>
