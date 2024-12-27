@@ -3,6 +3,7 @@
 .pnp.js
 
 /converage
+/coverage
 
 /build
 /dist
@@ -16,3 +17,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
