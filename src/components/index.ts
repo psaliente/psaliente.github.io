@@ -10,7 +10,6 @@ import ProjectListItem from './projecListItem.component';
 import ProgLangs from './proglangs.component';
 import RolesList from './rolesList.component';
 import RouterComponent from "./router.component";
-import SkillListItem from './skillListItem.component';
 
 export {
     BrandColors,
@@ -24,6 +23,5 @@ export {
     ProjectListItem, 
     ProgLangs,
     RolesList, 
-    RouterComponent, 
-    SkillListItem
+    RouterComponent
 }

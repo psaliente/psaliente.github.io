@@ -1,7 +1,6 @@
 import HeaderComponent from "./header.component";
 import ProjectList from "./projectList.component";
 import { ProjectType } from "../types/Project.Type";
-import { SkillType } from "../types/Skill.Type";
 import { MyInfoType } from "../types/MyInfo.type";
 import { useEffect, useState } from "react";
 import { useMyInfoService, useProjectsService } from "../services";
