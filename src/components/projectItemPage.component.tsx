@@ -2,8 +2,10 @@ import { useContext } from "react";
 import { PortfolioContext, ProjectItemContext } from "../contexts";
 import useProjectThumbnail from "../hooks/useProjectThumbnail";
 import { TextTitle } from "./labels";
-import { BrandColors, LanguageList, RolesList } from ".";
+import { BrandColors, Footer, LanguageList, RolesList } from ".";
 import { Link } from "react-router-dom";
+import useScrollToTop from "../hooks/useScrollToTop.hook";
+import useRedirect from "../hooks/useRedirect.hook";
 
 export default function ProjectItemPage() {
     const { projectItem } = useContext(ProjectItemContext);
@@ -11,6 +13,9 @@ export default function ProjectItemPage() {
     const projectItemType = !projectItem ? 'generic': projectItem.Type;
     const projectImage = useProjectThumbnail(projectItemType);
     const projectLanguages = !projectItem ? []: projectItem.Languages;
+
+    useRedirect('/', !!projectItem == false)
+    useScrollToTop();
 
     return <div className="flex flex-col bg-gray-100">
         <div className="flex flex-col bg-white p-5">
@@ -30,5 +35,6 @@ export default function ProjectItemPage() {
                 <RolesList Roles={projectItem?.Role} />
             </div>
         </div>
+        <Footer />
     </div>
 }
