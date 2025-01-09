@@ -10,10 +10,11 @@ type ProjectListPropType = {
 function ProjectList({ projects }: ProjectListPropType) {
   return (
     <Section className="flex flex-col gap-10 px-10 py-12 overflow-x-hidden">
-      <Section.Title>
+      <Section.Title className="text-gray-500 font-thin">
         <Section.Title.Gradient>
-          Projects
+          Projects.
         </Section.Title.Gradient>
+        I got involved
       </Section.Title>
       <Section.Content className="grid grid-cols-1 gap-x-8 gap-y-12 hd:grid-cols-2 fhd:grid-cols-4">
         {projects.map((p, i) => (

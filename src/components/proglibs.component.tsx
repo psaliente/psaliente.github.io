@@ -3,8 +3,9 @@ import { Card, Section } from "./containers";
 
 export default function ProgLibraries() {
     return <Section className="z-10 flex flex-col px-10 py-12 " >
-        <Section.Title>
-            <Section.Title.Gradient>Libraries and Frameworks</Section.Title.Gradient>
+        <Section.Title className="text-gray-500 font-thin">
+            <Section.Title.Gradient>Libraries and Frameworks.</Section.Title.Gradient>
+            I ran my codes in
         </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-gray-50">

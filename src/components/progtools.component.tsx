@@ -3,8 +3,9 @@ import { Card, Section } from "./containers";
 
 export default function ProgTools() {
     return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
-        <Section.Title>
-            <Section.Title.Gradient>Tools and Platforms</Section.Title.Gradient>
+        <Section.Title className="text-gray-500 font-thin">
+            <Section.Title.Gradient>Tools and Platforms.</Section.Title.Gradient>
+            I work with
         </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-slate-200">
