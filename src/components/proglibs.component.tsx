@@ -1,4 +1,4 @@
-import { angularSVG, apgSVG, bootstrapSVG, dotnetSVG, koSVG, nodeSVG, reactSVG, tailwindSVG } from "../assets/images";
+import { angularSVG, apgSVG, bootstrapSVG, dotnetSVG, koSVG, nodeSVG, reactNativeSVG, reactSVG, tailwindSVG } from "../assets/images";
 import { Card, Section } from "./containers";
 
 export default function ProgLibraries() {
@@ -9,25 +9,44 @@ export default function ProgLibraries() {
         </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={dotnetSVG} className="h-20" alt=".Net Logo"/>
+                <a href="https://dotnet.microsoft.com/en-us/">
+                    <img src={dotnetSVG} className="h-20" alt=".Net Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={angularSVG} className="h-20" alt="Angular Logo"/>
+                <a href="https://angular.dev/">
+                    <img src={angularSVG} className="h-20" alt="Angular Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={bootstrapSVG} className="h-20" alt="Bootstrap CSS Logo"/>
+                <a href="https://getbootstrap.com/">
+                    <img src={bootstrapSVG} className="h-20" alt="Bootstrap CSS Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={koSVG} className="h-20" alt="KnockOut JS Logo"/>
+                <a href="https://knockoutjs.com/">
+                    <img src={koSVG} className="h-20" alt="KnockOut JS Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={nodeSVG} className="h-20" alt="KnockOut JS Logo"/>
+                <a href="https://nodejs.org/en">
+                    <img src={nodeSVG} className="h-20" alt="NodeJS Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={reactSVG} className="h-20" alt="ReactJS Logo"/>
+                <a href="https://react.dev/">
+                    <img src={reactSVG} className="h-20" alt="ReactJS Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-gray-50">
-                <img src={tailwindSVG} className="h-20" alt="Tailwind CSS Logo"/>
+                <a href="https://reactnative.dev/">
+                    <img src={reactNativeSVG} className="h-20" alt="React Native Logo"/>
+                </a>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-gray-50">
+                <a href="https://tailwindcss.com/">
+                    <img src={tailwindSVG} className="h-20" alt="Tailwind CSS Logo"/>
+                </a>
             </Card>
         </Section.Content>
     </Section>

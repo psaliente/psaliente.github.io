@@ -1,4 +1,4 @@
-import { aics6SVG, apgSVG, expoSVG, githubSVG, jiraSVG, mongodbSVG, mssqlSVG, oracleSVG, postmanSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
+import { aics6SVG, apgSVG, azuredevopsSVG, expoSVG, githubSVG, jiraSVG, mongodbSVG, mssqlSVG, oracleSVG, postmanSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
 import { Card, Section } from "./containers";
 
 export default function ProgTools() {
@@ -20,40 +20,69 @@ export default function ProgTools() {
                 </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={expoSVG} className="h-20" alt="Expo Logo"/>
+                <a href="https://dev.azure.com/">
+                    <img src={azuredevopsSVG} className="h-20" alt="Azure DevOps Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={githubSVG} className="h-20" alt="GitHub Logo"/>
+                <a href="https://expo.dev/">
+                    <img src={expoSVG} className="h-20" alt="Expo Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={jiraSVG} className="h-20" alt="Jira Logo"/>
+                <a href="https://github.com/">
+                    <img src={githubSVG} className="h-20" alt="GitHub Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={mongodbSVG} className="h-20" alt="MongoDB Logo"/>
+                <a href="https://www.atlassian.com/software/jira">
+                    <img src={jiraSVG} className="h-20" alt="Jira Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={mssqlSVG} className="h-20" alt="MS SQL Logo"/>
+                <a href="https://www.mongodb.com">
+                    <img src={mongodbSVG} className="h-20" alt="MongoDB Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={oracleSVG} className="h-20" alt="Oracle RDBMS Logo"/>
+                <a href="https://www.microsoft.com/en-us/sql-server">
+                    <img src={mssqlSVG} className="h-20" alt="MS SQL Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={postmanSVG} className="h-20" alt="Postman Logo"/>
+                <a href="https://www.oracle.com/database/">
+                    <img src={oracleSVG} className="h-20" alt="Oracle RDBMS Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={powerappSVG} className="h-20" alt="Power Apps Logo"/>
+                <a href="https://www.postman.com/">
+                    <img src={postmanSVG} className="h-20" alt="Postman Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={powerautomateSVG} className="h-20" alt="Power Automate Logo"/>
+                <a href="https://make.powerapps.com/">
+                    <img src={powerappSVG} className="h-20" alt="Power Apps Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={spSVG} className="h-20" alt="SharePoint Logo"/>
+                <a href="https://make.powerautomate.com/">
+                    <img src={powerautomateSVG} className="h-20" alt="Power Automate Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={viteSVG} className="h-20" alt="VS Code Logo"/>
+                <a href="https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration">
+                    <img src={spSVG} className="h-20" alt="SharePoint Logo"/>
+                </a>
             </Card>
             <Card className="content-center p-6 rounded-xl bg-slate-200">
-                <img src={vscodeSVG} className="h-20" alt="VS Code Logo"/>
+                <a href="https://vite.dev/">
+                    <img src={viteSVG} className="h-20" alt="Vite Logo"/>
+                </a>
+            </Card>
+            <Card className="content-center p-6 rounded-xl bg-slate-200">
+                <a href="https://code.visualstudio.com/">
+                    <img src={vscodeSVG} className="h-20" alt="VS Code Logo"/>
+                </a>
             </Card>
         </Section.Content>
     </Section>

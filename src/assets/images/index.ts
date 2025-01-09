@@ -7,6 +7,7 @@ import appIconDesktop from '../images/app-icon-desktop.svg';
 import appIconGeneric from '../images/app-icon-generic.svg';
 import appIconMobile from '../images/app-icon-mobile.svg';
 import appIconWeb from '../images/app-icon-web.svg';
+import azuredevopsSVG from '../images/azure-devops.svg';
 import bootstrapSVG from '../images/bootstrap.svg';
 import csharpSVG from '../images/C_sharp.svg';
 import cssSVG from '../images/css.svg';
@@ -26,6 +27,7 @@ import powerappSVG from '../images/powerapps.svg';
 import powerautomateSVG from '../images/powerautomate.svg';
 import pscs6SVG from '../images/ps-cs6.svg';
 import reactSVG from '../images/react.svg';
+import reactNativeSVG from '../images/react-native.svg';
 import spSVG from '../images/sp.svg';
 import sqlSVG from '../images/sql.svg';
 import tailwindSVG from '../images/tailwind.svg';
@@ -44,6 +46,7 @@ export {
     appIconGeneric,
     appIconMobile,
     appIconWeb,
+    azuredevopsSVG,
     bootstrapSVG,
     csharpSVG,
     cssSVG,
@@ -63,6 +66,7 @@ export {
     powerautomateSVG,
     pscs6SVG,
     reactSVG,
+    reactNativeSVG,
     spSVG,
     sqlSVG,
     tailwindSVG,
