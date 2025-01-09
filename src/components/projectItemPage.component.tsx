@@ -20,7 +20,9 @@ export default function ProjectItemPage() {
     return <div className="flex flex-col bg-gray-100">
         <div className="flex flex-col bg-white p-5">
             <Link to='/'>
-                <TextTitle className={"text-center"}>{me}</TextTitle>
+                <TextTitle className={"text-center"}>
+                    <TextTitle.Gradient>{me}</TextTitle.Gradient>
+                </TextTitle>
             </Link>
         </div>
         <BrandColors />
