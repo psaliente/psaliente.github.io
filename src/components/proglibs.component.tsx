@@ -3,7 +3,9 @@ import { Card, Section } from "./containers";
 
 export default function ProgLibraries() {
     return <Section className="z-10 flex flex-col px-10 py-12 " >
-        <Section.Title>Libraries and Frameworks</Section.Title>
+        <Section.Title>
+            <Section.Title.Gradient>Libraries and Frameworks</Section.Title.Gradient>
+        </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-gray-50">
                 <img src={dotnetSVG} className="h-20" alt=".Net Logo"/>

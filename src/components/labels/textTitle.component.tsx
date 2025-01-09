@@ -7,8 +7,10 @@ type TextTitlePropsType = {
 
 function TextTitle({className, children}: TextTitlePropsType) {
     return <h1 className={className + " p-2 text-5xl md:text-7xl z-10"}>
-        <TextGradient>{ children }</TextGradient>
+        { children }
     </h1>
 }
 
-export default React.memo(TextTitle);
+TextTitle.Gradient = TextGradient
+
+export default TextTitle;

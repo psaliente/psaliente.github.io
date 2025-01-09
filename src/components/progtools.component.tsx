@@ -3,7 +3,9 @@ import { Card, Section } from "./containers";
 
 export default function ProgTools() {
     return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
-        <Section.Title>Tools and Platforms</Section.Title>
+        <Section.Title>
+            <Section.Title.Gradient>Tools and Platforms</Section.Title.Gradient>
+        </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-slate-200">
                 <img src={pscs6SVG} className="h-20" alt="Adobe Photoshop Logo"/>
