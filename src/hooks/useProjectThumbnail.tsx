@@ -11,7 +11,7 @@ import { ProjectType } from "../types/Project.Type";
 
 
 function useProjectThumbnail(type?: ProjectType['Type']) {
-    const [svgSrc, setSvgSrc] = useState('');
+    const [svgSrc, setSvgSrc] = useState<string | undefined>(undefined);
 
     useEffect(() => {
         switch(type) {
