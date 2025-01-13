@@ -2,19 +2,22 @@ import React from "react";
 import { ProjectListItem } from ".";
 import { ProjectType } from "../types/Project.Type";
 import { Section } from "./containers";
+import { SECTIONS } from "../constants";
 
 type ProjectListPropType = {
   projects: ProjectType[]
 }
 
 function ProjectList({ projects }: ProjectListPropType) {
+  const {TITLE, SUBTITLE} = SECTIONS.PROJECTS;
+  
   return (
     <Section className="flex flex-col gap-10 px-10 py-12 overflow-x-hidden">
       <Section.Title className="text-gray-500 font-thin">
         <Section.Title.Gradient>
-          Projects.
+          {TITLE}
         </Section.Title.Gradient>
-        I got involved
+        {SUBTITLE}
       </Section.Title>
       <Section.Content className="grid grid-cols-1 gap-x-8 gap-y-12 hd:grid-cols-2 fhd:grid-cols-4">
         {projects.map((p, i) => (

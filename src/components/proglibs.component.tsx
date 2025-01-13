@@ -1,11 +1,14 @@
 import { angularSVG, apgSVG, bootstrapSVG, dotnetSVG, koSVG, nodeSVG, reactNativeSVG, reactSVG, tailwindSVG } from "../assets/images";
+import { SECTIONS } from "../constants";
 import { Card, Section } from "./containers";
 
 export default function ProgLibraries() {
+  const {TITLE, SUBTITLE} = SECTIONS.PROGLIBS;
+
     return <Section className="z-10 flex flex-col px-10 py-12 " >
         <Section.Title className="text-gray-500 font-thin">
-            <Section.Title.Gradient>Libraries and Frameworks.</Section.Title.Gradient>
-            I ran my codes in
+            <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
+            {SUBTITLE}
         </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-gray-50">

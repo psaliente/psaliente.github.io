@@ -1,11 +1,14 @@
 import { aics6SVG, apgSVG, azuredevopsSVG, expoSVG, githubSVG, jiraSVG, mongodbSVG, mssqlSVG, oracleSVG, postmanSVG, powerappSVG, powerautomateSVG, pscs6SVG, spSVG, viteSVG, vscodeSVG } from "../assets/images";
+import { SECTIONS } from "../constants";
 import { Card, Section } from "./containers";
 
 export default function ProgTools() {
+  const {TITLE, SUBTITLE} = SECTIONS.PROGTOOLS;
+  
     return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
         <Section.Title className="text-gray-500 font-thin">
-            <Section.Title.Gradient>Tools and Platforms.</Section.Title.Gradient>
-            I work with
+            <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
+            {SUBTITLE}
         </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-slate-200">

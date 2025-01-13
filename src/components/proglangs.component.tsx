@@ -1,11 +1,14 @@
 import { csharpSVG, cssSVG, html5SVG, jsSVG, sqlSVG, tsSVG } from "../assets/images";
+import { SECTIONS } from "../constants";
 import { Card, Section } from "./containers";
 
 export default function ProgLangs() {
+  const {TITLE, SUBTITLE} = SECTIONS.PROGLANGS;
+  
     return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
         <Section.Title className="text-gray-500 font-thin">
-            <Section.Title.Gradient>Languages.</Section.Title.Gradient>
-            I write and code in
+            <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
+            {SUBTITLE}
         </Section.Title>
         <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
             <Card className="content-center p-6 rounded-xl bg-slate-200">
