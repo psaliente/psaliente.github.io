@@ -1,4 +1,4 @@
 export type MyInfoType = {
-    Name: string,
-    Description: string
-}
+  Name: string;
+  Description: string;
+};
