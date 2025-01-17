@@ -1,8 +1,11 @@
-import { MyInfoType } from "../types/MyInfo.type";
+import { useContext } from "react";
 import BrandColors from "./brandcolors.component";
 import { TextTitle } from "./labels";
+import { PortfolioContext } from "../contexts";
 
-const HeaderComponent = ({Name, Description}: MyInfoType) => {
+const HeaderComponent = () => {
+  const { Name, Description } = useContext(PortfolioContext);
+
     return (
       <div className="overflow-y-hidden relative">
         <div className="flex flex-col gap-8 md:gap-16 bg-white p-5 md:p-20 ">

@@ -9,7 +9,7 @@ import useRedirect from "../hooks/useRedirect.hook";
 
 export default function ProjectItemPage() {
     const { projectItem } = useContext(ProjectItemContext);
-    const me = useContext(PortfolioContext);
+    const { Name } = useContext(PortfolioContext);
     const projectItemType = !projectItem ? 'generic': projectItem.Type;
     const projectImage = useProjectThumbnail(projectItemType);
     const projectLanguages = !projectItem ? []: projectItem.Languages;
@@ -21,7 +21,7 @@ export default function ProjectItemPage() {
         <div className="flex flex-col bg-white p-5">
             <Link to='/'>
                 <TextTitle className={"text-center"}>
-                    <TextTitle.Gradient>{me}</TextTitle.Gradient>
+                    <TextTitle.Gradient>{Name}</TextTitle.Gradient>
                 </TextTitle>
             </Link>
         </div>
