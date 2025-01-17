@@ -4,58 +4,72 @@
     "Description": "Simple ReactJS App that showcases my project portfolio",
     "Type": "web",
     "Link": "/",
-    "Role": ["Full-Stack Development", "Developed this Project from the ground-up","Created and Maintained this Web App"],
-    "Languages": ["ReactJS", "TypeScript", "JavaScript"]
+    "Role": [
+      "Full-Stack Development", 
+      "Developed this Project from the ground-up",
+      "Created and Maintained this Web App"
+    ],
+    "Languages": ["ReactJS", "TypeScript", "JavaScript", "Tailwind CSS"]
   },
   {
     "Title": "FRA",
-    "Description": "Power App Application- NDA",
+    "Description": "Power App Application - redacted due to current non-disclosure agreement with the client",
     "Type": "cross-platform",
     "Role": [
       "Front-End Development",
       "Developed the application from the ground-up",
-      "Provided feature enhancements and bug-fixes"
+      "Provided feature enhancements and bug-fixes",
+      "Documents and update project wiki",
+      "Coordinated with the Business Analyst for the requirements"
     ],
     "Languages": ["PowerApps", "PowerAutomate", "SharePoint"]
   },
   {
     "Title": "Moments",
-    "Description": "Mobile App (Android/IOS) - NDA",
+    "Description": "Mobile App (Android/IOS) - redacted due to current non-disclosure agreement with the client",
     "Type": "mobile",
     "Role": [
       "Front-End Development",
       "Developed the project from the ground-up",
-      "Provided feature enhancements and bug-fixes"
+      "Provided feature enhancements and bug-fixes",
+      "Documents and update project wiki",
+      "Coordinated with the Business Analyst for the requirements"
     ],
     "Languages": ["React-Native", "TypeScript"]
   },
   {
     "Title": "E-Competency",
-    "Description": "Web Application - NDA",
+    "Description": "Web Application - redacted due to current non-disclosure agreement with the client",
     "Type": "web",
     "Role": [
       "Front-End Development",
-      "Provided feature enhancements and bug-fixes"
+      "Provided feature enhancements and bug-fixes",
+      "Documents and update project wiki",
+      "Coordinated with the Business Analyst for the requirements"
     ],
     "Languages": ["Angular", "TypeScript", "SharePoint"]
   },
   {
     "Title": "OMNIX",
-    "Description": "Web Application - NDA",
+    "Description": "Booking Web Application - redacted due to current non-disclosure agreement with the client",
     "Type": "cross-platform",
+    "Link": "https://www.cebupacificair.com/",
     "Role": [
       "Front-End Development",
-      "Provided feature enhancements and bug-fixes"
+      "Provided feature enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
     ],
     "Languages": ["Angular", "TypeScript"]
   },
   {
     "Title": "E-Collect",
-    "Description": "Web Application - NDA",
+    "Description": "Web Application - redacted due to current non-disclosure agreement with the client",
     "Type": "web",
     "Role": [
       "Full-Stack Development",
-      "Provided feature enhancements and bug-fixes"
+      "Provided feature enhancements and bug-fixes",
+      "Documents and update project wiki",
+      "Coordinated with the Business Analyst for the requirements"
     ],
     "Languages": ["Angular", "JavaScript", "MongoDB", "APIGEE"]
   },
@@ -63,77 +77,133 @@
     "Title": "SpotLight",
     "Type": "desktop",
     "Description": "A WPF Desktop application that extends and adds custom functionality to Peloton",
-    "Role": ["Full-Stack Development", "Created Feature Enhancements"],
+    "Role": [
+      "Full-Stack Development", 
+      "Created Feature Enhancements",
+      "Coordinated with the Senior Developers for the requirements"
+    ],
     "Languages": ["C#", "WPF"]
   },
   {
     "Title": "Active Directory Web API",
     "Type": "web",
     "Description": "A Web API that provides a common source of Active Directory Information that can easily be consumed by other Applications",
-    "Role": ["Back-End Development", "Developed the project from the ground-up", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Back-End Development", 
+      "Developed the project from the ground-up", 
+      "Provided feature enhancements and bug-fixes",
+      "Coordinated directly with the stakeholders for the requirements"
+    ],
     "Languages": ["C#", "MVC Web API"]
   },
   {
     "Title": "Wafer Scribe Alerts",
     "Type": "console",
     "Description": "A windows background service that is used to monitor discrepancies between data from two different applications",
-    "Role": ["Back-End Development", "Developed the project from the ground-up", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Back-End Development", 
+      "Developed the project from the ground-up", 
+      "Provided feature enhancements and bug-fixes",
+      "Coordinated directly with the stakeholders for the requirements"
+    ],
     "Languages": ["C#", ".Net Core", "T-SQL", "PL/SQL"]
   },
   {
     "Title": "COVID-19 Dashboard",
     "Type": "web",
     "Description": "A simple dashboard that displays the overview of the COVID-19 cases of employees",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up", 
+      "Provided feature enhancements and bug-fixes",
+      "Coordinated directly with the stakeholders for the requirements"
+    ],
     "Languages": ["C#", "MVC", "WEB API", "JavaScript", "T-SQL"]
   },
   {
     "Title": "Location Logging System",
     "Type": "mobile",
     "Description": "An OutSystems android application that is used for QR-Code based logging of employees",
-    "Role": ["Database Development", "Developed T-SQL queries, stored procedures, and views from the ground-up", "Provided enhancements and bug-fixes"],
+    "Role": [
+      "Database Development", 
+      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Provided enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["T-SQL"]
   },
   {
     "Title": "Paperless Receipt Traveller",
     "Type": "cross-platform",
     "Description": "An OutSystems web application approval system for Receipt Travellers",
-    "Role": ["Database Development", "Developed T-SQL queries, stored procedures, and views from the ground-up", "Provided enhancements and bug-fixes"],
+    "Role": [
+      "Database Development", 
+      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Provided enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["T-SQL"]
   },
   {
     "Title": "iRMS",
     "Type": "web",
     "Description": "An MVC/AngularJS web application used to manage Recipes used on Manufacturing Equipments",
-    "Role": ["Database Development", "Developed T-SQL queries, stored procedures, and views from the ground-up", "Provided enhancements and bug-fixes"],
+    "Role": [
+      "Database Development", 
+      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Provided enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["T-SQL"]
   },
   {
     "Title": "eRFQ",
     "Type": "cross-platform",
     "Description": "An OutSystems web application approval system for Request-for-Quotation forms",
-    "Role": ["Database Development", "Developed T-SQL queries, stored procedures, and views from the ground-up", "Provided enhancements and bug-fixes"],
+    "Role": [
+      "Database Development", 
+      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Provided enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["T-SQL"]
   },
   {
     "Title": "Covid-19 Tracker / Tracer",
     "Type": "web",
     "Description": "An MVC web application record keeping system for COVID-19 related cases of employees",
-    "Role": ["Database Development", "Developed T-SQL queries, stored procedures, and views from the ground-up", "Provided enhancements and bug-fixes"],
+    "Role": [
+      "Database Development", 
+      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Provided enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["T-SQL"]
   },
   {
     "Title": "Universal Data Collection",
     "Type": "cross-platform",
     "Description": "An OutSystems web application used as an all-purpose basic record-keeping system",
-    "Role": ["Database Development", "Developed T-SQL queries, stored procedures, and views from the ground-up", "Provided enhancements and bug-fixes"],
+    "Role": [
+      "Database Development", 
+      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Provided enhancements and bug-fixes",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["T-SQL"]
   },
   {
     "Title": "EPMAP",
     "Type": "web",
     "Description": "A SharePoint WebPart-based application used for the approval of promotional materials and events",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up", 
+      "Provided feature enhancements and bug-fixes",
+      "Documents and update project wiki",
+      "Coordinated with the Business Analyst for the requirements",
+      "Supervised Junior Developers by giving them tasks and reviewing their work"
+    ],
     "Languages": [
       "SharePoint",
       "C#",
@@ -147,42 +217,69 @@
     "Title": "4Runner",
     "Type": "web",
     "Description": "A SharePoint WebPart-based application used by Medical Representatives for managing marketing activities, sales tactical proposals, and reimbursements",
-    "Role": ["Full-Stack Development", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Full-Stack Development", 
+      "Provided feature enhancements and bug-fixes",
+      "Documents and update project wiki",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["SharePoint", "C#", "Web API", "JavaScript"]
   },
   {
     "Title": "AIG",
     "Type": "web",
     "Description": "Account-in-a-Glance, is a SharePoint WebPart-based web app dashboard for a quick overview of the sales and costs of product in a certain sales territory",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up", 
+      "Provided feature enhancements and bug-fixes",
+      "Coordinated directly with the user and client for the requirements"
+    ],
     "Languages": ["SharePoint", "C#", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "ePAF",
     "Type": "web",
     "Description": "Electronic Principal Approval Form, is a SharePoint WebPart-based application for the basic record keeping of Principal Approval Forms",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up", "Provided feature enhancements and bug-fixes"],
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up", 
+      "Provided feature enhancements and bug-fixes",
+      "Coordinated directly with the user and client for the requirements"
+    ],
     "Languages": ["SharePoint", "C#", "REST API", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "CRAMS",
     "Type": "web",
     "Description": "Crew Resource Allocation Management System - is a SharePoint WebPart-Based Application used by airline mechanics to manage their aircraft maintenance schedules and tasks",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up"],
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up",
+      "Coordinated with the Business Analyst for the requirements"
+    ],
     "Languages": ["SharePoint", "C#", "REST API", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "Flight Status Checker",
     "Type": "web",
     "Description": "A simple SharePoint WebPart to view the flight status of incoming aircrafts",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up"],
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up",
+      "Coordinated with the Senior Developer for the requirements"
+    ],
     "Languages": ["SharePoint", "C#", "HTTP Handler", "JavaScript"]
   },
   {
     "Title": "Cabin Crew Leave Exchange Form",
     "Type": "web",
-    "Description": "A simple SharePoint WebPart for flight attendants to submit Leave Exchage Request",
-    "Role": ["Full-Stack Development", "Developed the project from the ground-up"],
+    "Description": "A simple SharePoint WebPart for flight attendants to submit Leave Exchage Requests",
+    "Role": [
+      "Full-Stack Development", 
+      "Developed the project from the ground-up",
+      "Coordinated with the Senior Developer for the requirements"
+    ],
     "Languages": ["SharePoint", "C#", "JavaScript"]
   }
 ]
