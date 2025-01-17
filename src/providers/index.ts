@@ -1,5 +1,3 @@
-import ProjectItemProvider from "./projectItemProvider";
+import ProjectItemProvider from './projectItemProvider';
 
-export {
-    ProjectItemProvider
-}
+export { ProjectItemProvider };
