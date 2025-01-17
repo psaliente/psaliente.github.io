@@ -1,14 +1,6 @@
-type MainPagePropType = {
-  component: React.ReactNode
-}
-
-function MainPage({ component }: MainPagePropType) {
+function MainPage() {
   //const ActiveComponent = component;
-  return (
-    <>
-      {/* <ActiveComponent></ActiveComponent> */}
-    </>
-  );
+  return <>{/* <ActiveComponent></ActiveComponent> */}</>;
 }
 
 export default MainPage;
