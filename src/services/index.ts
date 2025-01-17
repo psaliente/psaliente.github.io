@@ -1,4 +1,4 @@
-import { useMyInfoService } from "./myinfo.service";
-import { useProjectsService } from "./projects.service";
+import { useMyInfoService } from './myinfo.service';
+import { useProjectsService } from './projects.service';
 
-export { useMyInfoService, useProjectsService }
+export { useMyInfoService, useProjectsService };
