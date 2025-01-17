@@ -5,7 +5,7 @@ import { Card, Section } from "./containers";
 export default function ProgLangs() {
   const {TITLE, SUBTITLE} = SECTIONS.PROGLANGS;
   
-    return <Section className="z-10 bg-white flex flex-col px-10 py-12 shadow-lg">
+    return <Section className="z-10 bg-white flex flex-col gap-8 px-10 py-12 shadow-lg">
         <Section.Title className="text-gray-500 font-thin">
             <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
             {SUBTITLE}

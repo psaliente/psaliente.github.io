@@ -5,7 +5,7 @@ import { Card, Section } from "./containers";
 export default function ProgLibraries() {
   const {TITLE, SUBTITLE} = SECTIONS.PROGLIBS;
 
-    return <Section className="z-10 flex flex-col px-10 py-12 " >
+    return <Section className="z-10 flex flex-col gap-8 px-10 py-12 " >
         <Section.Title className="text-gray-500 font-thin">
             <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
             {SUBTITLE}
