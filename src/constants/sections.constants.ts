@@ -1,4 +1,19 @@
-import { csharpSVG, cssSVG, html5SVG, jsSVG, sqlSVG, tsSVG } from '../assets/images';
+import {
+  angularSVG,
+  bootstrapSVG,
+  csharpSVG,
+  cssSVG,
+  dotnetSVG,
+  html5SVG,
+  jsSVG,
+  koSVG,
+  nodeSVG,
+  reactNativeSVG,
+  reactSVG,
+  sqlSVG,
+  tailwindSVG,
+  tsSVG
+} from '../assets/images';
 
 export const SECTIONS = {
   PROJECTS: {
@@ -44,7 +59,48 @@ export const SECTIONS = {
   PROGLIBS: {
     TITLE: 'Libraries and Frameworks.',
     SUBTITLE: 'I ran my codes in',
-    ITEMS: []
+    ITEMS: [
+      {
+        IMG_SRC: dotnetSVG,
+        IMG_ALT: 'dot net logo',
+        URL: 'https://dotnet.microsoft.com/en-us/'
+      },
+      {
+        IMG_SRC: angularSVG,
+        IMG_ALT: 'angular logo',
+        URL: 'https://angular.dev/'
+      },
+      {
+        IMG_SRC: bootstrapSVG,
+        IMG_ALT: 'bootstrap logo',
+        URL: 'https://getbootstrap.com/'
+      },
+      {
+        IMG_SRC: koSVG,
+        IMG_ALT: 'knockout JS logo',
+        URL: 'https://knockoutjs.com/'
+      },
+      {
+        IMG_SRC: nodeSVG,
+        IMG_ALT: 'node JS logo',
+        URL: 'https://nodejs.org/en'
+      },
+      {
+        IMG_SRC: reactSVG,
+        IMG_ALT: 'react JS logo',
+        URL: 'https://react.dev/'
+      },
+      {
+        IMG_SRC: reactNativeSVG,
+        IMG_ALT: 'react-native logo',
+        URL: 'https://reactnative.dev/'
+      },
+      {
+        IMG_SRC: tailwindSVG,
+        IMG_ALT: 'tailwind CSS logo',
+        URL: 'https://tailwindcss.com/'
+      }
+    ]
   },
   PROGTOOLS: {
     TITLE: 'Tools and Platforms.',
