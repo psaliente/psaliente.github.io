@@ -19,6 +19,20 @@ export default function ProgLangs() {
           </Card>
         ))}
       </Section.Content>
+      <Section.Content className="text-2xl md:text-3xl font-[SourceCodePro] text-gray-500 text-center">
+        Aside from the above that I am actively using on my recent projects, I also had knowledge and past experience in
+        writing codes using:
+        <ul className="list-disc list-inside flex flex-row flex-wrap gap-x-8 justify-center m-4">
+          <li>YAML</li>
+          <li>PowerFX</li>
+          <li>CAML Query</li>
+          <li>PHP</li>
+          <li>JAVA</li>
+          <li>Visual Basic 6</li>
+          <li>Turbo C</li>
+          <li>Batch</li>
+        </ul>
+      </Section.Content>
     </Section>
   );
 }
