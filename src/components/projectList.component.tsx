@@ -17,7 +17,7 @@ function ProjectList({ projects }: ProjectListPropType) {
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}
       </Section.Title>
-      <Section.Content className="grid grid-cols-1 gap-x-8 gap-y-12 hd:grid-cols-2 fhd:grid-cols-4">
+      <Section.Content className="grid grid-cols-1 gap-x-8 gap-y-12 fhd:grid-cols-2 qhd:grid-cols-3 uhd:grid-cols-4">
         {projects.map((p, i) => (
           <ProjectListItem key={'projectItem' + i} ProjectID={i} {...p} />
         ))}

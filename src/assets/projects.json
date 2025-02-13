@@ -5,7 +5,7 @@
     "Type": "web",
     "Link": "/",
     "Role": [
-      "Full-Stack Development", 
+      "Full-Stack Development",
       "Developed this Project from the ground-up",
       "Created and Maintained this Web App"
     ],
@@ -35,7 +35,7 @@
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["React-Native", "TypeScript"]
+    "Languages": ["APIGEE", "React-Native", "TypeScript"]
   },
   {
     "Title": "E-Competency",
@@ -59,7 +59,7 @@
       "Provided feature enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["Angular", "TypeScript"]
+    "Languages": ["Angular", "APIGEE", "TypeScript"]
   },
   {
     "Title": "E-Collect",
@@ -71,14 +71,14 @@
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["Angular", "JavaScript", "MongoDB", "APIGEE"]
+    "Languages": ["Angular", "APIGEE", "JavaScript", "MongoDB"]
   },
   {
     "Title": "SpotLight",
     "Type": "desktop",
     "Description": "A WPF Desktop application that extends and adds custom functionality to Peloton",
     "Role": [
-      "Full-Stack Development", 
+      "Full-Stack Development",
       "Created Feature Enhancements",
       "Coordinated with the Senior Developers for the requirements"
     ],
@@ -89,8 +89,8 @@
     "Type": "web",
     "Description": "A Web API that provides a common source of Active Directory Information that can easily be consumed by other Applications",
     "Role": [
-      "Back-End Development", 
-      "Developed the project from the ground-up", 
+      "Back-End Development",
+      "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the stakeholders for the requirements"
     ],
@@ -101,8 +101,8 @@
     "Type": "console",
     "Description": "A windows background service that is used to monitor discrepancies between data from two different applications",
     "Role": [
-      "Back-End Development", 
-      "Developed the project from the ground-up", 
+      "Back-End Development",
+      "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the stakeholders for the requirements"
     ],
@@ -113,8 +113,8 @@
     "Type": "web",
     "Description": "A simple dashboard that displays the overview of the COVID-19 cases of employees",
     "Role": [
-      "Full-Stack Development", 
-      "Developed the project from the ground-up", 
+      "Full-Stack Development",
+      "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the stakeholders for the requirements"
     ],
@@ -125,8 +125,8 @@
     "Type": "mobile",
     "Description": "An OutSystems android application that is used for QR-Code based logging of employees",
     "Role": [
-      "Database Development", 
-      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Database Development",
+      "Developed T-SQL queries, stored procedures, and views from the ground-up",
       "Provided enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -137,8 +137,8 @@
     "Type": "cross-platform",
     "Description": "An OutSystems web application approval system for Receipt Travellers",
     "Role": [
-      "Database Development", 
-      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Database Development",
+      "Developed T-SQL queries, stored procedures, and views from the ground-up",
       "Provided enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -149,8 +149,8 @@
     "Type": "web",
     "Description": "An MVC/AngularJS web application used to manage Recipes used on Manufacturing Equipments",
     "Role": [
-      "Database Development", 
-      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Database Development",
+      "Developed T-SQL queries, stored procedures, and views from the ground-up",
       "Provided enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -161,8 +161,8 @@
     "Type": "cross-platform",
     "Description": "An OutSystems web application approval system for Request-for-Quotation forms",
     "Role": [
-      "Database Development", 
-      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Database Development",
+      "Developed T-SQL queries, stored procedures, and views from the ground-up",
       "Provided enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -173,8 +173,8 @@
     "Type": "web",
     "Description": "An MVC web application record keeping system for COVID-19 related cases of employees",
     "Role": [
-      "Database Development", 
-      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Database Development",
+      "Developed T-SQL queries, stored procedures, and views from the ground-up",
       "Provided enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -185,8 +185,8 @@
     "Type": "cross-platform",
     "Description": "An OutSystems web application used as an all-purpose basic record-keeping system",
     "Role": [
-      "Database Development", 
-      "Developed T-SQL queries, stored procedures, and views from the ground-up", 
+      "Database Development",
+      "Developed T-SQL queries, stored procedures, and views from the ground-up",
       "Provided enhancements and bug-fixes",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -197,28 +197,21 @@
     "Type": "web",
     "Description": "A SharePoint WebPart-based application used for the approval of promotional materials and events",
     "Role": [
-      "Full-Stack Development", 
-      "Developed the project from the ground-up", 
+      "Full-Stack Development",
+      "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements",
       "Supervised Junior Developers by giving them tasks and reviewing their work"
     ],
-    "Languages": [
-      "SharePoint",
-      "C#",
-      "Web API",
-      "JavaScript",
-      "AngularJS",
-      "SQL"
-    ]
+    "Languages": ["SharePoint", "C#", "Web API", "JavaScript", "AngularJS", "SQL"]
   },
   {
     "Title": "4Runner",
     "Type": "web",
     "Description": "A SharePoint WebPart-based application used by Medical Representatives for managing marketing activities, sales tactical proposals, and reimbursements",
     "Role": [
-      "Full-Stack Development", 
+      "Full-Stack Development",
       "Provided feature enhancements and bug-fixes",
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements"
@@ -230,8 +223,8 @@
     "Type": "web",
     "Description": "Account-in-a-Glance, is a SharePoint WebPart-based web app dashboard for a quick overview of the sales and costs of product in a certain sales territory",
     "Role": [
-      "Full-Stack Development", 
-      "Developed the project from the ground-up", 
+      "Full-Stack Development",
+      "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the user and client for the requirements"
     ],
@@ -242,8 +235,8 @@
     "Type": "web",
     "Description": "Electronic Principal Approval Form, is a SharePoint WebPart-based application for the basic record keeping of Principal Approval Forms",
     "Role": [
-      "Full-Stack Development", 
-      "Developed the project from the ground-up", 
+      "Full-Stack Development",
+      "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the user and client for the requirements"
     ],
@@ -254,7 +247,7 @@
     "Type": "web",
     "Description": "Crew Resource Allocation Management System - is a SharePoint WebPart-Based Application used by airline mechanics to manage their aircraft maintenance schedules and tasks",
     "Role": [
-      "Full-Stack Development", 
+      "Full-Stack Development",
       "Developed the project from the ground-up",
       "Coordinated with the Business Analyst for the requirements"
     ],
@@ -265,7 +258,7 @@
     "Type": "web",
     "Description": "A simple SharePoint WebPart to view the flight status of incoming aircrafts",
     "Role": [
-      "Full-Stack Development", 
+      "Full-Stack Development",
       "Developed the project from the ground-up",
       "Coordinated with the Senior Developer for the requirements"
     ],
@@ -276,7 +269,7 @@
     "Type": "web",
     "Description": "A simple SharePoint WebPart for flight attendants to submit Leave Exchage Requests",
     "Role": [
-      "Full-Stack Development", 
+      "Full-Stack Development",
       "Developed the project from the ground-up",
       "Coordinated with the Senior Developer for the requirements"
     ],
