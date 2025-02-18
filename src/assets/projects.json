@@ -12,6 +12,16 @@
     "Languages": ["ReactJS", "TypeScript", "JavaScript", "Tailwind CSS"]
   },
   {
+    "Title": "IamCEB",
+    "Description": "SharePoint - redacted due to current non-disclosure agreement with the client",
+    "Type": "web",
+    "Role": [
+      "Provided the initial setup of the CICD build and release pipelines",
+      "Assisted the development team for the migration of SharePoint 2010 and 2016 sites to SharePoint Online"
+    ],
+    "Languages": ["SharePoint 2010", "SharePoint 2016", "SharePoint Online", "YAML"]
+  },
+  {
     "Title": "FRA",
     "Description": "Power App Application - redacted due to current non-disclosure agreement with the client",
     "Type": "cross-platform",
@@ -22,7 +32,7 @@
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["PowerApps", "PowerAutomate", "SharePoint"]
+    "Languages": ["PowerApps", "PowerAutomate", "SharePoint Online"]
   },
   {
     "Title": "Moments",
@@ -47,7 +57,7 @@
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["Angular", "TypeScript", "SharePoint"]
+    "Languages": ["Angular", "TypeScript", "SharePoint 2016"]
   },
   {
     "Title": "OMNIX",
@@ -204,7 +214,7 @@
       "Coordinated with the Business Analyst for the requirements",
       "Supervised Junior Developers by giving them tasks and reviewing their work"
     ],
-    "Languages": ["SharePoint", "C#", "Web API", "JavaScript", "AngularJS", "SQL"]
+    "Languages": ["SharePoint 2016", "C#", "Web API", "JavaScript", "AngularJS", "SQL"]
   },
   {
     "Title": "4Runner",
@@ -216,7 +226,7 @@
       "Documents and update project wiki",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["SharePoint", "C#", "Web API", "JavaScript"]
+    "Languages": ["SharePoint 2016", "C#", "Web API", "JavaScript"]
   },
   {
     "Title": "AIG",
@@ -228,7 +238,7 @@
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the user and client for the requirements"
     ],
-    "Languages": ["SharePoint", "C#", "JavaScript", "KnockOutJS"]
+    "Languages": ["SharePoint 2016", "C#", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "ePAF",
@@ -240,7 +250,7 @@
       "Provided feature enhancements and bug-fixes",
       "Coordinated directly with the user and client for the requirements"
     ],
-    "Languages": ["SharePoint", "C#", "REST API", "JavaScript", "KnockOutJS"]
+    "Languages": ["SharePoint 2016", "C#", "REST API", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "CRAMS",
@@ -251,7 +261,7 @@
       "Developed the project from the ground-up",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["SharePoint", "C#", "REST API", "JavaScript", "KnockOutJS"]
+    "Languages": ["SharePoint 2010", "C#", "REST API", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "Flight Status Checker",
@@ -262,7 +272,7 @@
       "Developed the project from the ground-up",
       "Coordinated with the Senior Developer for the requirements"
     ],
-    "Languages": ["SharePoint", "C#", "HTTP Handler", "JavaScript"]
+    "Languages": ["SharePoint 2010", "C#", "HTTP Handler", "JavaScript"]
   },
   {
     "Title": "Cabin Crew Leave Exchange Form",
@@ -273,6 +283,6 @@
       "Developed the project from the ground-up",
       "Coordinated with the Senior Developer for the requirements"
     ],
-    "Languages": ["SharePoint", "C#", "JavaScript"]
+    "Languages": ["SharePoint 2010", "C#", "JavaScript"]
   }
 ]
