@@ -106,6 +106,11 @@ export default function ProgTools() {
           </a>
         </Card>
       </Section.Content>
+      <Section.Content className="text-2xl md:text-3xl font-[SourceCodePro] text-gray-500 text-center m-4">
+        From designing svg images to writing my codes. From the front-end to the back-end. From development to
+        deployment. I have been using these tools and platforms to help me become more productive with my work and
+        deliver my projects on-time.
+      </Section.Content>
     </Section>
   );
 }
