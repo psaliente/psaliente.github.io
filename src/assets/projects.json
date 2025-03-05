@@ -261,7 +261,7 @@
       "Developed the project from the ground-up",
       "Coordinated with the Business Analyst for the requirements"
     ],
-    "Languages": ["SharePoint 2010", "C#", "REST API", "JavaScript", "KnockOutJS"]
+    "Languages": ["SharePoint 2010", "C#", "HTTP Handler", "JavaScript", "KnockOutJS"]
   },
   {
     "Title": "Flight Status Checker",
