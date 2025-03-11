@@ -19,6 +19,20 @@ export default function ProgLibraries() {
           </Card>
         ))}
       </Section.Content>
+      <Section.Content className="text-2xl md:text-3xl font-[SourceCodePro] text-gray-500 text-center m-4">
+        <p>
+          Apart from these, I also keep myself updated by trying out new and other popular libraries and framework
+          regardless if I may or may not be using them on current or future projects.
+        </p>
+        <br />
+        <p>
+          Whenever I am not busy with my current projects, I explore and refresh my programming skills and knowledge by
+          following roadmaps in{' '}
+          <a className="text-blue-600" href="https://roadmap.sh">
+            ROADMAPS.SH
+          </a>
+        </p>
+      </Section.Content>
     </Section>
   );
 }

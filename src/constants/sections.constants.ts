@@ -22,7 +22,7 @@ export const SECTIONS = {
   },
   PROGLANGS: {
     TITLE: 'Languages.',
-    SUBTITLE: 'I write and code in',
+    SUBTITLE: "I don't speak, but I write in these",
     ITEMS: [
       {
         IMG_SRC: csharpSVG,
@@ -58,7 +58,7 @@ export const SECTIONS = {
   },
   PROGLIBS: {
     TITLE: 'Libraries and Frameworks.',
-    SUBTITLE: 'I ran my codes in',
+    SUBTITLE: 'integrating and keeping up with the popular ones',
     ITEMS: [
       {
         IMG_SRC: dotnetSVG,
@@ -104,7 +104,7 @@ export const SECTIONS = {
   },
   PROGTOOLS: {
     TITLE: 'Tools and Platforms.',
-    SUBTITLE: 'I work with',
+    SUBTITLE: 'utilized and work with',
     ITEMS: []
   }
 };
