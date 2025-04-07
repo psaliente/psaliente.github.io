@@ -38,7 +38,7 @@ function ProjectListItem(projectItem: ProjectListItemPropType) {
         <LanguageList ProjectID={'' + projectItem.ProjectID} Languages={projectItem.Languages} />
         <p className="text-lg md:text-xl font-[SourceCodePro] text-gray-700">{trimmedDesc}</p>
         <Link to="/project" className="font-bold text-blue-700" onClick={setCurrentProjectItem}>
-          see more
+          see my involvements
         </Link>
       </div>
     </Card>
