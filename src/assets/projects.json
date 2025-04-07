@@ -12,11 +12,11 @@
     "Languages": ["ReactJS", "TypeScript", "JavaScript", "Tailwind CSS"]
   },
   {
-    "Title": "Cybersource DM",
-    "Description": "APIGEE - redacted due to current non-disclosure agreement with the client",
+    "Title": "CyberSource DM",
+    "Description": "redacted due to current non-disclosure agreement with the client and the sensitive nature of the project",
     "Type": "web",
     "Role": ["Review and Approve Pull Requests", "Managed CICD build and deployment pipelines"],
-    "Languages": ["JavaScript"]
+    "Languages": ["APIGEE", "JavaScript"]
   },
   {
     "Title": "IamCEB",
@@ -297,7 +297,7 @@
     "Languages": ["SharePoint 2010", "C#", "JavaScript"]
   },
   {
-    "Title": "NFWM - Daily Vessel Report",
+    "Title": "Naval Forces Western Mindanao - Daily Vessel Report",
     "Type": "desktop",
     "Description": "Could not be disclosed due to sensitive military information",
     "Role": ["Bug fixes and enhancements"],
