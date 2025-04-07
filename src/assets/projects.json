@@ -12,11 +12,19 @@
     "Languages": ["ReactJS", "TypeScript", "JavaScript", "Tailwind CSS"]
   },
   {
+    "Title": "Cybersource DM",
+    "Description": "APIGEE - redacted due to current non-disclosure agreement with the client",
+    "Type": "web",
+    "Role": ["Review and Approve Pull Requests", "Managed CICD build and deployment pipelines"],
+    "Languages": ["JavaScript"]
+  },
+  {
     "Title": "IamCEB",
     "Description": "SharePoint - redacted due to current non-disclosure agreement with the client",
     "Type": "web",
     "Role": [
-      "Provided the initial setup of the CICD build and release pipelines",
+      "Review and Approve Pull Requests",
+      "Provided the initial setup and manage the CICD build and release pipelines",
       "Assisted the development team for the migration of SharePoint 2010 and 2016 sites to SharePoint Online"
     ],
     "Languages": ["SharePoint 2010", "SharePoint 2016", "SharePoint Online", "YAML"]
@@ -76,6 +84,7 @@
     "Description": "Web Application - redacted due to current non-disclosure agreement with the client",
     "Type": "web",
     "Role": [
+      "Review and Approve Pull Requests",
       "Full-Stack Development",
       "Provided feature enhancements and bug-fixes",
       "Documents and update project wiki",
@@ -207,6 +216,7 @@
     "Type": "web",
     "Description": "A SharePoint WebPart-based application used for the approval of promotional materials and events",
     "Role": [
+      "Review and Approve Pull Requests",
       "Full-Stack Development",
       "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
@@ -221,6 +231,7 @@
     "Type": "web",
     "Description": "A SharePoint WebPart-based application used by Medical Representatives for managing marketing activities, sales tactical proposals, and reimbursements",
     "Role": [
+      "Review and Approve Pull Requests",
       "Full-Stack Development",
       "Provided feature enhancements and bug-fixes",
       "Documents and update project wiki",
@@ -284,5 +295,12 @@
       "Coordinated with the Senior Developer for the requirements"
     ],
     "Languages": ["SharePoint 2010", "C#", "JavaScript"]
+  },
+  {
+    "Title": "NFWM - Daily Vessel Report",
+    "Type": "desktop",
+    "Description": "Could not be disclosed due to sensitive military information",
+    "Role": ["Bug fixes and enhancements"],
+    "Languages": ["Visual Basic 6"]
   }
 ]
