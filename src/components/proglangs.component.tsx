@@ -6,7 +6,7 @@ export default function ProgLangs() {
 
   return (
     <Section className="z-10 bg-white flex flex-col gap-8 px-10 py-12 shadow-lg">
-      <Section.Title className="text-gray-500 font-thin">
+      <Section.Title className="text-gray-500 font-thin break-words">
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}
       </Section.Title>
