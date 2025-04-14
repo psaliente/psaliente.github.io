@@ -1,8 +1,8 @@
 import React from 'react';
-import { ProjectListItem } from '.';
-import { ProjectType } from '../types/Project.Type';
-import { Section } from './containers';
-import { SECTIONS } from '../constants';
+import ProjectListItem from './projecListItem.component';
+import { ProjectType } from '../../../types/Project.Type';
+import { Section } from '../../containers';
+import { SECTIONS } from '../../../constants';
 
 type ProjectListPropType = {
   projects: ProjectType[];

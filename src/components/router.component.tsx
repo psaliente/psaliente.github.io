@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PortfolioPage from './portfolio.component';
-import ProjectItemPage from './projectItemPage.component';
+import { PortfolioPage } from './pages/portfoliopage';
+import { ProjectItemPage } from './pages/projectitempage';
 
 const RouterComponent = () => (
   <BrowserRouter>

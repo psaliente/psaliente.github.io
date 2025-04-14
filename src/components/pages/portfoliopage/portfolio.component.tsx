@@ -1,10 +1,10 @@
-import HeaderComponent from './header.component';
-import ProjectList from './projectList.component';
-import { useProjectsService } from '../services';
+import HeaderComponent from '../../header.component';
+import Footer from '../../footer.component';
+import { useProjectsService } from '../../../services';
 import ProgLangs from './proglangs.component';
 import ProgLibraries from './proglibs.component';
 import ProgTools from './progtools.component';
-import Footer from './footer.component';
+import ProjectList from './projectList.component';
 
 function PortfolioPage() {
   const { getProjects } = useProjectsService();

@@ -1,3 +1,4 @@
+import { SECTIONS } from '../../../constants';
 import {
   aics6SVG,
   apgSVG,
@@ -15,9 +16,8 @@ import {
   spSVG,
   viteSVG,
   vscodeSVG
-} from '../assets/images';
-import { SECTIONS } from '../constants';
-import { Card, Section } from './containers';
+} from '../../../assets/images';
+import { Card, Section } from '../../containers';
 
 export default function ProgTools() {
   const { TITLE, SUBTITLE } = SECTIONS.PROGTOOLS;

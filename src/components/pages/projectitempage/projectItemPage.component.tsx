@@ -1,11 +1,11 @@
 import { useContext } from 'react';
-import { PortfolioContext, ProjectItemContext } from '../contexts';
-import useProjectThumbnail from '../hooks/useProjectThumbnail';
-import { TextTitle } from './labels';
-import { BrandColors, Footer, LanguageList, RolesList } from '.';
+import { PortfolioContext, ProjectItemContext } from '../../../contexts';
+import useProjectThumbnail from '../../../hooks/useProjectThumbnail';
+import { TextTitle } from '../../labels';
+import { BrandColors, Footer, LanguageList, RolesList } from '../..';
 import { Link, useNavigate } from 'react-router-dom';
-import useScrollToTop from '../hooks/useScrollToTop.hook';
-import useRedirect from '../hooks/useRedirect.hook';
+import useScrollToTop from '../../../hooks/useScrollToTop.hook';
+import useRedirect from '../../../hooks/useRedirect.hook';
 
 export default function ProjectItemPage() {
   const { projectItem } = useContext(ProjectItemContext);

@@ -1,5 +1,5 @@
-import { SECTIONS } from '../constants';
-import { Card, Section } from './containers';
+import { SECTIONS } from '../../../constants';
+import { Card, Section } from '../../containers';
 
 export default function ProgLibraries() {
   const { TITLE, SUBTITLE, ITEMS } = SECTIONS.PROGLIBS;

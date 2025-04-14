@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { useCommonHook } from '../hooks/common.hook';
-import { Card } from './containers';
+import { useCommonHook } from '../../../hooks/common.hook';
+import { Card } from '../../containers';
 import { Link } from 'react-router-dom';
-import { LanguageList } from '.';
-import { ProjectType } from '../types/Project.Type';
-import useProjectThumbnail from '../hooks/useProjectThumbnail';
-import { ProjectItemContext } from '../contexts';
+import { LanguageList } from '../..';
+import { ProjectType } from '../../../types/Project.Type';
+import useProjectThumbnail from '../../../hooks/useProjectThumbnail';
+import { ProjectItemContext } from '../../../contexts';
 
 type ProjectListItemPropType = {
   ProjectID: number;
