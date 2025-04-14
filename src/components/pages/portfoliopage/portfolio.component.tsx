@@ -1,5 +1,5 @@
 import HeaderComponent from '../../header.component';
-import Footer from '../../footer.component';
+import FooterComponent from '../../footer.component';
 import { useProjectsService } from '../../../services';
 import ProgLangs from './proglangs.component';
 import ProgLibraries from './proglibs.component';
@@ -16,7 +16,7 @@ function PortfolioPage() {
       <ProgLangs />
       <ProgLibraries />
       <ProgTools />
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }
