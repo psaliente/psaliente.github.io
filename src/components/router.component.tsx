@@ -9,8 +9,8 @@ const RouterComponent = () => (
     <Routes>
       <Route path="/" element={<PortfolioPage />}></Route>
       <Route path="/project" element={<ProjectItemPage />}></Route>
-      <Route path="/decrypt-tool" element={<DecryptToolPage />}></Route>
-      <Route path="/encrypt-tool" element={<EncryptToolPage />}></Route>
+      <Route path="/tools/decrypt" element={<DecryptToolPage />}></Route>
+      <Route path="/tools/encrypt" element={<EncryptToolPage />}></Route>
     </Routes>
   </BrowserRouter>
 );
