@@ -5,7 +5,7 @@ import HeaderComponent from '../../header.component';
 export default function EncryptToolPage() {
   return (
     <>
-      <HeaderComponent />
+      <HeaderComponent EnableLink={true} ShowDescription={false} />
       <Section className="p-10">
         <Section.Title>Encryption Tool</Section.Title>
         <Section.Content>

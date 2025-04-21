@@ -1,15 +1,13 @@
 import { useContext } from 'react';
-import { PortfolioContext, ProjectItemContext } from '../../../contexts';
+import { ProjectItemContext } from '../../../contexts';
 import useProjectThumbnail from '../../../hooks/useProjectThumbnail';
-import { TextTitle } from '../../labels';
-import { BrandColors, FooterComponent, LanguageList, RolesList } from '../..';
-import { Link, useNavigate } from 'react-router-dom';
+import { FooterComponent, HeaderComponent, LanguageList, RolesList } from '../..';
+import { useNavigate } from 'react-router-dom';
 import useScrollToTop from '../../../hooks/useScrollToTop.hook';
 import useRedirect from '../../../hooks/useRedirect.hook';
 
 export default function ProjectItemPage() {
   const { projectItem } = useContext(ProjectItemContext);
-  const { Name } = useContext(PortfolioContext);
   const navigate = useNavigate();
   const projectItemType = !projectItem ? 'generic' : projectItem.Type;
   const projectImage = useProjectThumbnail(projectItemType);
@@ -25,14 +23,7 @@ export default function ProjectItemPage() {
 
   return (
     <div className="flex flex-col bg-gray-100">
-      <div className="flex flex-col bg-white p-5">
-        <Link to="/" aria-label="home">
-          <TextTitle className={'text-center'}>
-            <TextTitle.Gradient>{Name}</TextTitle.Gradient>
-          </TextTitle>
-        </Link>
-      </div>
-      <BrandColors />
+      <HeaderComponent EnableLink={true} ShowDescription={false} />
       <div className="flex flex-row flex-wrap gap-3 items-center justify-center p-8">
         <img src={projectImage} alt={projectItemType} className="w-full md:w-auto max-h-60" />
         <div className="w-full max-w-4xl pb-5 md:pb-10">

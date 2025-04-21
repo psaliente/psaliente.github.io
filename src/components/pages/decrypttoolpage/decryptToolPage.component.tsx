@@ -5,7 +5,7 @@ import HeaderComponent from '../../header.component';
 export default function DecryptToolPage() {
   return (
     <>
-      <HeaderComponent />
+      <HeaderComponent EnableLink={true} ShowDescription={false} />
       <Section className="p-10">
         <Section.Title>Decryption Tool</Section.Title>
         <Section.Content>
