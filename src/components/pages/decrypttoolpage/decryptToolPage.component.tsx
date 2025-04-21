@@ -4,7 +4,7 @@ import HeaderComponent from '../../header.component';
 
 export default function DecryptToolPage() {
   return (
-    <>
+    <div className="flex flex-col bg-gray-100">
       <HeaderComponent EnableLink={true} ShowDescription={false} />
       <Section className="p-10">
         <Section.Title>Decryption Tool</Section.Title>
@@ -13,6 +13,6 @@ export default function DecryptToolPage() {
         </Section.Content>
       </Section>
       <FooterComponent />
-    </>
+    </div>
   );
 }
