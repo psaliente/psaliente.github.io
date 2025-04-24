@@ -1,3 +1,5 @@
 import ProjectItemProvider from './projectItemProvider';
+import PortfolioProvider from './portfolioProvider';
+import ThemeProvider from './themeProvider';
 
-export { ProjectItemProvider };
+export { ProjectItemProvider, PortfolioProvider, ThemeProvider };
