@@ -1,18 +1,34 @@
 import {
+  aics6SVG,
   angularSVG,
+  apgSVG,
+  azuredevopsSVG,
   bootstrapSVG,
   csharpSVG,
   cssSVG,
   dotnetSVG,
+  expoSVG,
+  githubSVG,
   html5SVG,
+  jiraSVG,
   jsSVG,
   koSVG,
+  mongodbSVG,
+  mssqlSVG,
   nodeSVG,
+  oracleSVG,
+  postmanSVG,
+  powerappSVG,
+  powerautomateSVG,
+  pscs6SVG,
   reactNativeSVG,
   reactSVG,
+  spSVG,
   sqlSVG,
   tailwindSVG,
-  tsSVG
+  tsSVG,
+  viteSVG,
+  vscodeSVG
 } from '../assets/images';
 
 export const SECTIONS = {
@@ -105,6 +121,85 @@ export const SECTIONS = {
   PROGTOOLS: {
     TITLE: 'Tools and Platforms.',
     SUBTITLE: 'utilized and work with',
-    ITEMS: []
+    ITEMS: [
+      {
+        IMG_SRC: pscs6SVG,
+        IMG_ALT: 'Adobe Photoshop Logo'
+      },
+      {
+        IMG_SRC: aics6SVG,
+        IMG_ALT: 'Adobe Illustrator Logo'
+      },
+      {
+        IMG_SRC: apgSVG,
+        IMG_ALT: 'Apigee Logo',
+        URL: 'https://apigee.com/'
+      },
+      {
+        IMG_SRC: azuredevopsSVG,
+        IMG_ALT: 'Azure DevOps Logo',
+        URL: 'https://dev.azure.com/'
+      },
+      {
+        IMG_SRC: expoSVG,
+        IMG_ALT: 'Expo Logo',
+        URL: 'https://expo.dev/'
+      },
+      {
+        IMG_SRC: githubSVG,
+        IMG_ALT: 'GitHub Logo',
+        URL: 'https://github.com/'
+      },
+      {
+        IMG_SRC: jiraSVG,
+        IMG_ALT: 'Jira Logo',
+        URL: 'https://www.atlassian.com/software/jira'
+      },
+      {
+        IMG_SRC: mongodbSVG,
+        IMG_ALT: 'MongoDB Logo',
+        URL: 'https://www.mongodb.com'
+      },
+      {
+        IMG_SRC: mssqlSVG,
+        IMG_ALT: 'MS SQL Logo',
+        URL: 'https://www.microsoft.com/en-us/sql-server'
+      },
+      {
+        IMG_SRC: oracleSVG,
+        IMG_ALT: 'Oracle RDBMS Logo',
+        URL: 'https://www.oracle.com/database/'
+      },
+      {
+        IMG_SRC: postmanSVG,
+        IMG_ALT: 'Postman Logo',
+        URL: 'https://www.postman.com/'
+      },
+      {
+        IMG_SRC: powerappSVG,
+        IMG_ALT: 'Power Apps Logo',
+        URL: 'https://make.powerapps.com/'
+      },
+      {
+        IMG_SRC: powerautomateSVG,
+        IMG_ALT: 'Power Automate Logo',
+        URL: 'https://make.powerautomate.com/'
+      },
+      {
+        IMG_SRC: spSVG,
+        IMG_ALT: 'SharePoint Logo',
+        URL: 'https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration'
+      },
+      {
+        IMG_SRC: viteSVG,
+        IMG_ALT: 'Vite Logo',
+        URL: 'https://vite.dev/'
+      },
+      {
+        IMG_SRC: vscodeSVG,
+        IMG_ALT: 'VS Code Logo',
+        URL: 'https://code.visualstudio.com/'
+      }
+    ]
   }
 };

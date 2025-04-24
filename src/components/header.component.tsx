@@ -19,7 +19,7 @@ const HeaderComponent = ({ EnableLink = false, ShowDescription = true }: HeaderC
 
   return (
     <div className="overflow-y-hidden relative">
-      <div className="flex flex-col gap-8 md:gap-16 bg-white p-5 md:p-20 ">
+      <div className="flex flex-col gap-8 md:gap-16 bg-white dark:bg-gray-800 p-5 md:p-20 ">
         {EnableLink ? (
           <Link to="/" aria-label="home">
             {headerTitle}
@@ -28,7 +28,7 @@ const HeaderComponent = ({ EnableLink = false, ShowDescription = true }: HeaderC
           headerTitle
         )}
         {ShowDescription && (
-          <p className="p-5 text-2xl md:text-4xl text-justify font-[SourceCodePro] text-gray-500 break-words">
+          <p className="p-5 text-2xl md:text-4xl text-justify font-[SourceCodePro] text-gray-500 dark:text-gray-100 break-words">
             {Description}
           </p>
         )}

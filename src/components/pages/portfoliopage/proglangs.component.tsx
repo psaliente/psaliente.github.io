@@ -5,21 +5,21 @@ export default function ProgLangs() {
   const { TITLE, SUBTITLE, ITEMS } = SECTIONS.PROGLANGS;
 
   return (
-    <Section className="z-10 bg-white flex flex-col gap-8 px-10 py-12 shadow-lg">
-      <Section.Title className="text-gray-500 font-thin break-words">
+    <Section className="z-10 bg-white dark:bg-gray-800 flex flex-col gap-8 px-10 py-12 shadow-lg dark:shadow-gray-600">
+      <Section.Title className="text-gray-500 dark:text-gray-100 font-thin break-words">
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}
       </Section.Title>
       <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
         {ITEMS.map(({ IMG_ALT, IMG_SRC, URL }) => (
-          <Card key={IMG_ALT} className="content-center p-6 rounded-xl bg-slate-200">
+          <Card key={IMG_ALT} className="content-center p-6 rounded-xl bg-slate-200 dark:bg-slate-700">
             <a href={URL}>
               <img src={IMG_SRC} className="h-20" alt={IMG_ALT} />
             </a>
           </Card>
         ))}
       </Section.Content>
-      <Section.Content className="text-2xl md:text-3xl font-[SourceCodePro] text-gray-500 text-center">
+      <Section.Content className="text-2xl md:text-3xl font-[SourceCodePro] text-gray-500 dark:text-gray-100 text-center">
         Aside from the above that I am actively using on my recent projects, I also had knowledge and past experience in
         writing codes using:
         <ul className="list-disc list-inside flex flex-row flex-wrap gap-x-8 justify-center m-4">
