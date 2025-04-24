@@ -1,4 +1,5 @@
 import { useMyInfoService } from './myinfo.service';
 import { useProjectsService } from './projects.service';
+import useEncryptionService from './encryption.service';
 
-export { useMyInfoService, useProjectsService };
+export { useEncryptionService, useMyInfoService, useProjectsService };
