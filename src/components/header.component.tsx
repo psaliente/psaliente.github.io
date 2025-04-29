@@ -28,7 +28,7 @@ const HeaderComponent = ({ EnableLink = false, ShowDescription = true }: HeaderC
           headerTitle
         )}
         {ShowDescription && (
-          <p className="p-5 text-2xl md:text-4xl text-justify font-[SourceCodePro] text-gray-500 dark:text-gray-100 break-words">
+          <p className="p-5 text-2xl md:text-4xl text-center md:text-justify font-[SourceCodePro] text-gray-500 dark:text-gray-100 break-words">
             {Description}
           </p>
         )}
