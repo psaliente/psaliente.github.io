@@ -1,9 +1,9 @@
-import { Section } from '../../containers';
-import FooterComponent from '../../footer.component';
-import HeaderComponent from '../../header.component';
+import { Section } from '../../../containers';
+import FooterComponent from '../../../footer.component';
+import HeaderComponent from '../../../header.component';
 import useEncryptionToolPage from './useEncryptionToolPage';
 
-export default function EncryptToolPage() {
+export default function EncryptPage() {
   const { setEncKey, setEncMsg, EncryptMessage, encResult, isLoading } = useEncryptionToolPage();
 
   return (

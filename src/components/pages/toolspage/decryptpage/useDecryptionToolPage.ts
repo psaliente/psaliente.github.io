@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useEncryptionService } from '../../../services';
+import { useEncryptionService } from '../../../../services';
 
 export default function useDecryptionToolPage() {
   const [decKey, setDecKey] = useState('');

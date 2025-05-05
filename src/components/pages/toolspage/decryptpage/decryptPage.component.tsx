@@ -1,8 +1,8 @@
-import { Section } from '../../containers';
-import FooterComponent from '../../footer.component';
-import HeaderComponent from '../../header.component';
+import { Section } from '../../../containers';
+import FooterComponent from '../../../footer.component';
+import HeaderComponent from '../../../header.component';
 
-export default function DecryptToolPage() {
+export default function DecryptPage() {
   return (
     <div className="flex flex-col bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
       <HeaderComponent EnableLink={true} ShowDescription={false} />
