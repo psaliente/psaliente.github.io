@@ -35,11 +35,19 @@ const useCommonHook = () => {
   const trimText2Elipse = (value: string, length: number = 40): string =>
     value.length <= length ? value : `${value.substring(0, length - 3)}...`;
 
+  const getURLParams = (init?: string[][] | string | Record<string, string>) => {
+    const searchQuery = init ?? window.location.search;
+    const currentParams = new URLSearchParams(searchQuery);
+
+    return currentParams.entries();
+  };
+
   return {
     mapLanguageToColor,
     isEven,
     isOdd,
-    trimText2Elipse
+    trimText2Elipse,
+    getURLParams
   };
 };
 
