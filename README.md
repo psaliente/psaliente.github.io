@@ -4,7 +4,6 @@ todo:
 
 - add localization
 - refactoring
-- temporarily disable playwright due to svg issues
 - tools: julian date converter
 
 # Deploy to GitHub pages
