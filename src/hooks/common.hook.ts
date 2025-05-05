@@ -39,7 +39,7 @@ const useCommonHook = () => {
     const searchQuery = init ?? window.location.search;
     const currentParams = new URLSearchParams(searchQuery);
 
-    return currentParams.entries();
+    return currentParams;
   };
 
   return {
