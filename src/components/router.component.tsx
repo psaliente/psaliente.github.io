@@ -4,7 +4,7 @@ import { ProjectItemPage } from './pages/projectitempage';
 import { DecodePage, DecryptPage, EncodePage, EncryptPage, JulianConverterPage } from './pages/toolspage';
 
 const RouterComponent = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path="/" element={<PortfolioPage />}></Route>
       <Route path="/project" element={<ProjectItemPage />}></Route>
