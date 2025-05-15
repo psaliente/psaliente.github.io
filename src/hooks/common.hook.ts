@@ -42,12 +42,19 @@ const useCommonHook = () => {
     return currentParams;
   };
 
+  const cryptoShift = (value: string, shift: number) =>
+    value
+      .split('')
+      .map((d) => String.fromCharCode(d.charCodeAt(0) + shift))
+      .join('');
+
   return {
     mapLanguageToColor,
     isEven,
     isOdd,
     trimText2Elipse,
-    getURLParams
+    getURLParams,
+    cryptoShift
   };
 };
 
