@@ -35,11 +35,26 @@ const useCommonHook = () => {
   const trimText2Elipse = (value: string, length: number = 40): string =>
     value.length <= length ? value : `${value.substring(0, length - 3)}...`;
 
+  const getURLParams = (init?: string[][] | string | Record<string, string>) => {
+    const searchQuery = init ?? window.location.search;
+    const currentParams = new URLSearchParams(searchQuery);
+
+    return currentParams;
+  };
+
+  const cryptoShift = (value: string, shift: number) =>
+    value
+      .split('')
+      .map((d) => String.fromCharCode(d.charCodeAt(0) + shift))
+      .join('');
+
   return {
     mapLanguageToColor,
     isEven,
     isOdd,
-    trimText2Elipse
+    trimText2Elipse,
+    getURLParams,
+    cryptoShift
   };
 };
 
