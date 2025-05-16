@@ -25,7 +25,7 @@ export default function JulianConverterPage() {
         <Section.Title>
           <Section.Title.Gradient>Julian Date Converter Tool</Section.Title.Gradient>
         </Section.Title>
-        <Section.Content className="flex flex-col gap-3 p-4">
+        <Section.Content className="flex flex-col gap-3 p-4 text-xl fhd:text-base">
           <p>About This Tool - a simple app that converts regular date into julian date format and vise versa</p>
           <p>
             About Julian Date - a simplified date format that represents the number of days since the start of the year
@@ -53,7 +53,7 @@ export default function JulianConverterPage() {
             </li>
           </ul>
         </Section.Content>
-        <Section.Content className="p-2">
+        <Section.Content className="fhd:p-2 text-xl fhd:text-base">
           <button
             className={
               'rounded-t-full py-2 px-6 ' +

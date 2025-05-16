@@ -18,7 +18,7 @@ export default function DecodePage() {
         <Section.Title>
           <Section.Title.Gradient> Decode Tool</Section.Title.Gradient>
         </Section.Title>
-        <Section.Content className="flex flex-col gap-3 p-4">
+        <Section.Content className="flex flex-col gap-3 p-4 text-xl fhd:text-base">
           About this tool - a simple app that uses decoding method &quot;atob&quot; with a mix of my custom character
           shifting algorithm, which means this can only decode data encoded by my encoding tool that utilizes the same
           algorithm.
@@ -51,7 +51,7 @@ export default function DecodePage() {
             </li>
           </ul>
         </Section.Content>
-        <Section.Content className="p-8">
+        <Section.Content className="fhd:p-8 text-xl fhd:text-base">
           <Card className="flex flex-col gap-5 p-8 bg-white dark:bg-gray-700">
             <FormTextArea
               label="Encoded Message:"
