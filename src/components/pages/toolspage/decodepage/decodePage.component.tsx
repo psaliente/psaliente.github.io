@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 import { Card, Section } from '../../../containers';
 import useDecodePage from './useDecodePage';
 import { FormTextArea } from '../../../inputs';
@@ -8,6 +8,7 @@ import FooterComponent from '../../../footer.component';
 
 export default function DecodePage() {
   const { valueToDecode, decodedValue, setValueToDecode, decodeValue } = useDecodePage();
+  const decodePath = useHref('/tools/decode');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 flex flex-col">
@@ -38,7 +39,7 @@ export default function DecodePage() {
             <li>
               TIP: you can also use the query string parameter <i>&quot;cipher&quot;</i> in the URL{' '}
               <i>
-                (example: psaliente.github.io/tools/decode?<b>cipher</b>=your message here)
+                (example: {window.location.host + '/' + decodePath}?<b>cipher</b>=your message here)
               </i>{' '}
               to prepopulate the Message field
             </li>

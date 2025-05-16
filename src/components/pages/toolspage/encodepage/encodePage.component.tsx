@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 import { Card, Section } from '../../../containers';
 import useEncodePage from './useEncodePage';
 import { Button, NightModeToggle } from '../../../buttons';
@@ -11,6 +11,7 @@ export default function EncodePage() {
   const { valueToEncode, encodedValue, decodeURL, isCopied, encodeValue, setValueToEncode, setIsCopied } =
     useEncodePage();
   const { copyToClipboard } = useClipboard();
+  const encodePath = useHref('/tools/encode');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 flex flex-col">
@@ -46,7 +47,7 @@ export default function EncodePage() {
             <li>
               TIP: you can also use the query string parameter <i>&quot;msg&quot;</i> in the URL{' '}
               <i>
-                (example: psaliente.github.io/tools/encode?<b>msg</b>=your message here)
+                (example: {window.location.host + '/' + encodePath}?<b>msg</b>=your message here)
               </i>{' '}
               to prepopulate the Message field
             </li>

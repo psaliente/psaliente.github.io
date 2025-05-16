@@ -15,7 +15,7 @@ export default function useEncodePage() {
     const shiftedValue = cryptoShift(value, 5);
 
     setEncodedValue(shiftedValue);
-    setDecodeURL(`${window.location.host}${decodePath}${encodeURI(shiftedValue)}`);
+    setDecodeURL(`${window.location.host}/${decodePath}${encodeURI(shiftedValue)}`);
   };
 
   useEffect(() => {
