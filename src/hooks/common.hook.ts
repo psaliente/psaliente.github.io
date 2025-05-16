@@ -1,4 +1,7 @@
+import { useLocation } from 'react-router-dom';
+
 const useCommonHook = () => {
+  const loc = useLocation();
   const mapLanguageToColor = (language: string): string => {
     const key = language.charAt(0).toLowerCase();
 
@@ -36,7 +39,7 @@ const useCommonHook = () => {
     value.length <= length ? value : `${value.substring(0, length - 3)}...`;
 
   const getURLParams = (init?: string[][] | string | Record<string, string>) => {
-    const searchQuery = init ?? window.location.search;
+    const searchQuery = init ?? loc.search;
     const currentParams = new URLSearchParams(searchQuery);
 
     return currentParams;

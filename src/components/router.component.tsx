@@ -1,10 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { PortfolioPage } from './pages/portfoliopage';
 import { ProjectItemPage } from './pages/projectitempage';
 import { DecodePage, DecryptPage, EncodePage, EncryptPage, JulianConverterPage } from './pages/toolspage';
 
 const RouterComponent = () => (
-  <BrowserRouter basename={import.meta.env.BASE_URL}>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<PortfolioPage />}></Route>
       <Route path="/project" element={<ProjectItemPage />}></Route>
@@ -14,7 +14,7 @@ const RouterComponent = () => (
       <Route path="/tools/encode" element={<EncodePage />}></Route>
       <Route path="/tools/julian-convert" element={<JulianConverterPage />}></Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default RouterComponent;

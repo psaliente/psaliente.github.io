@@ -15,6 +15,7 @@ export default function useDecodePage() {
 
   useEffect(() => {
     const params = getURLParams();
+
     if (params.has('cipher')) {
       setValueToDecode(params.get('cipher') ?? '');
     }

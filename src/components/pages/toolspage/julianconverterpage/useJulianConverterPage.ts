@@ -19,11 +19,8 @@ export default function useJulianConverterPage() {
 
   const computeRegularDateValue = () => {
     const intJDate = parseInt(julianDateValue);
-    console.log(`PETE! intJDate: ${intJDate}`);
     const year = Math.round(intJDate / 1000);
-    console.log(`PETE! year: ${year}`);
     let runningJDate = intJDate % 1000;
-    console.log(`PETE! runningJDate: ${runningJDate}`);
     let month = 0;
     let monthDays = 0;
 
