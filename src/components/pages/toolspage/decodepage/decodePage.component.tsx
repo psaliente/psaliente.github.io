@@ -14,7 +14,7 @@ export default function DecodePage() {
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
-      <Section className="flex flex-col gap-4 p-10">
+      <Section className="flex flex-col gap-4 py-10 px-4 fhd:px-10">
         <Section.Title>
           <Section.Title.Gradient> Decode Tool</Section.Title.Gradient>
         </Section.Title>
@@ -26,7 +26,7 @@ export default function DecodePage() {
             (see atob)
           </a>
           How to use this tool:
-          <ul className="list-inside list-disc">
+          <ul className="list-inside list-disc flex flex-col gap-4">
             <li>
               In the <i>&quot;Encoded Message&quot;</i> Field, type in the message you want to decode
             </li>
@@ -52,7 +52,7 @@ export default function DecodePage() {
           </ul>
         </Section.Content>
         <Section.Content className="fhd:p-8 text-xl fhd:text-base">
-          <Card className="flex flex-col gap-5 p-8 bg-white dark:bg-gray-700">
+          <Card className="flex flex-col gap-5 p-6 fhd:p-8 bg-white dark:bg-gray-700">
             <FormTextArea
               label="Encoded Message:"
               name="txtMessage"

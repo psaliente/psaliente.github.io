@@ -21,7 +21,7 @@ export default function JulianConverterPage() {
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
-      <Section className="flex flex-col gap-4 p-10">
+      <Section className="flex flex-col gap-4 py-10 px-4 fhd:px-10">
         <Section.Title>
           <Section.Title.Gradient>Julian Date Converter Tool</Section.Title.Gradient>
         </Section.Title>
@@ -31,7 +31,7 @@ export default function JulianConverterPage() {
             About Julian Date - a simplified date format that represents the number of days since the start of the year
           </p>
           <p>How to use this tool:</p>
-          <ul className="list-inside list-disc">
+          <ul className="list-inside list-disc flex flex-col gap-4">
             <li>select an option whether you want &quot;Date to Julian&quot; or &quot;Julian to Date&quot;</li>
             <li>
               For Date to Julian:
@@ -74,7 +74,7 @@ export default function JulianConverterPage() {
           </button>
 
           {convertType == 'julian' && (
-            <Card className="flex flex-col gap-5 p-8 rounded-tl-none bg-white dark:bg-gray-700">
+            <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700">
               <span className="text-2xl">Convert Regular Date to Julian</span>
 
               <div className="flex flex-row justify-center flex-wrap gap-4">
@@ -97,7 +97,7 @@ export default function JulianConverterPage() {
           )}
 
           {convertType == 'regular' && (
-            <Card className="flex flex-col gap-5 p-8 rounded-tl-none bg-white dark:bg-gray-700">
+            <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700">
               <span className="text-2xl">Convert Julian to Regular Date</span>
 
               <div className="flex flex-row justify-center flex-wrap gap-4">
