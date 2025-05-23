@@ -45,6 +45,15 @@ const useCommonHook = () => {
     return currentParams;
   };
 
+  const getURLParamByKey = (key: string, init?: string[][] | string | Record<string, string>) => {
+    const params = getURLParams(init);
+    let paramValue = '';
+
+    if (params.has(key)) paramValue = params.get(key) ?? '';
+
+    return paramValue;
+  };
+
   const cryptoShift = (value: string, shift: number) =>
     value
       .split('')
@@ -57,6 +66,7 @@ const useCommonHook = () => {
     isOdd,
     trimText2Elipse,
     getURLParams,
+    getURLParamByKey,
     cryptoShift
   };
 };

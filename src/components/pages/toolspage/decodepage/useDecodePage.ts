@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useCommonHook } from '../../../../hooks/common.hook';
 
 export default function useDecodePage() {
-  const { cryptoShift, getURLParams } = useCommonHook();
-  const [valueToDecode, setValueToDecode] = useState('');
+  const { cryptoShift, getURLParamByKey } = useCommonHook();
+  const paramCipher = getURLParamByKey('cipher');
+  const [valueToDecode, setValueToDecode] = useState(paramCipher);
   const [decodedValue, setDecodedValue] = useState('');
 
   const decodeValue = () => {
@@ -12,14 +13,6 @@ export default function useDecodePage() {
 
     setDecodedValue(value);
   };
-
-  useEffect(() => {
-    const params = getURLParams();
-
-    if (params.has('cipher')) {
-      setValueToDecode(params.get('cipher') ?? '');
-    }
-  }, [getURLParams]);
 
   return {
     valueToDecode,

@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useCommonHook } from '../../../../hooks/common.hook';
 import { useHref } from 'react-router-dom';
 
 export default function useEncodePage() {
-  const { cryptoShift, getURLParams } = useCommonHook();
-  const [valueToEncode, setValueToEncode] = useState('');
+  const { cryptoShift, getURLParamByKey } = useCommonHook();
+  const paramMsg = getURLParamByKey('msg');
+  const [valueToEncode, setValueToEncode] = useState(paramMsg);
   const [encodedValue, setEncodedValue] = useState('');
   const [decodeURL, setDecodeURL] = useState('');
   const [isCopied, setIsCopied] = useState(false);
@@ -17,13 +18,6 @@ export default function useEncodePage() {
     setEncodedValue(shiftedValue);
     setDecodeURL(`${window.location.host}/${decodePath}${encodeURI(shiftedValue)}`);
   };
-
-  useEffect(() => {
-    const params = getURLParams();
-    if (params.has('msg')) {
-      setValueToEncode(params.get('msg') ?? '');
-    }
-  }, [getURLParams]);
 
   return {
     valueToEncode,
