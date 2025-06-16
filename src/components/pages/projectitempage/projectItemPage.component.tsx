@@ -22,9 +22,9 @@ export default function ProjectItemPage() {
   useScrollToTop();
 
   return (
-    <div className="flex flex-col bg-gray-100 dark:bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900">
       <HeaderComponent EnableLink={true} ShowDescription={false} />
-      <div className="flex flex-row flex-wrap gap-3 items-center justify-center p-8">
+      <div className="flex flex-row flex-wrap flex-auto gap-3 items-center justify-center p-8">
         <img src={projectImage} alt={projectItemType} className="w-full md:w-auto max-h-60" />
         <div className="w-full max-w-4xl pb-5 md:pb-10">
           <h1 className="text-5xl md:text-7xl text-gray-600 dark:text-gray-200">{projectItem?.Title}</h1>

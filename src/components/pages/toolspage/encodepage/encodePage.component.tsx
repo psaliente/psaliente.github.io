@@ -14,10 +14,10 @@ export default function EncodePage() {
   const encodePath = useHref('/tools/encode');
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 flex flex-col">
+    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 min-h-screen flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
-      <Section className="flex flex-col gap-4 py-10 px-4 fhd:px-10">
+      <Section className="flex flex-col flex-auto gap-4 py-10 px-4 fhd:px-10">
         <Section.Title>
           <Section.Title.Gradient>Encode Tool</Section.Title.Gradient>
         </Section.Title>

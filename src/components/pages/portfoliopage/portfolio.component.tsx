@@ -11,7 +11,7 @@ function PortfolioPage() {
   const { getProjects } = useProjectsService();
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 flex flex-col">
+    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col">
       <HeaderComponent />
       <NightModeToggle />
       <ProjectList projects={getProjects()} />
