@@ -5,6 +5,8 @@ import { useHref } from 'react-router-dom';
 export default function useEncodePage() {
   const { cryptoShift, getURLParamByKey } = useCommonHook();
   const paramMsg = getURLParamByKey('msg');
+  const paramShift = getURLParamByKey('shift');
+  const shift: number = !!paramShift === true ? parseInt(paramShift) : 5;
   const [valueToEncode, setValueToEncode] = useState(paramMsg);
   const [encodedValue, setEncodedValue] = useState('');
   const [decodeURL, setDecodeURL] = useState('');
@@ -13,7 +15,7 @@ export default function useEncodePage() {
 
   const encodeValue = () => {
     const value = btoa(valueToEncode);
-    const shiftedValue = cryptoShift(value, 5);
+    const shiftedValue = cryptoShift(value, shift);
 
     setEncodedValue(shiftedValue);
     setDecodeURL(`${window.location.host}/${decodePath}${encodeURI(shiftedValue)}`);
