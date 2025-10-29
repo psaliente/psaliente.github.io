@@ -23,7 +23,7 @@ function ProjectListItem(projectItem: ProjectListItemPropType) {
   };
 
   return (
-    <Card className="flex flex-row flex-wrap gap-4 px-7 pb-5 pt-8 bg-white dark:bg-gray-800 justify-center hd:justify-normal">
+    <Card className="flex flex-row flex-wrap gap-4 px-7 pb-5 pt-8 bg-white dark:bg-gray-800 justify-center hd:justify-normal transition delay-300 duration-500 hover:scale-[1.02]">
       <img src={projectThumb} className="w-40 h-40" alt="mobile app" />
       <div className="flex flex-col gap-5 max-w-xs content-between">
         {projectItem.Link ? (
