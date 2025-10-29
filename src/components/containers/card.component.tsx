@@ -6,7 +6,9 @@ type CardPropsType = {
 
 function Card({ className, children }: CardPropsType) {
   return (
-    <div className={'z-10 rounded-3xl shadow-lg hover:shadow-xl scale-100 hover:scale-105 ' + className}>
+    <div
+      className={'z-10 rounded-3xl transition duration-500 shadow-lg hover:shadow-xl hover:scale-[1.02] ' + className}
+    >
       {children}
     </div>
   );
