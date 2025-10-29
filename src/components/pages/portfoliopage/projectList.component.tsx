@@ -13,7 +13,7 @@ function ProjectList({ projects }: ProjectListPropType) {
 
   return (
     <Section className="flex flex-col gap-10 px-10 py-12 overflow-x-hidden">
-      <Section.Title className="text-gray-500 dark:text-gray-100 font-thin break-words">
+      <Section.Title className="text-gray-500 dark:text-gray-100 transition delay-300 duration-500 font-thin break-words">
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}
       </Section.Title>

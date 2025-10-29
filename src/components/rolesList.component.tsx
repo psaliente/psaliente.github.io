@@ -9,12 +9,15 @@ function RolesList({ Roles }: RolesListPropType) {
 
   return (
     <div className="m-6 max-w-4xl">
-      <strong className="font-[SourceCodePro] text-xl md:text-3xl text-gray-600 dark:text-gray-100">
+      <strong className="font-[SourceCodePro] text-xl md:text-3xl text-gray-600 dark:text-gray-100 transition delay-300 duration-500">
         Roles and Responsibilities:
       </strong>
       <ul className="list-disc list-inside">
         {Roles.map((r, i) => (
-          <li key={'role' + i} className="font-[SourceCodePro] text-lg md:text-2xl text-gray-700 dark:text-gray-50">
+          <li
+            key={'role' + i}
+            className="font-[SourceCodePro] text-lg md:text-2xl text-gray-700 dark:text-gray-50 transition delay-300 duration-500"
+          >
             {r}
           </li>
         ))}
