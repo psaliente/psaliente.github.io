@@ -5,6 +5,7 @@ import { FooterComponent, HeaderComponent, LanguageList, RolesList } from '../..
 import { useNavigate } from 'react-router-dom';
 import useScrollToTop from '../../../hooks/useScrollToTop.hook';
 import useRedirect from '../../../hooks/useRedirect.hook';
+import { GradientButton } from '../../buttons';
 
 export default function ProjectItemPage() {
   const { projectItem } = useContext(ProjectItemContext);
@@ -36,12 +37,7 @@ export default function ProjectItemPage() {
           </p>
           <RolesList Roles={projectItem?.Role} />
         </div>
-        <button
-          className="bg-gradient-to-tr rounded-full px-8 py-1 from-blue-500 to-emerald-300 text-2xl shadow-md text-gray-200"
-          onClick={navBack}
-        >
-          Back
-        </button>
+        <GradientButton onClick={navBack}>Back</GradientButton>
       </div>
       <FooterComponent />
     </div>
