@@ -6,4 +6,8 @@ export type ProjectType = {
   Link?: string;
   Role: string[];
   Languages: string[];
+  Libraries?: string[];
+  Frameworks?: string[];
+  Tools?: string[];
+  Platforms?: string[];
 };
