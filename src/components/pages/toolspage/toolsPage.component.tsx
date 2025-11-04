@@ -9,7 +9,7 @@ const ToolsPage = () => {
   const tools = getToolList();
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 min-h-screen flex flex-col">
+    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
       <Section className="flex flex-col flex-auto gap-4 py-10 px-4 fhd:px-10">

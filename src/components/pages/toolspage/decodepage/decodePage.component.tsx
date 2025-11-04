@@ -11,7 +11,7 @@ export default function DecodePage() {
   const decodePath = useHref('/tools/decode');
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 min-h-screen flex flex-col">
+    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
       <Section className="flex flex-col flex-auto gap-4 py-10 px-4 fhd:px-10">
@@ -52,7 +52,7 @@ export default function DecodePage() {
           </ul>
         </Section.Content>
         <Section.Content className="fhd:p-8 text-xl fhd:text-base">
-          <Card className="flex flex-col gap-5 p-6 fhd:p-8 bg-white dark:bg-gray-700">
+          <Card className="flex flex-col gap-5 p-6 fhd:p-8 bg-white dark:bg-gray-700 transition delay-300 duration-500">
             <FormTextArea
               label="Encoded Message:"
               name="txtMessage"

@@ -18,7 +18,7 @@ export default function JulianConverterPage() {
   } = useJulianConverterPage();
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 min-h-screen flex flex-col">
+    <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
       <Section className="flex flex-col flex-auto gap-4 py-10 px-4 fhd:px-10">
@@ -56,7 +56,7 @@ export default function JulianConverterPage() {
         <Section.Content className="fhd:p-2 text-xl fhd:text-base">
           <button
             className={
-              'rounded-t-full py-2 px-6 ' +
+              'rounded-t-full py-2 px-6 transition delay-300 duration-500 ' +
               (convertType == 'julian' ? 'bg-white dark:bg-gray-700' : 'bg-gray-200 dark:bg-black ')
             }
             onClick={() => setConvertType('julian')}
@@ -65,7 +65,7 @@ export default function JulianConverterPage() {
           </button>
           <button
             className={
-              'rounded-t-full py-2 px-6 ' +
+              'rounded-t-full py-2 px-6 transition delay-300 duration-500 ' +
               (convertType == 'regular' ? 'bg-white dark:bg-gray-700' : 'bg-gray-200 dark:bg-black ')
             }
             onClick={() => setConvertType('regular')}
@@ -74,7 +74,7 @@ export default function JulianConverterPage() {
           </button>
 
           {convertType == 'julian' && (
-            <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700">
+            <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700 transition delay-300 duration-500">
               <span className="text-2xl">Convert Regular Date to Julian</span>
 
               <div className="flex flex-row justify-center flex-wrap gap-4">
@@ -97,7 +97,7 @@ export default function JulianConverterPage() {
           )}
 
           {convertType == 'regular' && (
-            <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700">
+            <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700 transition delay-300 duration-500">
               <span className="text-2xl">Convert Julian to Regular Date</span>
 
               <div className="flex flex-row justify-center flex-wrap gap-4">
