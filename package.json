@@ -38,6 +38,7 @@
     "react": "19.0.0",
     "react-datepicker": "^8.3.0",
     "react-dom": "19.0.0",
+    "react-ga4": "^2.1.0",
     "react-router-dom": "^6.8.1",
     "tailwindcss": "^3.4.14",
     "vite": "^5.4.11",
