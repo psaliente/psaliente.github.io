@@ -6,12 +6,14 @@ import { Button, NightModeToggle } from '../../../buttons';
 import HeaderComponent from '../../../header.component';
 import FooterComponent from '../../../footer.component';
 import useGTag from '../../../../hooks/useGTag.hook';
+import usePageTitle from '../../../../hooks/usePageTitle.hook';
 
 export default function DecodePage() {
   const { valueToDecode, decodedValue, setValueToDecode, decodeValue } = useDecodePage();
   const decodePath = useHref('/tools/decode');
 
   useGTag('Decode Tool');
+  usePageTitle('Decode Tool');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">

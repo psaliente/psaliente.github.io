@@ -7,6 +7,7 @@ import FooterComponent from '../../../footer.component';
 import HeaderComponent from '../../../header.component';
 import useClipboard from '../../../../hooks/useClipboard.hook';
 import useGTag from '../../../../hooks/useGTag.hook';
+import usePageTitle from '../../../../hooks/usePageTitle.hook';
 
 export default function EncodePage() {
   const { valueToEncode, encodedValue, decodeURL, isCopied, encodeValue, setValueToEncode, setIsCopied } =
@@ -15,6 +16,7 @@ export default function EncodePage() {
   const encodePath = useHref('/tools/encode');
 
   useGTag('Encode Tool');
+  usePageTitle('Encode Tool');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">

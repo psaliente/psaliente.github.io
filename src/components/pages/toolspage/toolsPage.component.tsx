@@ -4,12 +4,14 @@ import { useToolsService } from '../../../services';
 import { NightModeToggle } from '../../buttons';
 import { Section } from '../../containers';
 import useGTag from '../../../hooks/useGTag.hook';
+import usePageTitle from '../../../hooks/usePageTitle.hook';
 
 const ToolsPage = () => {
   const { getToolList } = useToolsService();
   const tools = getToolList();
 
   useGTag('Tools Page');
+  usePageTitle('Tools Page');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">

@@ -1,4 +1,5 @@
 import useGTag from '../../../../hooks/useGTag.hook';
+import usePageTitle from '../../../../hooks/usePageTitle.hook';
 import { Button, NightModeToggle } from '../../../buttons';
 import { Card, Section } from '../../../containers';
 import FooterComponent from '../../../footer.component';
@@ -19,6 +20,7 @@ export default function JulianConverterPage() {
   } = useJulianConverterPage();
 
   useGTag('Julian Converter');
+  usePageTitle('Julian Converter');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">

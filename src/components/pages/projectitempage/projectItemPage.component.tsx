@@ -7,6 +7,7 @@ import useScrollToTop from '../../../hooks/useScrollToTop.hook';
 import useRedirect from '../../../hooks/useRedirect.hook';
 import { GradientButton } from '../../buttons';
 import useGTag from '../../../hooks/useGTag.hook';
+import usePageTitle from '../../../hooks/usePageTitle.hook';
 
 export default function ProjectItemPage() {
   const { projectItem } = useContext(ProjectItemContext);
@@ -23,6 +24,7 @@ export default function ProjectItemPage() {
   useRedirect('/', !!projectItem == false);
   useScrollToTop();
   useGTag(projectItem?.Title);
+  usePageTitle(projectItem?.Title);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900">

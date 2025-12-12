@@ -7,11 +7,13 @@ import ProgTools from './progtools.component';
 import ProjectList from './projectList.component';
 import { NightModeToggle } from '../../buttons';
 import useGTag from '../../../hooks/useGTag.hook';
+import usePageTitle from '../../../hooks/usePageTitle.hook';
 
 function PortfolioPage() {
   const { getProjects } = useProjectsService();
 
   useGTag();
+  usePageTitle('Peter John Saliente');
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 transition delay-300 duration-500 min-h-screen flex flex-col">
