@@ -12,6 +12,13 @@
     "Languages": ["ReactJS", "TypeScript", "JavaScript", "Tailwind CSS"]
   },
   {
+    "Title": "Project Sulong",
+    "Description": "redacted due to current non-disclosure agreement with the client and the sensitive nature of the project",
+    "Type": "web",
+    "Role": ["Review and Approve Pull Requests", "Managed CICD build and deployment pipelines"],
+    "Languages": ["APIGEE", "JavaScript"]
+  },
+  {
     "Title": "Group Fare Form",
     "Description": "redacted due to current non-disclosure agreement with the client and the sensitive nature of the project",
     "Type": "web",
