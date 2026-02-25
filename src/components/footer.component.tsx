@@ -17,7 +17,7 @@ export default function FooterComponent() {
   };
 
   return (
-    <div className="flex-shrink-0 flex flex-col p-6 pt-20 gap-2 text-center transition delay-300 duration-500 dark:text-white">
+    <div className="shrink-0 flex flex-col p-6 pt-20 gap-2 text-center transition delay-300 duration-500 dark:text-white">
       <div className="flex flex-row flex-wrap gap-3 w-full items-center justify-center">
         <a href="https://github.com/psaliente" onClick={onGithubClick}>
           My Github Profile

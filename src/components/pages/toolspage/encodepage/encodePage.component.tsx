@@ -90,7 +90,7 @@ export default function EncodePage() {
 
             {!!encodedValue === true && (
               <div className="flex flex-row flex-wrap items-center gap-1 p-1">
-                DECODE URL: <code className="border border-gray-500 max-w-[80%] break-words p-1 m-1">{decodeURL}</code>
+                DECODE URL: <code className="border border-gray-500 max-w-[80%] wrap-break-word p-1 m-1">{decodeURL}</code>
                 <Button
                   className="bg-blue-700 text-white rounded-xl px-2 py-1"
                   onClick={() => copyToClipboard(decodeURL).then(() => setIsCopied(true))}

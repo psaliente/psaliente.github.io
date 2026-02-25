@@ -36,7 +36,7 @@ export default function ProjectItemPage() {
           <LanguageList ProjectID="" Languages={projectLanguages} />
         </div>
         <div className="flex flex-col w-full p-10 items-center justify-center">
-          <p className="dark:text-gray-400 text-2xl md:text-4xl max-w-4xl font-light break-words">
+          <p className="dark:text-gray-400 text-2xl md:text-4xl max-w-4xl font-light wrap-break-word">
             {projectItem?.Description}
           </p>
           <RolesList Roles={projectItem?.Role} />

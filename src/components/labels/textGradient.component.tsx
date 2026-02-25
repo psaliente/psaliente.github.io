@@ -14,7 +14,7 @@ function TextGradient({
 }: TextGradientPropsType) {
   return (
     <span
-      className={`font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-gradient-to-r ${fromColor} from-10% ${viaColor} via-60% ${toColor} to-90%`}
+      className={`font-[SourceCodePro] font-thin text-transparent bg-clip-text bg-linear-to-r ${fromColor} from-10% ${viaColor} via-60% ${toColor} to-90%`}
     >
       {children}
     </span>
