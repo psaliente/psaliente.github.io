@@ -87,7 +87,7 @@ export default function JulianConverterPage() {
                   label="Regular Date:"
                   name="dtRegularDate"
                   selected={regularDateValue}
-                  onChange={(date) => setRegularDateValue(date!)}
+                  onChange={(date: Date | null) => setRegularDateValue(date!)}
                 />
                 <Button onClick={computeJulianDateValue}>Convert Regular Date to Julian</Button>
                 <FormTextInput
