@@ -8,6 +8,7 @@ import HeaderComponent from '../../../header.component';
 import useClipboard from '../../../../hooks/useClipboard.hook';
 import useGTag from '../../../../hooks/useGTag.hook';
 import usePageTitle from '../../../../hooks/usePageTitle.hook';
+import { Activity } from 'react';
 
 export default function EncodePage() {
   const { valueToEncode, encodedValue, decodeURL, isCopied, encodeValue, setValueToEncode, setIsCopied } =
@@ -88,9 +89,10 @@ export default function EncodePage() {
               readOnly
             ></FormTextArea>
 
-            {!!encodedValue === true && (
+            <Activity mode={!!encodedValue === true ? 'visible' : 'hidden'}>
               <div className="flex flex-row flex-wrap items-center gap-1 p-1">
-                DECODE URL: <code className="border border-gray-500 max-w-[80%] wrap-break-word p-1 m-1">{decodeURL}</code>
+                DECODE URL:{' '}
+                <code className="border border-gray-500 max-w-[80%] wrap-break-word p-1 m-1">{decodeURL}</code>
                 <Button
                   className="bg-blue-700 text-white rounded-xl px-2 py-1"
                   onClick={() => copyToClipboard(decodeURL).then(() => setIsCopied(true))}
@@ -99,15 +101,12 @@ export default function EncodePage() {
                 </Button>
                 <Link
                   className="bg-blue-700 text-white rounded-xl px-2 py-1"
-                  to={{
-                    pathname: '/tools/decode',
-                    search: `?cipher=${encodedValue}`
-                  }}
+                  to={{ pathname: '/tools/decode', search: `?cipher=${encodedValue}` }}
                 >
                   Go to URL
                 </Link>
               </div>
-            )}
+            </Activity>
           </Card>
         </Section.Content>
       </Section>

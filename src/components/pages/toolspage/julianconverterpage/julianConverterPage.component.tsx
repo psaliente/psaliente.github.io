@@ -1,3 +1,4 @@
+import { Activity } from 'react';
 import useGTag from '../../../../hooks/useGTag.hook';
 import usePageTitle from '../../../../hooks/usePageTitle.hook';
 import { Button, NightModeToggle } from '../../../buttons';
@@ -78,7 +79,7 @@ export default function JulianConverterPage() {
             Julian to Date
           </button>
 
-          {convertType == 'julian' && (
+          <Activity mode={convertType == 'julian' ? 'visible' : 'hidden'}>
             <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700 transition delay-300 duration-500">
               <span className="text-2xl">Convert Regular Date to Julian</span>
 
@@ -99,9 +100,9 @@ export default function JulianConverterPage() {
                 />
               </div>
             </Card>
-          )}
+          </Activity>
 
-          {convertType == 'regular' && (
+          <Activity mode={convertType == 'regular' ? 'visible' : 'hidden'}>
             <Card className="flex flex-col gap-5 p-6 fhd:p-8 rounded-tl-none bg-white dark:bg-gray-700 transition delay-300 duration-500">
               <span className="text-2xl">Convert Julian to Regular Date</span>
 
@@ -123,7 +124,7 @@ export default function JulianConverterPage() {
                 />
               </div>
             </Card>
-          )}
+          </Activity>
         </Section.Content>
       </Section>
       <FooterComponent />

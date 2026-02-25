@@ -1,13 +1,10 @@
-import { useContext } from 'react';
+import { Activity, useContext } from 'react';
 import BrandColors from './brandcolors.component';
 import { TextTitle } from './labels';
 import { PortfolioContext } from '../contexts';
 import { Link } from 'react-router-dom';
 
-type HeaderComponentPropsType = {
-  EnableLink?: boolean;
-  ShowDescription?: boolean;
-};
+type HeaderComponentPropsType = { EnableLink?: boolean; ShowDescription?: boolean };
 
 const HeaderComponent = ({ EnableLink = false, ShowDescription = true }: HeaderComponentPropsType) => {
   const { Name, Description } = useContext(PortfolioContext);
@@ -20,18 +17,18 @@ const HeaderComponent = ({ EnableLink = false, ShowDescription = true }: HeaderC
   return (
     <div className="overflow-y-hidden relative">
       <div className="flex flex-col gap-8 md:gap-16 bg-white dark:bg-gray-800 transition delay-300 duration-500 p-5 md:p-20 ">
-        {EnableLink ? (
+        <Activity mode={EnableLink ? 'visible' : 'hidden'}>
           <Link to="/" aria-label="home">
             {headerTitle}
           </Link>
-        ) : (
-          headerTitle
-        )}
-        {ShowDescription && (
+        </Activity>
+        <Activity mode={EnableLink ? 'hidden' : 'visible'}>{headerTitle}</Activity>
+
+        <Activity mode={ShowDescription ? 'visible' : 'hidden'}>
           <p className="p-5 text-2xl md:text-4xl text-center md:text-justify font-[SourceCodePro] text-gray-500 dark:text-gray-100 transition delay-300 duration-500 wrap-break-word">
             {Description}
           </p>
-        )}
+        </Activity>
       </div>
       <BrandColors />
     </div>
