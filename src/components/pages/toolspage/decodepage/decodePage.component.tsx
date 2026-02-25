@@ -19,11 +19,11 @@ export default function DecodePage() {
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
-      <Section className="flex flex-col flex-auto gap-4 py-10 px-4 fhd:px-10">
+      <Section className="flex flex-col flex-auto gap-4 py-10 px-4 lg:px-10">
         <Section.Title>
           <Section.Title.Gradient> Decode Tool</Section.Title.Gradient>
         </Section.Title>
-        <Section.Content className="flex flex-col gap-3 p-4 text-xl fhd:text-base">
+        <Section.Content className="flex flex-col gap-3 p-4 text-xl lg:text-base">
           About this tool - a simple app that uses decoding method &quot;atob&quot; with a mix of my custom character
           shifting algorithm, which means this can only decode data encoded by my encoding tool that utilizes the same
           algorithm.
@@ -56,8 +56,8 @@ export default function DecodePage() {
             </li>
           </ul>
         </Section.Content>
-        <Section.Content className="fhd:p-8 text-xl fhd:text-base">
-          <Card className="flex flex-col gap-5 p-6 fhd:p-8 bg-white dark:bg-gray-700 transition delay-300 duration-500">
+        <Section.Content className="fhd:p-8 text-xl lg:text-base">
+          <Card className="flex flex-col gap-5 p-6 lg:p-8 bg-white dark:bg-gray-700 transition delay-300 duration-500">
             <FormTextArea
               label="Encoded Message:"
               name="txtMessage"

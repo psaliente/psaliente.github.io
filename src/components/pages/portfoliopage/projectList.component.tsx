@@ -4,9 +4,7 @@ import { ProjectType } from '../../../types/Project.Type';
 import { Section } from '../../containers';
 import { SECTIONS } from '../../../constants';
 
-type ProjectListPropType = {
-  projects: ProjectType[];
-};
+type ProjectListPropType = { projects: ProjectType[] };
 
 function ProjectList({ projects }: ProjectListPropType) {
   const { TITLE, SUBTITLE } = SECTIONS.PROJECTS;
@@ -17,7 +15,7 @@ function ProjectList({ projects }: ProjectListPropType) {
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}
       </Section.Title>
-      <Section.Content className="grid grid-cols-1 gap-x-8 gap-y-12 fhd:grid-cols-2 qhd:grid-cols-3 uhd:grid-cols-4">
+      <Section.Content className="grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
         {projects.map((p, i) => (
           <ProjectListItem key={'projectItem' + i} ProjectID={i} {...p} />
         ))}

@@ -10,7 +10,7 @@ export default function ProgTools() {
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}
       </Section.Title>
-      <Section.Content className="flex flex-row flex-wrap p-4 hd:p-8 gap-6 justify-center">
+      <Section.Content className="flex flex-row flex-wrap p-4 sm:p-8 gap-6 justify-center">
         {ITEMS.map(({ IMG_ALT, IMG_SRC, URL }) => (
           <a key={IMG_ALT} href={URL} target="_blank" rel="noreferrer">
             <Card className="content-center p-6 rounded-xl bg-slate-200 dark:bg-slate-700 transition delay-300 duration-500 hover:scale-[1.1]">

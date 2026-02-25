@@ -17,7 +17,7 @@ const ToolsPage = () => {
     <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50 transition delay-300 duration-500 min-h-screen flex flex-col">
       <HeaderComponent ShowDescription={false} EnableLink={true} />
       <NightModeToggle />
-      <Section className="flex flex-col flex-auto gap-4 py-10 px-4 fhd:px-10">
+      <Section className="flex flex-col flex-auto gap-4 py-10 px-4 lg:px-10">
         <Section.Title>
           <Section.Title.Gradient>My Custom-Made Tools</Section.Title.Gradient>
         </Section.Title>
