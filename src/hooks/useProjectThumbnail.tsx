@@ -7,9 +7,9 @@ import {
   appIconMobile,
   appIconWeb
 } from '../assets/images';
-import { ProjectType } from '../types/Project.Type';
+import { ProjectItemType } from '../types/Project.Type';
 
-function useProjectThumbnail(type?: ProjectType['Type']) {
+function useProjectThumbnail(type?: ProjectItemType['Type']) {
   const [svgSrc, setSvgSrc] = useState<string | undefined>(undefined);
 
   useEffect(() => {

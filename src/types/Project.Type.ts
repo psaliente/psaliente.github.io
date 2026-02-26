@@ -1,7 +1,9 @@
-export type ProjectType = {
+export type ProjectType = 'console' | 'cross-platform' | 'desktop' | 'generic' | 'mobile' | 'web';
+
+export type ProjectItemType = {
   Title: string;
   Description: string;
-  Type?: 'console' | 'cross-platform' | 'desktop' | 'generic' | 'mobile' | 'web';
+  Type?: ProjectType;
   DevType?: 'fe' | 'be' | 'data' | 'full';
   Link?: string;
   Role: string[];

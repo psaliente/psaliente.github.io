@@ -1,9 +1,9 @@
 import React, { createContext } from 'react';
-import { ProjectType } from '../types/Project.Type';
+import { ProjectItemType } from '../types/Project.Type';
 
 export type ProjectItemContextPropType = {
-  projectItem: ProjectType | null;
-  setProjectItem: React.Dispatch<React.SetStateAction<ProjectType | null>>;
+  projectItem: ProjectItemType | null;
+  setProjectItem: React.Dispatch<React.SetStateAction<ProjectItemType | null>>;
 };
 
 export const ProjectItemContext = createContext<ProjectItemContextPropType>({
