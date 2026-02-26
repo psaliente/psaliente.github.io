@@ -10,7 +10,7 @@ type ProjectListPropType = { projects: ProjectType[] };
 
 function ProjectList({ projects }: ProjectListPropType) {
   const { TITLE, SUBTITLE } = SECTIONS.PROJECTS;
-  const { scrollToLeft, scrollToRight } = useCarouselScroll('.project-list');
+  const { scrollToLeft, scrollToRight, disableLeft, disableRight } = useCarouselScroll('.project-list');
 
   return (
     <Section className="flex flex-col gap-10 py-12 overflow-x-hidden">
@@ -25,7 +25,12 @@ function ProjectList({ projects }: ProjectListPropType) {
           ))}
         </div>
         <div className="flex flex-row px-12 gap-3 justify-end">
-          <CarouselButtons leftAction={scrollToLeft} rightAction={scrollToRight} />
+          <CarouselButtons
+            leftAction={scrollToLeft}
+            rightAction={scrollToRight}
+            disableLeft={disableLeft}
+            disableRight={disableRight}
+          />
         </div>
       </Section.Content>
     </Section>

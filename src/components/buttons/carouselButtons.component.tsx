@@ -1,24 +1,21 @@
 import { MouseEventHandler } from 'react';
+import CarouselButton from './carouselButton.component';
 
 type CarouselButtonsProps = {
   leftAction: MouseEventHandler<HTMLButtonElement>;
   rightAction: MouseEventHandler<HTMLButtonElement>;
+  disableLeft: boolean;
+  disableRight: boolean;
 };
-export default function CarouselButtons({ leftAction, rightAction }: CarouselButtonsProps) {
+export default function CarouselButtons({ leftAction, rightAction, disableLeft, disableRight }: CarouselButtonsProps) {
   return (
     <>
-      <button
-        className="rounded-full bg-white dark:bg-gray-800 hover:bg-gray-200 active:bg-gray-400 dark:text-white size-12 drop-shadow-sm transition delay-300 duration-500"
-        onClick={leftAction}
-      >
+      <CarouselButton onClick={leftAction} disabled={disableLeft}>
         &lt;
-      </button>
-      <button
-        className="rounded-full bg-white dark:bg-gray-800 hover:bg-gray-200 active:bg-gray-400 dark:text-white size-12 drop-shadow-sm transition delay-300 duration-500"
-        onClick={rightAction}
-      >
+      </CarouselButton>
+      <CarouselButton onClick={rightAction} disabled={disableRight}>
         &gt;
-      </button>
+      </CarouselButton>
     </>
   );
 }
