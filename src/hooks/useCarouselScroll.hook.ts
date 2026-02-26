@@ -1,17 +1,23 @@
-export default function useCarouselScroll(selectors: string) {
-  const carouselContainer = document.querySelector(selectors);
+import { MouseEventHandler, useEffect, useState } from 'react';
 
-  const scrollToLeft = () => {
+export default function useCarouselScroll(selectors: string) {
+  const [carouselContainer, setCarouselContainer] = useState<Element | null>(null);
+
+  const scrollToLeft: MouseEventHandler<HTMLButtonElement> = () => {
     if (carouselContainer) {
       carouselContainer.scrollBy({ left: -300, behavior: 'smooth' });
     }
   };
 
-  const scrollToRight = () => {
+  const scrollToRight: MouseEventHandler<HTMLButtonElement> = () => {
     if (carouselContainer) {
       carouselContainer.scrollBy({ left: 300, behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    setCarouselContainer(document.querySelector(selectors));
+  }, [selectors]);
 
   return { scrollToLeft, scrollToRight };
 }
