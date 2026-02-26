@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 /* @config "../tailwind.config.js"; */
 
+:root {
+  --project-section-height: 28rem;
+  --project-card-height: 26rem;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
