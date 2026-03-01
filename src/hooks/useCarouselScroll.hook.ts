@@ -1,12 +1,19 @@
-import { MouseEventHandler, useEffect, useState } from 'react';
+import { MouseEventHandler, useMemo, useState } from 'react';
 
 export default function useCarouselScroll(selectors: string) {
-  const [carouselContainer, setCarouselContainer] = useState<Element | null>(null);
   const [disableLeft, setDisableLeft] = useState(false);
   const [disableRight, setDisableRight] = useState(false);
 
+  const carouselContainer = useMemo(() => {
+    const container = document.querySelector(selectors);
+    console.log(selectors, container);
+
+    return container instanceof HTMLElement ? container : null;
+  }, [selectors]);
+
   const checkScrollPosition = () => {
     if (carouselContainer) {
+      console.log(carouselContainer.scrollLeft, carouselContainer.clientWidth, carouselContainer.scrollWidth);
       setDisableLeft(carouselContainer.scrollLeft <= 0);
       setDisableRight(carouselContainer.scrollLeft + carouselContainer.clientWidth >= carouselContainer.scrollWidth);
     }
@@ -25,18 +32,6 @@ export default function useCarouselScroll(selectors: string) {
       checkScrollPosition();
     }
   };
-
-  useEffect(() => {
-    const container = document.querySelector(selectors);
-    setCarouselContainer(container);
-
-    if (container) {
-      checkScrollPosition();
-    } else {
-      setDisableLeft(true);
-      setDisableRight(true);
-    }
-  }, [selectors]);
 
   return { scrollToLeft, scrollToRight, disableLeft, disableRight };
 }

@@ -5,7 +5,7 @@ export default function ProgTools() {
   const { TITLE, SUBTITLE, ITEMS } = SECTIONS.PROGTOOLS;
 
   return (
-    <Section className="z-10 bg-white dark:bg-gray-800 transition delay-300 duration-500 flex flex-col gap-8 px-10 py-12 shadow-lg dark:shadow-gray-600">
+    <Section className="z-10 bg-white dark:bg-gray-800 transition delay-300 duration-500 flex flex-col gap-14 px-10 py-12 shadow-lg dark:shadow-gray-600">
       <Section.Title className="text-gray-500 dark:text-gray-100 transition delay-300 duration-500 font-thin wrap-break-word">
         <Section.Title.Gradient>{TITLE}</Section.Title.Gradient>
         {SUBTITLE}

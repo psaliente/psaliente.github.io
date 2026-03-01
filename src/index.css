@@ -2,15 +2,11 @@
 /* @config "../tailwind.config.js"; */
 
 :root {
-  --project-section-height: 28rem;
-  --project-card-height: 26rem;
+  --project-section-height: 32rem;
+  --project-card-height: 30rem;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
-
-@theme {
-  --breakpoint-*: initial;
-}
 
 @keyframes fade-in {
   from {
@@ -23,4 +19,27 @@
 
 .fade-in {
   animation: fade-in 0.5s ease-in-out;
+}
+
+.nav {
+  button {
+    z-index: 10;
+    position: relative;
+    padding: 0.75rem 1.5rem;
+    &.active {
+      anchor-name: --active;
+      color: white;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.bubble {
+  position-anchor: --active;
+  top: anchor(top);
+  right: anchor(right);
+  bottom: anchor(bottom);
+  left: anchor(left);
+  transition: all 0.5s;
+  z-index: 2;
 }
