@@ -65,6 +65,7 @@
     "Description": "Mobile App (Android/IOS) - redacted due to current non-disclosure agreement with the client",
     "Type": "mobile",
     "Role": [
+      "Create and Manage CICD build and release pipelines",
       "Front-End Development",
       "Developed the project from the ground-up",
       "Provided feature enhancements and bug-fixes",
