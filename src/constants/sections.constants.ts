@@ -8,6 +8,7 @@ import {
   cssSVG,
   dotnetSVG,
   expoSVG,
+  firebaseSVG,
   githubSVG,
   html5SVG,
   jiraSVG,
@@ -144,6 +145,11 @@ export const SECTIONS = {
         IMG_SRC: expoSVG,
         IMG_ALT: 'Expo Logo',
         URL: 'https://expo.dev/'
+      },
+      {
+        IMG_SRC: firebaseSVG,
+        IMG_ALT: 'Firebase Logomark Full Color',
+        URL: 'https://firebase.google.com/'
       },
       {
         IMG_SRC: githubSVG,

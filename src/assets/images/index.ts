@@ -13,6 +13,7 @@ import csharpSVG from '../images/C_sharp.svg';
 import cssSVG from '../images/css.svg';
 import dotnetSVG from '../images/dotnet.svg';
 import expoSVG from '../images/expo.svg';
+import firebaseSVG from '../images/firebase.svg';
 import githubSVG from '../images/github.svg';
 import html5SVG from '../images/html5.svg';
 import jiraSVG from '../images/jira.svg';
@@ -51,6 +52,7 @@ export {
   cssSVG,
   dotnetSVG,
   expoSVG,
+  firebaseSVG,
   html5SVG,
   githubSVG,
   jiraSVG,
