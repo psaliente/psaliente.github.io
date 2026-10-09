@@ -316,6 +316,20 @@
     "Languages": ["SharePoint 2010", "C#", "JavaScript"]
   },
   {
+    "Title": "TSNC - Daily Activity Report",
+    "Type": "desktop",
+    "Description": "A desktop application that is used to record the daily activities for the IT department of Timberland Sports and Nature Club",
+    "Role": ["Full-Stack Development", "Developed the project from the ground-up"],
+    "Languages": ["VB.Net", "Microsoft Access DB"]
+  },
+  {
+    "Title": "TSNS - Decoder Watchlist",
+    "Type": "desktop",
+    "Description": "A desktop application for monitoring and managing cable TV decoders and Smart Cards in Timberland Sports and Nature Club",
+    "Role": ["Full-Stack Development", "Developed the project from the ground-up"],
+    "Languages": ["VB.Net", "Microsoft Access DB"]
+  },
+  {
     "Title": "Naval Forces Western Mindanao - Daily Vessel Report",
     "Type": "desktop",
     "Description": "Could not be disclosed due to sensitive military information",
